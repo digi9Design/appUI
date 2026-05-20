@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ranking Page（排行榜总页） i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#ranking/ranking-page.html" data-back-link>← 返回目录</a><span>/</span><span>ranking</span></nav>
+          <div class="phone-wire">
+      <div class="frame-label">Ranking Page（排行榜总页）</div>
+      <div class="top-bar">Ranking Page（排行榜总页）</div>
+      <div class="wire-content"><div class="wire-block">Owner</div>
+<div class="wire-block">Ranking</div>
+<div class="wire-block">Gift Received</div>
+<div class="wire-block">Gift Sent</div>
+<div class="wire-block">Room</div>
+<div class="wire-block">Family</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">ranking</p>
+        <h1>Ranking Page（排行榜总页）</h1>
+        <p>docs&#47;ui-structure&#47;ranking&#47;ranking-page.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>`Scaffold` 黑底，`extendBodyBehindAppBar: true`，透明 `AppBar` + 白字标题 `k_ranking`。</p>
+<p>`body`：`SafeArea` + `Stack`：`TabBarView`（各分类一个 `RankingCategoryPage`）+ 底部 `Positioned` 分类 Tab（魅力&#47;财富&#47;房间&#47;家族等，由接口 `categoryList` 决定）。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Owner</td>
+              <td><code>k_owner</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;ranking_medal_avatar.dart:279</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Ranking</td>
+              <td><code>k_ranking</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;ranking&#47;page&#47;ranking_page.dart:68</code></td>
+            </tr>
+            <tr>
+              <td>Ranking segment</td>
+              <td>Gift Received</td>
+              <td><code>k_gift_received</code></td>
+              <td>Yes</td>
+              <td><code>semantic:ranking-page</code></td>
+            </tr>
+            <tr>
+              <td>Ranking segment</td>
+              <td>Gift Sent</td>
+              <td><code>k_gift_sent</code></td>
+              <td>Yes</td>
+              <td><code>semantic:ranking-page</code></td>
+            </tr>
+            <tr>
+              <td>Ranking segment</td>
+              <td>Room</td>
+              <td><code>k_room_1</code></td>
+              <td>Yes</td>
+              <td><code>semantic:ranking-page</code></td>
+            </tr>
+            <tr>
+              <td>Ranking segment</td>
+              <td>Family</td>
+              <td><code>k_family</code></td>
+              <td>Yes</td>
+              <td><code>semantic:ranking-page</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;common&#47;common_ui&#47;gala_diamonds_num_label.dart</code></li>
+<li><code>lib&#47;ui&#47;common&#47;common_ui&#47;ranking_medal_avatar.dart</code></li>
+<li><code>lib&#47;ui&#47;ranking&#47;page&#47;ranking_page.dart</code></li>
+<li><code>lib&#47;ui&#47;ranking&#47;ranking_category_page.dart</code></li>
+<li><code>lib&#47;ui&#47;ranking&#47;ranking_config.dart</code></li>
+<li><code>lib&#47;ui&#47;ranking&#47;ranking_family_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;ranking&#47;ranking_room_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;ranking&#47;ranking_square_rrect_cover.dart</code></li>
+<li><code>lib&#47;ui&#47;ranking&#47;ranking_user_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;ranking&#47;widget&#47;ranking_background_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;ranking&#47;widget&#47;ranking_front_anim_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;ranking&#47;widget&#47;ranking_page_subtype_segment_button.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_name_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_pop_level_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_rich_level_icon.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room Main Page i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#room_list/room-main-page.html" data-back-link>← 返回目录</a><span>/</span><span>room_list</span></nav>
+          <div class="phone-wire">
+      <div class="frame-label">Room Main Page</div>
+      <div class="top-bar">Room Main Page</div>
+      <div class="wire-content"><div class="wire-block">Mine</div>
+<div class="wire-block">Active</div>
+<div class="wire-block">Party Event</div>
+<div class="wire-block">Active Friends</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">room_list</p>
+        <h1>Room Main Page</h1>
+        <p>docs&#47;ui-structure&#47;room_list&#47;room-main-page.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>顶部房间 Tab：`Mine &#47; Popular &#47; Event`，使用 `TabBar` + `AppUnderlineTabIndicator`。</p>
+<p>顶部选中下划线固定宽度为 `18dp`，高度为 `4dp`，颜色使用 `AppColors.primary`（`#26DBD3`），圆角为 `2dp`。</p>
+<p>内容区使用 `TabBarView` 承载 `RoomMinePage`、`RoomListPage(type: active)`、`ActivityPage`。</p>
+<p>右下角好友在房提示浮窗：监听 `EventBusUpdateFriendInRoom` 后调用 `MainApiService.getFriendsInRoom()`，通过 `AppOverlayAlert` 展示 `FollowRoomTipFloatWidget`，点击跳转 `FriendInRoomListPage`。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Mine</td>
+              <td><code>k_mine</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart:195</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Active</td>
+              <td><code>k_active</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart:196</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Party Event</td>
+              <td><code>k_party_event</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart:197</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Active Friends</td>
+              <td><code>k_active_friends</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;widget&#47;follow_room_tip_float_widget.dart:56</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;ui&#47;room_list&#47;entity&#47;event_bus_update_friend_in_room.dart</code></li>
+<li><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart</code></li>
+<li><code>lib&#47;ui&#47;room_list&#47;widget&#47;follow_room_tip_float_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

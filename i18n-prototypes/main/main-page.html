@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Main Page（主 Tab 壳） i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#main/main-page.html" data-back-link>← 返回目录</a><span>/</span><span>main</span></nav>
+          <div class="phone-wire main-wire">
+      <div class="frame-label">Main Page（主 Tab 壳）</div>
+      <div class="top-bar">Main Page（主 Tab 壳）</div>
+      <div class="content-list"><div class="content-row">Home</div>
+<div class="content-row">Square</div>
+<div class="content-row">Message</div>
+<div class="content-row">Mine</div>
+<div class="content-row">Chats</div>
+<div class="content-row">{s1} invites you to chat together!</div>
+<div class="content-row">Join Room</div>
+<div class="content-row">Following</div>
+<div class="content-row">Followers</div>
+<div class="content-row">Visitors</div></div>
+      <div class="tab-bar"><div>Home</div><div>Square</div><div>Message</div><div>Mine</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">main</p>
+        <h1>Main Page（主 Tab 壳）</h1>
+        <p>docs&#47;ui-structure&#47;main&#47;main-page.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>`PageController` + 多 Tab：`MainTab.home`（房间列表 `RoomMainPage`）、`square`（`PostTabListPage`）、`message`（`MainSessionListPage`）、`profile`（`MePage`）。</p>
+<p>底部自定义 TabBar；房间悬浮球、活动弹窗、新用户礼包等逻辑在 `initState` &#47; 回调中。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Home</td>
+              <td><code>k_home</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;main&#47;main_page.dart:377</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Square</td>
+              <td><code>k_square</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;main&#47;main_page.dart:381</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Message</td>
+              <td><code>k_chat</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;main&#47;main_page.dart:384</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Mine</td>
+              <td><code>k_mine</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;main&#47;main_page.dart:388</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Chats</td>
+              <td><code>k_chats</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;main&#47;main_session_list_page.dart:57</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} invites you to chat together!</td>
+              <td><code>k_xxx_invites_you_to_chat_together</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;main&#47;recommend_room_dialog.dart:48</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Join Room</td>
+              <td><code>k_join_room</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;main&#47;recommend_room_dialog.dart:112</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Following</td>
+              <td><code>k_following</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:336</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Followers</td>
+              <td><code>k_followers</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:344</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Visitors</td>
+              <td><code>k_visitors</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:352</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Wallet</td>
+              <td><code>k_wallet</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:499</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>My Room</td>
+              <td><code>k_my_room</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:505</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Mall</td>
+              <td><code>k_mall</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:511</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Family</td>
+              <td><code>k_family</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:517</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Badge</td>
+              <td><code>k_badge</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:628</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Wealth&#47;Charm</td>
+              <td><code>k_wealthcharm</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:643</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Super</td>
+              <td><code>k_super</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:662</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Greeting Line</td>
+              <td><code>k_greeting_line</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:674</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>BD System</td>
+              <td><code>k_bd_system</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:684</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Official System</td>
+              <td><code>k_official_system</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:698</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Help Center</td>
+              <td><code>k_help_center</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:707</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Setting</td>
+              <td><code>k_setting</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:715</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>New</td>
+              <td><code>k_new</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:825</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Earn Silver</td>
+              <td><code>k_earn_silver</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:849</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Shipping</td>
+              <td><code>k_shipping</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart:892</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>New</td>
+              <td><code>k_new_1</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;list&#47;post_tab_list_page.dart:145</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>HOT</td>
+              <td><code>k_hot</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;list&#47;post_tab_list_page.dart:151</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Follow</td>
+              <td><code>k_follow</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;list&#47;post_tab_list_page.dart:157</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Active</td>
+              <td><code>k_active</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart:196</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Party Event</td>
+              <td><code>k_party_event</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart:197</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="dialog-line"><strong>Copied to clipboard</strong><code>k_copied_to_clipboard</code><small>lib&#47;widget&#47;user&#47;user_id_widget.dart:297</small></div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;ui&#47;main&#47;activity_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;main&#47;main_page.dart</code></li>
+<li><code>lib&#47;ui&#47;main&#47;main_page_controller.dart</code></li>
+<li><code>lib&#47;ui&#47;main&#47;main_room_floating_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;main&#47;main_session_list_page.dart</code></li>
+<li><code>lib&#47;ui&#47;main&#47;recommend_room_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;me&#47;page&#47;me_page.dart</code></li>
+<li><code>lib&#47;ui&#47;post&#47;list&#47;post_tab_list_page.dart</code></li>
+<li><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_id_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_pop_level_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_rich_level_icon.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

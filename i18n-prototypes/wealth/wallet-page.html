@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wallet Page（钱包） i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#wealth/wallet-page.html" data-back-link>← 返回目录</a><span>/</span><span>wealth</span></nav>
+          <div class="wallet-board-wire">
+      <div class="frame-label">Wallet Page（钱包）</div>
+      <div class="wallet-case score-case">
+        <div class="wallet-bg"></div>
+        <div class="wallet-appbar">
+          <span>‹</span>
+          <div class="wallet-tabs">
+            <b>Roses</b>
+            <span>Golds</span>
+            <span>Recharge Agents</span>
+          </div>
+        </div>
+        <div class="wallet-balance">
+          <strong>Transfer to Golds ›</strong>
+          <b>12,345.00</b>
+        </div>
+        <div class="wallet-coin"></div>
+        <div class="wallet-sheet">
+          <div class="wallet-history-row"><span></span><b>Income title</b><small>+120</small></div>
+          <div class="wallet-history-row"><span></span><b>Spend title</b><small>-80</small></div>
+          <div class="wallet-history-row"><span></span><b>Record title</b><small>+30</small></div>
+        </div>
+      </div>
+      <div class="wallet-case diamond-case">
+        <div class="wallet-bg"></div>
+        <div class="wallet-appbar">
+          <span>‹</span>
+          <div class="wallet-tabs">
+            <span>Roses</span>
+            <b>Golds</b>
+            <span>Recharge Agents</span>
+          </div>
+          <em>◎</em>
+        </div>
+        <div class="wallet-balance">
+          <strong>Transfer Amount ›</strong>
+          <b>8,888</b>
+        </div>
+        <div class="wallet-coin diamond"></div>
+        <div class="wallet-sheet">
+          <div class="wallet-grid">
+            <div><i></i><b>60</b><small>$0.99</small></div>
+            <div><i></i><b>300</b><small>$4.99</small></div>
+            <div><i></i><b>980</b><small>$14.99</small></div>
+            <div><i></i><b>1980</b><small>$29.99</small></div>
+          </div>
+          <div class="wallet-footer">
+            <span>VIP</span>
+            <b>Contact us ›</b>
+          </div>
+        </div>
+      </div>
+      <div class="wallet-case proxy-case">
+        <div class="wallet-appbar dark">
+          <span>‹</span>
+          <div class="wallet-tabs">
+            <span>Roses</span>
+            <span>Golds</span>
+            <b>Recharge Agents</b>
+          </div>
+        </div>
+        <div class="wallet-agent-list">
+          <div><span></span><b>Agent name</b><small>ID: 100001</small><em>✉</em></div>
+          <div><span></span><b>Agent name</b><small>ID: 100002</small><em>✉</em></div>
+          <div class="wallet-empty">Nothing at all</div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">wealth</p>
+        <h1>Wallet Page（钱包）</h1>
+        <p>docs&#47;ui-structure&#47;wealth&#47;wallet-page.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>`Scaffold` + `extendBodyBehindAppBar: true`，背景 `#F5F5F5`。</p>
+<p>`AppBar`：透明、`toolbarHeight: dp(44)`，`title` 为水平可滚 `TabBar`（积分 &#47; 钻石 &#47; [可选]代充）。</p>
+<p>Tab 文字与指示器颜色：随 `TabController.animation` 在「白 ↔ 深灰」间插值，滑到第三页（代充）时偏深色。</p>
+<p>`body`：`TabBarView` + `KeepAliveWrapper` → `ScoreListPage` | `DiamondRechargePage` | `ProxyRechargePage`。</p>
+<p>钻石 Tab 时 `actions` 显示记录按钮，跳转钻石流水。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Nothing at all</td>
+              <td><code>k_nothing_at_all</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;proxy_recharge_page.dart:82</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Transfer to Golds</td>
+              <td><code>k_transfer_to_golds</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;score_list_page.dart:132</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Transfer Amount</td>
+              <td><code>k_transfer_amount</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;wallet_diamond_recharge_page.dart:182</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Roses</td>
+              <td><code>k_roses</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;wallet_page.dart:167</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Golds</td>
+              <td><code>k_golds</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;wallet_page.dart:168</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Recharge Agents</td>
+              <td><code>k_recharge_agents</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;wallet_page.dart:170</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>VIP CS</td>
+              <td><code>k_vip_cs</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;widget&#47;ar_vip_list_dialog.dart:50</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>VIP</td>
+              <td><code>k_vip</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;widget&#47;diamond_recharge.dart:343</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Contact us</td>
+              <td><code>k_contact_us</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;widget&#47;diamond_recharge.dart:361</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;page&#47;proxy_recharge_page.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;page&#47;score_list_page.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;page&#47;wallet_diamond_recharge_page.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;page&#47;wallet_page.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;widget&#47;ar_vip_list_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;widget&#47;diamond_recharge.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

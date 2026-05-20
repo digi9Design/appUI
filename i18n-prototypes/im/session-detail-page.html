@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Session Detail Page i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#im/session-detail-page.html" data-back-link>← 返回目录</a><span>/</span><span>im</span></nav>
+          <div class="phone-wire">
+      <div class="frame-label">Session Detail Page</div>
+      <div class="top-bar">Session Detail Page</div>
+      <div class="wire-content"><div class="wire-block">Official Staff</div>
+<div class="wire-block">Members</div>
+<div class="wire-block">Online</div>
+<div class="wire-block">Sayhi to {s1}</div>
+<div class="wire-block">Hi</div>
+<div class="wire-block">ID</div>
+<div class="wire-block">Pull down load more</div>
+<div class="wire-block">Release to load more</div>
+<div class="wire-block">Loading.....</div>
+<div class="wire-block">Image</div>
+<div class="wire-block">Say something?</div>
+<div class="wire-block">Gif</div>
+<div class="wire-block">Send</div>
+<div class="wire-block">Slide up to cancel</div>
+<div class="wire-block">Release to cancel</div>
+<div class="wire-block">Hold to talk</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">im</p>
+        <h1>Session Detail Page</h1>
+        <p>docs&#47;ui-structure&#47;im&#47;session-detail-page.md</p>
+      </header>
+      
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Official Staff</td>
+              <td><code>k_official_staff</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;user_official_brand.dart:33</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Members</td>
+              <td><code>k_members</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;group&#47;group_session_detail_body.dart:61</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Online</td>
+              <td><code>k_online</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;p2p&#47;p2p_session_detail_body.dart:197</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Sayhi to {s1}</td>
+              <td><code>k_you_winked_at_xxx</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;p2p&#47;p2p_session_detail_body.dart:291</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Hi</td>
+              <td><code>k_hi</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;p2p&#47;p2p_session_detail_body.dart:307</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>ID</td>
+              <td><code>k_id</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;p2p&#47;p2p_session_detail_body.dart:497</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Pull down load more</td>
+              <td><code>k_pull_down_load_more</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:284</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Release to load more</td>
+              <td><code>k_release_to_load_more</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:285</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Loading.....</td>
+              <td><code>k_loading_1</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:286</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Image</td>
+              <td><code>k_image</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:409</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Say something?</td>
+              <td><code>k_say_something</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:605</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>Gif</td>
+              <td><code>k_gif</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:658</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Send</td>
+              <td><code>k_send</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:725</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Slide up to cancel</td>
+              <td><code>k_slide_up_to_cancel</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:812</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Release to cancel</td>
+              <td><code>k_release_to_cancel</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:814</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Hold to talk</td>
+              <td><code>k_hold_to_talk</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:1030</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Release to sent</td>
+              <td><code>k_release_to_send</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:1031</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} gave you {s2}, {s3} days</td>
+              <td><code>k_xxx_gave_you_xxx_xxx_days</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;avatar_frame_gift_message_item.dart:54</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>not support</td>
+              <td><code>k_not_support</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;base_message_item.dart:73</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Copy</td>
+              <td><code>k_copy</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;base_message_item.dart:365</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Report</td>
+              <td><code>k_report</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;base_message_item.dart:384</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Reply</td>
+              <td><code>k_reply</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;base_message_item.dart:403</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Join Room</td>
+              <td><code>k_join_room</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;chat_room_invite_item.dart:101</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>The owner invites you to join the agency.</td>
+              <td><code>k_the_owner_invites_you_to_join_the_agency</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;family_invite_message_item.dart:54</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Agency Invitation</td>
+              <td><code>k_agency_invitation</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;family_invite_message_item.dart:83</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Agency Name</td>
+              <td><code>k_agency_name</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;family_invite_message_item.dart:126</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Join!</td>
+              <td><code>k_join_now</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;family_invite_message_item.dart:148</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Awaiting Respond</td>
+              <td><code>k_awaiting_respond</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;withdraw_reseller_message_item.dart:76</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Expires in</td>
+              <td><code>k_expires_in</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;withdraw_reseller_message_item.dart:81</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Reject</td>
+              <td><code>k_reject</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;withdraw_reseller_message_item.dart:193</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Agree</td>
+              <td><code>k_agree</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;withdraw_reseller_message_item.dart:218</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="dialog-line"><strong>Use {s1} Golds to start the chat</strong><code>k_use_xxx_diamonds_to_start_the_chat</code><small>lib&#47;ui&#47;im&#47;sayhi&#47;say_hi_biz.dart:44</small></div>
+<div class="dialog-line"><strong>You have 1 last chance to say HI today. Would you send now?</strong><code>k_you_have_1_last_chance_to_say_hi_today_would_you_send_now</code><small>lib&#47;ui&#47;im&#47;sayhi&#47;say_hi_biz.dart:65</small></div>
+<div class="dialog-line"><strong>Yes</strong><code>k_yes</code><small>lib&#47;ui&#47;im&#47;sayhi&#47;say_hi_biz.dart:66</small></div>
+<div class="dialog-line"><strong>No</strong><code>k_no</code><small>lib&#47;ui&#47;im&#47;sayhi&#47;say_hi_biz.dart:67</small></div>
+<div class="dialog-line"><strong>Copied to clipboard</strong><code>k_copied_to_clipboard</code><small>lib&#47;ui&#47;im&#47;sessiondetail&#47;p2p&#47;p2p_session_detail_body.dart:491</small></div>
+<div class="dialog-line"><strong>Follow</strong><code>k_follow</code><small>lib&#47;ui&#47;im&#47;sessiondetail&#47;p2p&#47;p2p_session_detail_body.dart:552</small></div>
+<div class="dialog-line"><strong>Time to short!</strong><code>k_time_too_short</code><small>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart:875</small></div>
+<div class="dialog-line"><strong>Are you sure to join the family?</strong><code>k_are_you_sure_to_join_the_family</code><small>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;family_invite_message_item.dart:26</small></div>
+<div class="dialog-line"><strong>Succeed!</strong><code>k_succeed</code><small>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;withdraw_reseller_message_item.dart:248</small></div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;theme&#47;appbar&#47;app_bar_title.dart</code></li>
+<li><code>lib&#47;ui&#47;common&#47;common_ui&#47;user_official_brand.dart</code></li>
+<li><code>lib&#47;ui&#47;common&#47;imagebrowse&#47;image_browser.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sayhi&#47;say_hi_biz.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;group&#47;group_session_detail_body.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;p2p&#47;p2p_session_detail_body.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;session_detail_page.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;audio_animation_view.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;audio_message_item.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;avatar_frame_gift_message_item.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;base_message_item.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;chat_room_invite_item.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;cp_invite_item.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;family_invite_message_item.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;forward_message_item.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;image_message_item.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;text_message_item.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;message_list_item&#47;withdraw_reseller_message_item.dart</code></li>
+<li><code>lib&#47;ui&#47;im&#47;sessiondetail&#47;widget&#47;session_detail_appbar_leading.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;emoji&#47;emoji_Selector_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_id_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_pop_level_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_rich_level_icon.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

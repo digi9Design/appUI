@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>好友在房提示浮窗 i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#room_list/follow-room-tip-float-widget.html" data-back-link>← 返回目录</a><span>/</span><span>room_list</span></nav>
+          <div class="phone-wire">
+      <div class="frame-label">好友在房提示浮窗</div>
+      <div class="top-bar">好友在房提示浮窗</div>
+      <div class="wire-content"><div class="wire-block">Mine</div>
+<div class="wire-block">Active</div>
+<div class="wire-block">Party Event</div>
+<div class="wire-block">Active Friends</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">room_list</p>
+        <h1>好友在房提示浮窗</h1>
+        <p>docs&#47;ui-structure&#47;room_list&#47;follow-room-tip-float-widget.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>根节点：`GestureDetector`，点击区域覆盖整个浮窗。</p>
+<p>外层：`ClipRRect` + `BackdropFilter`，圆角 `dp(12)`，背景模糊 `sigmaX&#47;sigmaY = 4`。</p>
+<p>容器背景：`AppColors.color4D030303`（`#0303034D`），圆角 `dp(12)`。</p>
+<p>渐变边框：通过 `_GradientBorderPainter` 只绘制 `PaintingStyle.stroke`，中间区域做镂空处理；方向为 `Alignment.topCenter` 到 `Alignment.bottomCenter`，颜色从 `AppColors.colorFF86FFFD` 到 `AppColors.colorFFFFEF88`，描边宽度 `dp(1)`，圆角 `dp(12)`。</p>
+<p>内容区：`Stack(clipBehavior: Clip.none)`。</p>
+<p>标题：`PositionedDirectional(top: dp(6), start: dp(10))`，文案为 `S.current.k_active_friends`。</p>
+<p>头像：`_userAvatarList()` 根据 `users` 动态生成，位置为 `top: dp(25)`，横向起点 `dp(10) + index * dp(22)`，头像尺寸 `dp(32)`，白色半透明描边 `dp(1)`。</p>
+<p>右箭头：`PositionedDirectional(bottom: dp(13), end: dp(10))`，尺寸 `dp(18)`。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Mine</td>
+              <td><code>k_mine</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart:195</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Active</td>
+              <td><code>k_active</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart:196</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Party Event</td>
+              <td><code>k_party_event</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart:197</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Active Friends</td>
+              <td><code>k_active_friends</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;widget&#47;follow_room_tip_float_widget.dart:56</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;ui&#47;room_list&#47;entity&#47;event_bus_update_friend_in_room.dart</code></li>
+<li><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart</code></li>
+<li><code>lib&#47;ui&#47;room_list&#47;widget&#47;follow_room_tip_float_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

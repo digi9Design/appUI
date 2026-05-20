@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room Mine Page i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#room_list/room-mine-page.html" data-back-link>← 返回目录</a><span>/</span><span>room_list</span></nav>
+          <div class="phone-wire">
+      <div class="frame-label">Room Mine Page</div>
+      <div class="top-bar">Room Mine Page</div>
+      <div class="wire-content"><div class="wire-block">Favorite</div>
+<div class="wire-block">Recently</div>
+<div class="wire-block">Create room</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">room_list</p>
+        <h1>Room Mine Page</h1>
+        <p>docs&#47;ui-structure&#47;room_list&#47;room-mine-page.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>顶部展示我的房间卡片或创建房间卡片。</p>
+<p>子 Tab：`Favorites &#47; Recently`，使用手写文本 Tab + 选中下划线。</p>
+<p>子 Tab 选中下划线固定宽度为 `18dp`，高度为 `4dp`，颜色为 `AppColors.primary`（`#26DBD3`），圆角为 `2dp`。</p>
+<p>内容区使用 `TabBarView` 承载收藏房间列表和最近访问房间列表。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Favorite</td>
+              <td><code>k_favorite</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_mine_page.dart:203</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Recently</td>
+              <td><code>k_recently</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_mine_page.dart:204</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Create room</td>
+              <td><code>k_create_room</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_mine_page.dart:271</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;ui&#47;room_list&#47;entity&#47;event_mine_room_snapshot.dart</code></li>
+<li><code>lib&#47;ui&#47;room_list&#47;page&#47;room_mine_page.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

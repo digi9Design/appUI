@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room Gift Message Cell i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#room/room-gift-message-cell.html" data-back-link>← 返回目录</a><span>/</span><span>room</span></nav>
+          <div class="phone-wire">
+      <div class="frame-label">Room Gift Message Cell</div>
+      <div class="top-bar">Room Gift Message Cell</div>
+      <div class="wire-content"><div class="wire-block">Record</div>
+<div class="wire-block">Ok</div>
+<div class="wire-block">None</div>
+<div class="wire-block">Auction Seat</div>
+<div class="wire-block">Auction Assistant</div>
+<div class="wire-block">Golds Rain</div>
+<div class="wire-block tall">Best luck of the Golds Rain</div>
+<div class="wire-block tall">Not enough for {s1} people to click,it has been return</div>
+<div class="wire-block tall">{s1} sent a Golds Rain worth {s2} Golds.
+Will be distributed in {s3} minutes!</div>
+<div class="wire-block">Dice</div>
+<div class="wire-block">Dice Result</div>
+<div class="wire-block">Gifts Boom!!</div>
+<div class="wire-block tall">User ({s1}) won {s2} in lv{s3} Rocket</div>
+<div class="wire-block">Records</div>
+<div class="wire-block">All</div>
+<div class="wire-block">All on mic</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">room</p>
+        <h1>Room Gift Message Cell</h1>
+        <p>docs&#47;ui-structure&#47;room&#47;room-gift-message-cell.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>房间公屏礼物消息单元，展示礼物图、数量、收礼人和幸运礼物中奖文案。</p>
+<p>幸运礼物中奖金额使用 `formatAmount()` 按 `K&#47;M&#47;B` 缩写。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Record</td>
+              <td><code>k_auction_record</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_result_alert.dart:40</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Ok</td>
+              <td><code>k_ok</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_result_alert.dart:51</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>None</td>
+              <td><code>k_none</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_result_alert.dart:129</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Auction Seat</td>
+              <td><code>k_auction_seat</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_result_alert.dart:159</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Auction Assistant</td>
+              <td><code>k_auction_assistant</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_auction_message_cell.dart:20</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Golds Rain</td>
+              <td><code>k_dias_rain</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_dias_rain_message_cell.dart:24</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Best luck of the Golds Rain</td>
+              <td><code>k_best_luck_of_diamond_rain</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_dias_rain_message_cell.dart:33</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Not enough for {s1} people to click,it has been return</td>
+              <td><code>k_not_enough_for_xxx_people_to_click_it_has_been_returned</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_dias_rain_message_cell.dart:35</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} sent a Golds Rain worth {s2} Golds.
+Will be distributed in {s3} minutes!</td>
+              <td><code>k_xxx_sent_a_dias_rain_worth_xxx_diamonds_will_be_distributed_in_xxx_minutes</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_dias_rain_send_message_cell.dart:71</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Dice</td>
+              <td><code>k_dice</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_dice_message_cell.dart:13</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Dice Result</td>
+              <td><code>k_dice_result</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_dice_message_cell.dart:53</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Gifts Boom!!</td>
+              <td><code>k_fubag</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_fubag_message_cell.dart:20</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>User ({s1}) won {s2} in lv{s3} Rocket</td>
+              <td><code>k_user_xxx_won_in_lv_xxx_fu_bag_got_xxx</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_fubag_message_cell.dart:35</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Records</td>
+              <td><code>k_records</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_fubag_result_message_cell.dart:60</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>All</td>
+              <td><code>k_all</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_gift_message_cell.dart:132</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>All on mic</td>
+              <td><code>k_all_on_mic</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_gift_message_cell.dart:133</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Won {s1} Golds by Lucky Gifts({s2} times)!</td>
+              <td><code>k_won_xxx_dias_by_lucky_gifts_xxx_times</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_gift_message_cell.dart:210</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Lucky Guy</td>
+              <td><code>k_lucky_guy</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_lucky_guy_message_cell.dart:19</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Congratulations on the lucky guys</td>
+              <td><code>k_congratulations_on_the_lucky_guy</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_lucky_guy_message_cell.dart:32</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Rewards Record</td>
+              <td><code>k_rewards_record</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_new_fubag_result_message_cell.dart:56</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Official</td>
+              <td><code>k_official</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_operate_message_cell.dart:17</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>The Room has got a Hot for being good vibe</td>
+              <td><code>k_this_room_has_got_a_hot_for_being_good_vibe</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_operate_message_cell.dart:96</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>The Room has got a Top for being good vibe</td>
+              <td><code>k_this_room_has_got_a_top_for_being_good_vibe</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_operate_message_cell.dart:99</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>PK</td>
+              <td><code>k_pk</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_pk_message_cell.dart:20</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>PK Game End</td>
+              <td><code>k_pk_game_end</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_pk_message_cell.dart:24</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Deuce</td>
+              <td><code>k_deuce</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_pk_message_cell.dart:28</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Winning the TOP1 in consumption in PK!</td>
+              <td><code>k_winning_the_top1_in_consumption_in_pk</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_pk_message_cell.dart:30</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} in {s2} get</td>
+              <td><code>k_xxx_in_xxx_get</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:29</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Dream Planet</td>
+              <td><code>k_dream_planet</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:31</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Lucky box</td>
+              <td><code>k_lucky_box</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:36</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Need for Speed</td>
+              <td><code>k_need_for_speed</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:41</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} got {s2} times rewards</td>
+              <td><code>k_xxx_got_xxx_times_rewards</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:44</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Cockfighting</td>
+              <td><code>k_cockfighting</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:51</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>in Lucky Gifts ({s1})</td>
+              <td><code>k_in_lucky_gifts_xxx</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:73</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>got {s1} Golds</td>
+              <td><code>k_got_xxx_dias</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:76</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>got</td>
+              <td><code>k_got</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:80</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>days</td>
+              <td><code>k_days</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:80</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Lucky Gift</td>
+              <td><code>k_lucky_gift</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart:114</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Who&#39;s Still Stand</td>
+              <td><code>k_whos_still_stand</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_turntable_reward_message_cell.dart:22</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Join Room</td>
+              <td><code>k_join_room</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_welcome_message_cell.dart:56</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Record</td>
+              <td><code>k_record</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_reward_list_alert.dart:75</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Picked</td>
+              <td><code>k_picked</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_reward_list_alert.dart:139</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>New Messages</td>
+              <td><code>k_new_messages</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;room_message_list_widget.dart:430</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_result_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_auction_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_dias_rain_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_dias_rain_send_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_dias_rain_winner_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_dice_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_fubag_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_fubag_result_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_gift_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_lucky_guy_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_new_fubag_result_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_notice_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_operate_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_pk_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_reward_notice_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_roll_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_sticker_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_text_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_tip_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_turntable_reward_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;cell&#47;room_welcome_message_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_reward_list_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;fu_bag&#47;room_fu_bag_result_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;new_fu_bag&#47;new_fubag_reward_result_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_message_cell_header_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_message_list_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_random_gift_result_alert.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

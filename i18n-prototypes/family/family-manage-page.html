@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Family Manage Page（家族管理） i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#family/family-manage-page.html" data-back-link>← 返回目录</a><span>/</span><span>family</span></nav>
+          <div class="manage-board-wire">
+      <div class="frame-label">Family Manage Page（家族管理）</div>
+      <div class="manage-case leader">
+        <div class="manage-topbar">‹ <strong>My Income / Family Income</strong></div>
+        <div class="manage-segment main-segment">
+          <span class="active">My Income</span><span>Family Income</span>
+        </div>
+        <h3>Leader · legacy mode · My Income</h3>
+        <div class="manage-segment"><span class="active">This Month</span><span>Last Month</span></div>
+        <div class="member-card-wire"><span></span><b>Member Name</b><em>Owner</em></div>
+        <div class="income-grid-wire">
+          <div><b>120</b><span>Today</span></div>
+          <div><b>98</b><span>yesterday</span></div>
+        </div>
+        <div class="income-wide-card"><b>3,600</b><span>This Month</span></div>
+        <div class="income-grid-wire">
+          <div><b>700</b><span>Withdraw</span></div>
+          <div><b>1,200</b><span>Gold</span></div>
+        </div>
+        <div class="income-wide-card"><b>260</b><span>Last Month Remaining</span></div>
+        <div class="income-wide-card"><b>900</b><span>Fam Leader Salary</span></div>
+      </div>
+      <div class="manage-case leader">
+        <div class="manage-topbar">‹ <strong>My Income / Family Income</strong></div>
+        <div class="manage-segment main-segment">
+          <span>My Income</span><span class="active">Family Income</span>
+        </div>
+        <h3>Leader · legacy mode · Family Income</h3>
+        <div class="manage-segment"><span class="active">This Month</span><span>Last Month</span></div>
+        <div class="income-grid-wire">
+          <div><b>4,500</b><span>Withdraw</span></div>
+          <div><b>8,600</b><span>Family Salary Info</span></div>
+        </div>
+        <div class="income-wide-card"><b>1,100</b><span>Last Month Remaining</span></div>
+        <div class="income-wide-card"><b>2,000</b><span>Fam Leader Salary</span></div>
+        <button>Family Salary Info</button>
+        <div class="salary-list-wire">
+          <div><span></span><b>User A</b><em>+120</em></div>
+          <div><span></span><b>User B</b><em>+96</em></div>
+        </div>
+      </div>
+      <div class="manage-case ar">
+        <div class="manage-topbar">‹ <strong>My Income / Family Income</strong></div>
+        <div class="manage-segment main-segment">
+          <span class="active">My Income</span><span>Family Income</span>
+        </div>
+        <h3>mode = 1 · My Income</h3>
+        <div class="date-range-wire">2026-05-01 - 2026-05-20</div>
+        <div class="first-month-wire">1st Month</div>
+        <div class="income-grid-wire">
+          <div><b>12</b><span>Days</span></div>
+          <div><b>42</b><span>Hours</span></div>
+        </div>
+        <div class="income-wide-card"><b>1,280</b><span>Withdraw</span></div>
+        <div class="salary-list-wire">
+          <div><span></span><b>Record</b><em>+36</em></div>
+          <div><span></span><b>Record</b><em>+18</em></div>
+        </div>
+      </div>
+      <div class="manage-case ar">
+        <div class="manage-topbar">‹ <strong>My Income / Family Income</strong></div>
+        <div class="manage-segment main-segment">
+          <span>My Income</span><span class="active">Family Income</span>
+        </div>
+        <h3>mode = 1 · Family Income</h3>
+        <div class="date-range-wire">2026-05-01 - 2026-05-20</div>
+        <div class="income-wide-card"><b>9,800</b><span>Family Income</span></div>
+        <div class="search-wire">Search by ID</div>
+        <div class="salary-list-wire">
+          <div><span></span><b>Member ID</b><em>+320</em></div>
+          <div><span></span><b>Member ID</b><em>+260</em></div>
+        </div>
+      </div>
+      <div class="manage-case member">
+        <div class="manage-topbar">‹ <strong>Family Name</strong></div>
+        <h3>Non-leader view · My Income only</h3>
+        <div class="manage-segment"><span class="active">This Month</span><span>Last Month</span></div>
+        <div class="member-card-wire"><span></span><b>Member Name</b></div>
+        <div class="income-grid-wire">
+          <div><b>120</b><span>Today</span></div>
+          <div><b>98</b><span>yesterday</span></div>
+        </div>
+        <div class="income-wide-card"><b>3,600</b><span>This Month</span></div>
+        <div class="income-grid-wire">
+          <div><b>700</b><span>Withdraw</span></div>
+          <div><b>1,200</b><span>Gold</span></div>
+        </div>
+      </div>
+      <div class="manage-floating-dialog">
+        <strong>Set title</strong>
+        <span>Add title</span>
+        <b>Confirm</b>
+      </div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">family</p>
+        <h1>Family Manage Page（家族管理）</h1>
+        <p>docs&#47;ui-structure&#47;family&#47;family-manage-page.md</p>
+      </header>
+      
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>This Month</td>
+              <td><code>k_this_month</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;control&#47;family_income_segment.dart:52</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Last Month</td>
+              <td><code>k_last_month</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;control&#47;family_income_segment.dart:74</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Family Salary Info</td>
+              <td><code>k_family_salary_info</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:316</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Family Income</td>
+              <td><code>k_family_income</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:296</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Withdraw</td>
+              <td><code>k_withdraw</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:308</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Search by ID</td>
+              <td><code>k_search_by_id</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:353</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Fam Leader Salary</td>
+              <td><code>k_fam_leader_salary</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:395</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>Last Month Remaining</td>
+              <td><code>k_last_month_remaining</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:702</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Today</td>
+              <td><code>k_today</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_member_detail.dart:423</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>yesterday</td>
+              <td><code>k_yesterday</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_member_detail.dart:428</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Days</td>
+              <td><code>k_days_1</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_member_detail.dart:504</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Hours</td>
+              <td><code>k_hours</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_member_detail.dart:536</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Gold</td>
+              <td><code>k_diamond</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_member_detail.dart:558</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Owner</td>
+              <td><code>k_owner</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;guild_income_model1_my_income_layout.dart:216</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>My Income</td>
+              <td><code>k_my_income</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_manage_page.dart:100</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>Title</td>
+              <td><span class="hard">Salary This Month</span></td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:1049</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td><span class="hard">WithDraw This Month</span></td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:1051</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td><span class="hard">Salary Last Month</span></td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:1052</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td><span class="hard">WithDraw Last Month</span></td>
+              <td><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:1054</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="dialog-line"><strong>No more content</strong><code>k_no_more_content</code><small>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:253</small></div>
+<div class="dialog-line"><strong>Confirm</strong><code>k_confirm</code><small>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart:281</small></div>
+<div class="dialog-line hard-line"><strong>No more records</strong><small>lib&#47;ui&#47;family&#47;controller&#47;family_income_controller.dart:385</small></div>
+<div class="dialog-line hard-line"><strong>No more records</strong><small>lib&#47;ui&#47;family&#47;controller&#47;family_income_controller.dart:400</small></div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;service&#47;family&#47;gala_family_api_services.dart</code></li>
+<li><code>lib&#47;ui&#47;common&#47;common_ui&#47;gala_segment_button_line.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;control&#47;family_income_segment.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;control&#47;guild_income_date_range_field.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;controller&#47;family_controller.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;controller&#47;family_income_controller.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_income_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;familyIncome&#47;family_member_detail.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;familyIncome&#47;guild_income_model1_my_income_layout.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;family_manage_page.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

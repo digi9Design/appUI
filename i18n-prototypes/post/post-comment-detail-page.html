@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post Comment Detail Page i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#post/post-comment-detail-page.html" data-back-link>← 返回目录</a><span>/</span><span>post</span></nav>
+          <div class="phone-wire">
+      <div class="frame-label">Post Comment Detail Page</div>
+      <div class="top-bar">Post Comment Detail Page</div>
+      <div class="wire-content"><div class="wire-block">Delete</div>
+<div class="wire-block">Do you confirm deletion?</div>
+<div class="wire-block">Total</div>
+<div class="wire-block">All Comments</div>
+<div class="wire-block">Just now</div>
+<div class="wire-block">ago</div>
+<div class="wire-block">What’s on your mind?</div>
+<div class="wire-block">Send</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">post</p>
+        <h1>Post Comment Detail Page</h1>
+        <p>docs&#47;ui-structure&#47;post&#47;post-comment-detail-page.md</p>
+      </header>
+      
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>Button &#47; label</td>
+              <td>Delete</td>
+              <td><code>k_delete</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;comment&#47;post_comment_list_view.dart:84</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Do you confirm deletion?</td>
+              <td><code>k_want_to_delete_it</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;comment&#47;post_comment_list_view.dart:89</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Total</td>
+              <td><code>k_total</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;comment&#47;post_comment_list_view.dart:315</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>All Comments</td>
+              <td><code>k_all_comments</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;comment_detail&#47;post_comment_detail_page.dart:265</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Just now</td>
+              <td><code>k_just_now</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;post_util.dart:15</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>ago</td>
+              <td><code>k_ago</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;post_util.dart:17</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>What’s on your mind?</td>
+              <td><code>k_whats_on_your_mind</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;widget&#47;post_comment_input_view.dart:113</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Send</td>
+              <td><code>k_send</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;post&#47;widget&#47;post_comment_input_view.dart:154</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="dialog-line"><strong>Succeeded</strong><code>k_succeeded</code><small>lib&#47;ui&#47;post&#47;comment&#47;post_comment_list_view.dart:95</small></div>
+<div class="dialog-line"><strong>Report</strong><code>k_report</code><small>lib&#47;ui&#47;post&#47;comment&#47;post_comment_list_view.dart:105</small></div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;post&#47;comment&#47;post_comment_list_view.dart</code></li>
+<li><code>lib&#47;ui&#47;post&#47;comment_detail&#47;post_comment_detail_page.dart</code></li>
+<li><code>lib&#47;ui&#47;post&#47;post_util.dart</code></li>
+<li><code>lib&#47;ui&#47;post&#47;widget&#47;post_comment_count_view.dart</code></li>
+<li><code>lib&#47;ui&#47;post&#47;widget&#47;post_comment_input_view.dart</code></li>
+<li><code>lib&#47;ui&#47;post&#47;widget&#47;post_content_header_view.dart</code></li>
+<li><code>lib&#47;ui&#47;post&#47;widget&#47;post_like_button.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;emoji&#47;emoji_Selector_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

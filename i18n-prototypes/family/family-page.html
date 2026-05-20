@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Family Page（家族主页） i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#family/family-page.html" data-back-link>← 返回目录</a><span>/</span><span>family</span></nav>
+          <div class="phone-wire family-wire">
+      <div class="frame-label">Family Page（家族主页）</div>
+      <div class="family-hero-wire">
+        <div class="family-nav-wire"><span>‹</span><span>⚙</span></div>
+        <div class="family-avatar-wire"></div>
+        <strong>Family Name · Lv.8</strong>
+        <p>Family description preview text</p>
+      </div>
+      <section class="family-section">
+        <h3>Family</h3>
+        <div class="family-actions-wire">
+          <div>Apply to join the Family</div>
+          <div>Income</div>
+          <div>Album</div>
+        </div>
+      </section>
+      <section class="family-section">
+        <h3>Family Rooms</h3>
+        <div class="family-room-list-wire">
+          <div>Room card</div>
+          <div>Room card</div>
+        </div>
+      </section>
+      <section class="family-section">
+        <h3>Announcement</h3>
+        <div class="family-announcement-wire">
+          <span>Create announcement</span>
+        </div>
+      </section>
+      <section class="family-section">
+        <h3>Family member</h3>
+        <div class="family-add-member-wire">Add members</div>
+        <div class="family-member-list-wire">
+          <div><span></span><strong>Owner</strong></div>
+          <div><span></span><strong>Admin</strong></div>
+          <div><span></span><strong>Member:</strong></div>
+        </div>
+      </section>
+      <div class="family-manage-sheet">
+        <span>Set admins</span>
+        <span>Remove admin</span>
+        <span>Kicked out the member</span>
+      </div>
+      <div class="family-title-dialog">
+        <strong>Set title</strong>
+        <span>Add title</span>
+        <b>Confirm</b>
+      </div>
+      <div class="family-apply-dialog">
+        <strong>Apply to join the Family</strong>
+        <span>Why do you want to join?</span>
+      </div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">family</p>
+        <h1>Family Page（家族主页）</h1>
+        <p>docs&#47;ui-structure&#47;family&#47;family-page.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>`Scaffold` + `extendBodyBehindAppBar`，深色系内容区。</p>
+<p>头部 `family_header_bg` + 头像&#47;名称&#47;简介；管理区按钮（申请&#47;设置&#47;相册）；房间横滑；公告区；成员列表 `familyMemberCell`。</p>
+<p>访客与管理员展示不同操作区。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>Title</td>
+              <td>Set title</td>
+              <td><code>k_set_title</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;control&#47;family_member_rename_alert.dart:230</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Add title</td>
+              <td><code>k_add_title</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;control&#47;family_member_rename_alert.dart:237</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Confirm</td>
+              <td><code>k_confirm</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;control&#47;family_member_rename_alert.dart:252</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Album</td>
+              <td><code>k_album</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_gallery.dart:203</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Cancel</td>
+              <td><code>k_cancel</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_gallery.dart:205</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Delete</td>
+              <td><code>k_delete</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_gallery.dart:215</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Edit</td>
+              <td><code>k_edit</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_gallery.dart:223</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Income</td>
+              <td><code>k_income</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:269</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Announcement</td>
+              <td><code>k_announcement</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:399</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Create announcement</td>
+              <td><code>k_create_announcement</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:415</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Ok</td>
+              <td><code>k_ok</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:464</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Family</td>
+              <td><code>k_family</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:693</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Family Rooms</td>
+              <td><code>k_family_rooms</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:707</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Family member</td>
+              <td><code>k_family_member</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:741</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Remove admin</td>
+              <td><code>k_remove_admin</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:896</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Set admins</td>
+              <td><code>k_set_admins</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:898</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Kicked out the member</td>
+              <td><code>k_kicked_out_the_member</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:908</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Owner</td>
+              <td><code>k_owner</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:939</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Admin</td>
+              <td><code>k_admin</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:941</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Member:</td>
+              <td><code>k_member</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:943</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Add members</td>
+              <td><code>k_add_members</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:1001</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Apply to join the Family</td>
+              <td><code>k_apply_to_join_the_family</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:1094</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Why do you want to join?</td>
+              <td><code>k_why_do_you_want_to_join_this_family</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:1107</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>Text</td>
+              <td><span class="hard">成员</span></td>
+              <td><code>lib&#47;ui&#47;family&#47;family_page.dart:225</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="dialog-line"><strong>Send successfully</strong><code>k_send_successfully</code><small>lib&#47;ui&#47;family&#47;family_page.dart:450</small></div>
+<div class="dialog-line hard-line"><strong>Title Can</strong><small>lib&#47;ui&#47;family&#47;control&#47;family_member_rename_alert.dart:145</small></div>
+<div class="dialog-line hard-line"><strong>Photos reach Max: 30 photos</strong><small>lib&#47;ui&#47;family&#47;family_gallery.dart:95</small></div>
+<div class="dialog-line hard-line"><strong>upload fail</strong><small>lib&#47;ui&#47;family&#47;family_gallery.dart:152</small></div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;service&#47;family&#47;gala_family_api_services.dart</code></li>
+<li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;common&#47;imagebrowse&#47;image_browser.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;control&#47;family_member_rename_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;controller&#47;family_controller.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;controller&#47;family_gallery_controller.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;controller&#47;family_title_controller.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;family_gallery.dart</code></li>
+<li><code>lib&#47;ui&#47;family&#47;family_page.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

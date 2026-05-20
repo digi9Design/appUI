@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room Gift Sheets i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#room/room-gift-sheets.html" data-back-link>← 返回目录</a><span>/</span><span>room</span></nav>
+          <div class="phone-wire">
+      <div class="frame-label">Room Gift Sheets</div>
+      <div class="top-bar">Room Gift Sheets</div>
+      <div class="wire-content"><div class="wire-block tall">{s1} kicked out {s2} of the Room</div>
+<div class="wire-block">Hatgame starting</div>
+<div class="wire-block tall">{s1} is elliminated in the game.</div>
+<div class="wire-block">Cancel</div>
+<div class="wire-block">Ok</div>
+<div class="wire-block">Right to use dice</div>
+<div class="wire-block">All</div>
+<div class="wire-block">All on mic</div>
+<div class="wire-block">Admin</div>
+<div class="wire-block tall">Set who can send messages in the room:</div>
+<div class="wire-block">Say something?</div>
+<div class="wire-block">Lock the Mic</div>
+<div class="wire-block">Leave the Mic</div>
+<div class="wire-block">Mini Profile</div>
+<div class="wire-block">Clear Heart value</div>
+<div class="wire-block">{s1} won!</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">room</p>
+        <h1>Room Gift Sheets</h1>
+        <p>docs&#47;ui-structure&#47;room&#47;room-gift-sheets.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>礼物面板主体由 `RoomGiftSheets` 负责，包含顶部关系&#47;横幅&#47;财富等级区域、送礼成员列表、礼物列表与底部发送区域。</p>
+<p>礼物列表单元格由 `RoomGiftListCell` 负责，选中态保留 `AppColors.primary` 边框。</p>
+<p>财富等级进度使用 `formatAmount()` 按 `K&#47;M&#47;B` 缩写并最多保留两位小数。</p>
+<p>财富等级区域 `_richLevelWidget` 背景色使用 `AppColors.colorFF221E2F`（`#221E2F`）。</p>
+<p>送礼成员列表 `_memberListWidget` 背景色使用 `AppColors.colorE5000000`（`#000000E5`），顶部左右圆角为 `20dp`。</p>
+<p>送礼成员单元格 `RoomGiftListMemberCell` 选中态头像边框为 `2dp` 实线 `AppColors.primary`（`#26DBD3`）；数字角标选中态背景色为 `#26DBD3`，文字颜色为 `#FFFFFF`。</p>
+<p>礼物面板列表区域 `_giftListPageWidget` 背景色使用 `AppColors.colorFF221E2F`（`#221E2F`），顶部左右圆角为 `20dp`。</p>
+<p>底部余额组件 `DiamondBalanceWidget` 背景色与礼物列表背景色一致，使用 `AppColors.colorFF221E2F`（`#221E2F`）。</p>
+<p>底部余额组件 recharge 文案颜色使用 `AppColors.colorFFFFE67A`（`#FFE67A`）。</p>
+<p>礼物列表单元格选中态阴影为 `0px 4px 4px 0px #00000040`，对应 `blurRadius: 4dp`、`offset: Offset(0, 4dp)`、颜色 `AppColors.color40000000`。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>{s1} kicked out {s2} of the Room</td>
+              <td><code>k_xxx_kicked_out_xxx_of_the_room</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:409</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Hatgame starting</td>
+              <td><code>k_hatgame_starting</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:415</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} is elliminated in the game.</td>
+              <td><code>k_xxx_is_elliminated_in_the_game</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:418</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Cancel</td>
+              <td><code>k_cancel</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:498</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Ok</td>
+              <td><code>k_ok</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_result_alert.dart:158</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Right to use dice</td>
+              <td><code>k_right_to_use_dice</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:497</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>All</td>
+              <td><code>k_all</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:501</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>All on mic</td>
+              <td><code>k_all_on_mic</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:505</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>Admin</td>
+              <td><code>k_admin</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:509</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Set who can send messages in the room:</td>
+              <td><code>k_set_who_can_send_messages_in_the_room</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:526</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Say something?</td>
+              <td><code>k_say_something</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:679</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Lock the Mic</td>
+              <td><code>k_lock_the_mic</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_stage_extension.dart:44</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Leave the Mic</td>
+              <td><code>k_leave_the_mic</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_stage_extension.dart:79</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Mini Profile</td>
+              <td><code>k_mini_profile</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_stage_extension.dart:89</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Clear Heart value</td>
+              <td><code>k_clear_heart_value</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_stage_extension.dart:91</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} won!</td>
+              <td><code>k_xxx_won</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_stage_extension.dart:188</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Game starts.</td>
+              <td><code>k_game_starts</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_stage_extension.dart:316</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>is the winner of the Auction</td>
+              <td><code>k_is_the_winner_of_the_auction</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_end_anim_alert.dart:35</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>None</td>
+              <td><code>k_none</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_end_anim_alert.dart:43</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Record</td>
+              <td><code>k_auction_record</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_ranking_widget.dart:63</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Not yet</td>
+              <td><code>k_not_yet</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_ranking_widget.dart:75</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Start!!</td>
+              <td><code>k_start_auction</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_start_anim_alert.dart:29</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Use the Golds Rain</td>
+              <td><code>k_used_diamond_rain</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_alert.dart:142</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Congrats on winning Golds!</td>
+              <td><code>k_congrats_on_winning_golds</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_result_alert.dart:67</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Golds will be sent to your bag.</td>
+              <td><code>k_golds_will_be_sent_to_your_bag</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_result_alert.dart:100</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Oops～All Golds were picked up.</td>
+              <td><code>k_oops_all_golds_were_picked_up</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_result_alert.dart:119</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Not enough for {s1} people to click,it has been return</td>
+              <td><code>k_not_enough_for_xxx_people_to_click_it_has_been_returned</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_result_alert.dart:140</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Don&#39;t prompt again</td>
+              <td><code>k_dont_prompt_again</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;foreground_service&#47;room_foreground_service_dialog.dart:57</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Congratulations on the lucky guys</td>
+              <td><code>k_congratulations_on_the_lucky_guy</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;fu_bag&#47;room_fu_bag_reward_alert.dart:93</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Special</td>
+              <td><code>k_special</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;fu_bag&#47;room_fu_bag_reward_alert.dart:228</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Send</td>
+              <td><code>k_send</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;gift&#47;room_gift_bottom_send_widget.dart:130</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Nothing at all</td>
+              <td><code>k_nothing_at_all</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;gift&#47;room_gift_list_widget.dart:158</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Room Info</td>
+              <td><code>k_room_info</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;info&#47;room_info_sheets.dart:73</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Room Rewards</td>
+              <td><code>k_room_rewards</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;info&#47;room_info_sheets.dart:74</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Room settings</td>
+              <td><code>k_room_settings</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;info&#47;room_info_sheets.dart:75</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} applied to become a CP</td>
+              <td><code>k_xxx_applied_to_become_a_cp</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_receive_alert.dart:136</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Refuse</td>
+              <td><code>k_refuse</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_receive_alert.dart:149</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Accept</td>
+              <td><code>k_accept</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_receive_alert.dart:161</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} has accepted your CP request</td>
+              <td><code>k_xxx_has_accepted_your_cp_request</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_result_alert.dart:46</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} rejected your CP request</td>
+              <td><code>k_xxx_rejected_your_cp_request</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_result_alert.dart:48</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>You have accepted {s1}&#39;s CP request</td>
+              <td><code>k_you_have_accepted_xxxs_cp_request</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_result_alert.dart:52</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>You have rejected {s1}&#39;s CP request</td>
+              <td><code>k_you_have_rejected_xxxs_cp_request</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_result_alert.dart:54</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Wait for confirmation...</td>
+              <td><code>k_wait_for_confirmation</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_send_alert.dart:76</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Follow Top Contributor</td>
+              <td><code>k_follow_top_contributor</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;new_fu_bag&#47;new_fubag_achieve_alert.dart:229</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Boom it!!</td>
+              <td><code>k_boom_it</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;new_fu_bag&#47;new_fubag_achieve_boom_alert.dart:103</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Congratulations!</td>
+              <td><code>k_congratulations_2</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;new_fu_bag&#47;new_fubag_my_reward_alert.dart:45</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Round</td>
+              <td><code>k_round</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;new_fu_bag&#47;room_new_lucky_bag_sheet.dart:80</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Join Room</td>
+              <td><code>k_join_room</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;room_join_tip_widget.dart:175</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="dialog-line"><strong>Remove this user from the Mic?</strong><code>k_sure_to_remove_this_user_from_the_mic</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:529</small></div>
+<div class="dialog-line"><strong>Confirm</strong><code>k_confirm</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:530</small></div>
+<div class="dialog-line"><strong>Succeeded</strong><code>k_succeeded</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:551</small></div>
+<div class="dialog-line"><strong>The room has been closed</strong><code>k_the_room_you_are_in_is_closed</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:710</small></div>
+<div class="dialog-line"><strong>Banned to this room.</strong><code>k_you_were_banned_to_this_room</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:722</small></div>
+<div class="dialog-line"><strong>You were removed from the Mic.</strong><code>k_you_were_removed_from_the_mic</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:734</small></div>
+<div class="dialog-line"><strong>Kicked out of the room.</strong><code>k_you_are_kicked_out_of_the_room</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:742</small></div>
+<div class="dialog-line"><strong>Full of Mic</strong><code>k_full_of_mic</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:761</small></div>
+<div class="dialog-line"><strong>Not enough people, the game is over</strong><code>k_insufficient_participants_game_is_closed</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:800</small></div>
+<div class="dialog-line"><strong>PK Game End</strong><code>k_pk_game_end</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:1013</small></div>
+<div class="dialog-line"><strong>You don&#39;t enough,Want to recharge?</strong><code>k_not_enough_diamonds_want_to_recharge</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:1489</small></div>
+<div class="dialog-line"><strong>Recharge</strong><code>k_recharge</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page.dart:1491</small></div>
+<div class="dialog-line"><strong>Close the Room and kick out all users?</strong><code>k_close_the_room_and_kick_out_all_users</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:87</small></div>
+<div class="dialog-line"><strong>Close</strong><code>k_close</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:88</small></div>
+<div class="dialog-line"><strong>Messages unavailable in the room now.</strong><code>k_messages_unavailable_in_the_room_now</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:294</small></div>
+<div class="dialog-line"><strong>Succeed!</strong><code>k_succeed</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:492</small></div>
+<div class="dialog-line"><strong>You don&#39;t have the right to start Dice yet.</strong><code>k_you_dont_have_the_right_to_start_dice_yet</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:556</small></div>
+<div class="dialog-line"><strong>Unlock</strong><code>k_unlock</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_stage_extension.dart:29</small></div>
+<div class="dialog-line"><strong>Take the Mic</strong><code>k_take_the_mic</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_stage_extension.dart:35</small></div>
+<div class="dialog-line"><strong>Are u sure to clear Heart value?</strong><code>k_are_u_sure_to_clear_heart_value</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_stage_extension.dart:143</small></div>
+<div class="dialog-line"><strong>Yes</strong><code>k_yes</code><small>lib&#47;ui&#47;room&#47;widget&#47;foreground_service&#47;room_foreground_service_dialog.dart:29</small></div>
+<div class="dialog-line"><strong>No</strong><code>k_no</code><small>lib&#47;ui&#47;room&#47;widget&#47;foreground_service&#47;room_foreground_service_dialog.dart:30</small></div>
+<div class="dialog-line"><strong>Please choose a gift</strong><code>k_please_choose_a_gift</code><small>lib&#47;ui&#47;room&#47;widget&#47;gift&#47;room_gift_sheets.dart:145</small></div>
+<div class="dialog-line"><strong>Please choose a user</strong><code>k_please_choose_a_user</code><small>lib&#47;ui&#47;room&#47;widget&#47;gift&#47;room_gift_sheets.dart:152</small></div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;ui&#47;room&#47;entity&#47;event_room_keyboard_height.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;entity&#47;event_room_music_floating_status.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;page&#47;room_animate_manager.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;page&#47;room_page.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;page&#47;room_page_anim_extension.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;page&#47;room_page_header_extension.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;page&#47;room_page_message_extension.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;page&#47;room_page_stage_extension.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_end_anim_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_ranking_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;auction&#47;room_auction_start_anim_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;combo&#47;room_combo_keep_level_anim_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;combo&#47;room_combo_level_up_anim_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;combo&#47;room_combo_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_result_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;foreground_service&#47;room_foreground_service_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;fu_bag&#47;room_fu_bag_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;fu_bag&#47;room_fu_bag_reward_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;gift&#47;room_gift_bottom_send_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;gift&#47;room_gift_list_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;gift&#47;room_gift_list_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;gift&#47;room_gift_sheets.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;info&#47;room_info_sheets.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_receive_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_result_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;marry&#47;room_marry_send_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;music&#47;room_music_floating_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;new_fu_bag&#47;new_fubag_achieve_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;new_fu_bag&#47;new_fubag_achieve_boom_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;new_fu_bag&#47;new_fubag_my_reward_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;new_fu_bag&#47;new_lucky_bag_entry.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;new_fu_bag&#47;room_new_lucky_bag_sheet.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_gift_members_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_join_tip_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_operate_banner_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_rich_level_icon.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

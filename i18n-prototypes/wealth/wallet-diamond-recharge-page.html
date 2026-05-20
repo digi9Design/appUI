@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wallet Diamond Recharge Page（钻石充值） i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#wealth/wallet-diamond-recharge-page.html" data-back-link>← 返回目录</a><span>/</span><span>wealth</span></nav>
+          <div class="diamond-recharge-board-wire">
+      <div class="frame-label">Wallet Diamond Recharge Page（钻石充值）</div>
+      <div class="wallet-case diamond-recharge-wire">
+        <div class="wallet-bg"></div>
+        <div class="diamond-page-header">
+          <span>Transfer Amount ›</span>
+          <b>8,888</b>
+        </div>
+        <div class="wallet-coin diamond"></div>
+        <div class="wallet-sheet">
+          <div class="diamond-banner-wire">Banner / activity slot</div>
+          <div class="wallet-grid recharge-grid-wire">
+            <div><i></i><b>60</b><small>$0.99</small></div>
+            <div><i></i><b>300</b><small>$4.99</small></div>
+            <div><i></i><b>980</b><small>$14.99</small></div>
+            <div><i></i><b>1980</b><small>$29.99</small></div>
+            <div><i></i><b>3280</b><small>$49.99</small></div>
+            <div><i></i><b>6480</b><small>$99.99</small></div>
+          </div>
+          <div class="wallet-footer">
+            <span>VIP</span>
+            <b>Contact us ›</b>
+          </div>
+        </div>
+        <div class="vip-cs-sheet-wire">
+          <strong>VIP CS</strong>
+          <em>×</em>
+          <div><span></span><b>VIP agent</b><small>✉</small></div>
+          <div><span></span><b>VIP agent</b><small>✉</small></div>
+        </div>
+      </div>
+      <div class="wallet-state-note">
+        <b>No transfer permission</b>
+        <span>When transfer is unavailable, the header keeps the balance but hides “Transfer Amount”.</span>
+      </div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">wealth</p>
+        <h1>Wallet Diamond Recharge Page（钻石充值）</h1>
+        <p>docs&#47;ui-structure&#47;wealth&#47;wallet-diamond-recharge-page.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>全屏 `Stack`：`AppNetImage` &#47; 头图 + 大钻石 icon + 余额与「转账金额」文案；下方充值网格。</p>
+<p>与积分页统一使用 `navBarH` 等常量对齐透明 AppBar（见源码）。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Transfer Amount</td>
+              <td><code>k_transfer_amount</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;wallet_diamond_recharge_page.dart:182</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>VIP CS</td>
+              <td><code>k_vip_cs</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;widget&#47;ar_vip_list_dialog.dart:50</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>VIP</td>
+              <td><code>k_vip</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;widget&#47;diamond_recharge.dart:343</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Contact us</td>
+              <td><code>k_contact_us</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;widget&#47;diamond_recharge.dart:361</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;ui&#47;wealth&#47;page&#47;wallet_diamond_recharge_page.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;widget&#47;ar_vip_list_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;widget&#47;diamond_recharge.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

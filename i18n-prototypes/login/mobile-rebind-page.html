@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mobile Rebind Page i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#login/mobile-rebind-page.html" data-back-link>← 返回目录</a><span>/</span><span>login</span></nav>
+          <div class="phone-wire form-wire">
+      <div class="frame-label">Mobile Rebind Page</div>
+      <div class="top-bar">Send</div>
+      <div class="form-stack">
+        <div class="wire-button">Password</div>
+<div class="field-wire">Please enter password</div>
+<div class="wire-button">Confirm password</div>
+<div class="wire-button">Confirm new password</div>
+<div class="wire-button">Confirm</div>
+<div class="wire-button">Safety Certificate</div>
+<div class="field-wire">Enter verification code</div>
+<div class="wire-button">Change phone</div>
+      </div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">login</p>
+        <h1>Mobile Rebind Page</h1>
+        <p>docs&#47;ui-structure&#47;login&#47;mobile-rebind-page.md</p>
+      </header>
+      
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Send</td>
+              <td><code>k_send</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart:105</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>Password</td>
+              <td><code>k_password</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart:116</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Please enter password</td>
+              <td><code>k_please_enter_password</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart:117</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>Confirm password</td>
+              <td><code>k_confirm_password</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart:125</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Confirm new password</td>
+              <td><code>k_please_confirm_new_password</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart:126</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Confirm</td>
+              <td><code>k_confirm</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart:138</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Safety Certificate</td>
+              <td><code>k_safety_certificate</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart:233</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Enter verification code</td>
+              <td><code>k_enter_verification_code</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart:253</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Change phone</td>
+              <td><code>k_change_phone</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;mobile&#47;mobile_rebind_page.dart:58</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="dialog-line"><strong>Password does not match.</strong><code>k_password_does_not_match</code><small>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart:145</small></div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;theme&#47;appbar&#47;app_bar_title.dart</code></li>
+<li><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart</code></li>
+<li><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;mobile&#47;mobile_rebind_page.dart</code></li>
+<li><code>lib&#47;ui&#47;login&#47;widget&#47;login_background_view.dart</code></li>
+<li><code>lib&#47;ui&#47;login&#47;widget&#47;login_buttons.dart</code></li>
+<li><code>lib&#47;ui&#47;login&#47;widget&#47;login_header_label.dart</code></li>
+<li><code>lib&#47;ui&#47;login&#47;widget&#47;login_inputs.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

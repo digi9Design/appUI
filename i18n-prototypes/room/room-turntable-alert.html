@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room Turntable Alert i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#room/room-turntable-alert.html" data-back-link>← 返回目录</a><span>/</span><span>room</span></nav>
+          <div class="phone-wire">
+      <div class="frame-label">Room Turntable Alert</div>
+      <div class="top-bar">Room Turntable Alert</div>
+      <div class="wire-content"><div class="wire-block">Cancel</div>
+<div class="wire-block">Right to use dice</div>
+<div class="wire-block">All</div>
+<div class="wire-block">All on mic</div>
+<div class="wire-block">Admin</div>
+<div class="wire-block tall">Set who can send messages in the room:</div>
+<div class="wire-block">Say something?</div>
+<div class="wire-block">open&#47;close Voice Magic</div>
+<div class="wire-block tall">open&#47;close earphone monitor</div>
+<div class="wire-block">Boy</div>
+<div class="wire-block">Little boy</div>
+<div class="wire-block">Little girl</div>
+<div class="wire-block">Monster Pro</div>
+<div class="wire-block">Girl</div>
+<div class="wire-block">Electronic sound Pro</div>
+<div class="wire-block">R&amp;B</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">room</p>
+        <h1>Room Turntable Alert</h1>
+        <p>docs&#47;ui-structure&#47;room&#47;room-turntable-alert.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>房间转盘弹窗，展示奖池、转盘玩家、加入&#47;开始按钮、入场费和倒计时。</p>
+<p>奖池数量和入场费使用 `formatAmount()` 按 `K&#47;M&#47;B` 缩写。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Cancel</td>
+              <td><code>k_cancel</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:498</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Right to use dice</td>
+              <td><code>k_right_to_use_dice</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:497</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>All</td>
+              <td><code>k_all</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:501</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>All on mic</td>
+              <td><code>k_all_on_mic</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:505</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>Admin</td>
+              <td><code>k_admin</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:509</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Set who can send messages in the room:</td>
+              <td><code>k_set_who_can_send_messages_in_the_room</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:526</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Say something?</td>
+              <td><code>k_say_something</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:679</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>open&#47;close Voice Magic</td>
+              <td><code>k_openclose_voice_change</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:71</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>open&#47;close earphone monitor</td>
+              <td><code>k_openclose_earphone_monitor</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:73</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Boy</td>
+              <td><code>k_boy</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:105</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Little boy</td>
+              <td><code>k_little_boy</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:107</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Little girl</td>
+              <td><code>k_little_girl</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:108</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Monster Pro</td>
+              <td><code>k_monster_pro</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:110</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Girl</td>
+              <td><code>k_girl</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:114</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Electronic sound Pro</td>
+              <td><code>k_electronic_sound_pro</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:118</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>R&amp;B</td>
+              <td><code>k_rb</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:120</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Pop</td>
+              <td><code>k_pop</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:121</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Phonograph</td>
+              <td><code>k_phonograph</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:122</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Recording studio</td>
+              <td><code>k_recording_studio</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:123</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Wide</td>
+              <td><code>k_wide</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:124</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Sweeten</td>
+              <td><code>k_sweeten</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:128</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Natural</td>
+              <td><code>k_natural</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:129</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Mild</td>
+              <td><code>k_mild</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:130</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Bass</td>
+              <td><code>k_bass</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:131</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Voice Magic</td>
+              <td><code>k_voice_change</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:137</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Singing sound effect</td>
+              <td><code>k_singing_sound_effect</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:141</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Podcast sound effect</td>
+              <td><code>k_podcast_sound_effect</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart:143</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Golds Amount</td>
+              <td><code>k_dias_amount</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_config_sheets.dart:124</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Pick-up Slots</td>
+              <td><code>k_pickup_slots</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_config_sheets.dart:138</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Time</td>
+              <td><code>k_time</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_config_sheets.dart:149</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Ok</td>
+              <td><code>k_ok</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_config_sheets.dart:181</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>At Once</td>
+              <td><code>k_at_once</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_config_sheets.dart:316</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Party</td>
+              <td><code>k_party</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:73</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Room Administration</td>
+              <td><code>k_room_administration_1</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:102</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Hatgame</td>
+              <td><code>k_hatgame</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:176</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Lucky Guy</td>
+              <td><code>k_lucky_guy</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:178</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Dice</td>
+              <td><code>k_dice</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:180</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Lucky Rocket</td>
+              <td><code>k_lucky_rocket</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:182</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Room Rewards</td>
+              <td><code>k_room_rewards</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:184</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Room Bonus</td>
+              <td><code>k_room_bonus</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:186</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Who&#39;s Still Stand</td>
+              <td><code>k_whos_still_stand</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:188</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Share</td>
+              <td><code>k_share</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:190</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Theme</td>
+              <td><code>k_theme</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:364</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Lock</td>
+              <td><code>k_lock</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:366</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Music</td>
+              <td><code>k_music</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:368</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Broadcast Switch</td>
+              <td><code>k_broadcast_switch</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:370</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Gift Effect</td>
+              <td><code>k_gift_effect</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:372</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Vehicle Effect</td>
+              <td><code>k_vehicle_effect</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:374</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Voice Changer</td>
+              <td><code>k_voice_changer</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:376</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Clean Screen</td>
+              <td><code>k_clean_screen</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:378</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Message Permission</td>
+              <td><code>k_message_permission</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart:382</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Confirm</td>
+              <td><code>k_confirm</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_decoration_sheets.dart:220</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Wallpaper</td>
+              <td><code>k_wallpaper</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_decoration_sheets.dart:242</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Layout</td>
+              <td><code>k_layout</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_decoration_sheets.dart:242</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Set password to lock</td>
+              <td><code>k_set_password_to_lock_your_room</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_password_config_dialog.dart:82</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Enter password</td>
+              <td><code>k_enter_password</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_password_config_dialog.dart:102</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>1 to 8 letters or numbers</td>
+              <td><code>k_1_to_8_letters_or_numbers</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_password_config_dialog.dart:119</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>To be public</td>
+              <td><code>k_to_be_public</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_password_config_dialog.dart:152</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Free</td>
+              <td><code>k_free</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_stage_layout_cell.dart:161</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Purchased</td>
+              <td><code>k_purchased</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_stage_layout_cell.dart:163</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} Days</td>
+              <td><code>k_valid_xxx_days</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_stage_layout_cell.dart:210</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Upload</td>
+              <td><code>k_upload</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_wallpaper_list_widget.dart:150</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Select the user you want to @</td>
+              <td><code>k_select_the_user_you_want_to</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;room_at_users_sheets.dart:92</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Search</td>
+              <td><code>k_search</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;room_at_users_sheets.dart:105</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Send</td>
+              <td><code>k_send</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;room_input_sheets.dart:729</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>New Messages</td>
+              <td><code>k_new_messages</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;room_message_list_widget.dart:430</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Gifts</td>
+              <td><code>k_gifts</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;room_message_widget.dart:128</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Message</td>
+              <td><code>k_chat</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;room_message_widget.dart:129</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Other</td>
+              <td><code>k_other</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;room_message_widget.dart:130</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Go</td>
+              <td><code>k_go</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_alert.dart:378</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Prize pool:</td>
+              <td><code>k_prize_pool</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_alert.dart:416</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Join</td>
+              <td><code>k_join</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_alert.dart:551</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Player</td>
+              <td><code>k_player</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_alert.dart:557</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Admission fee:</td>
+              <td><code>k_admission_fee</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_alert.dart:618</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Enter Amount</td>
+              <td><code>k_enter_amount</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_chip_edit_cell.dart:111</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Rules</td>
+              <td><code>k_rules</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_config_alert.dart:143</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="dialog-line"><strong>Close the Room and kick out all users?</strong><code>k_close_the_room_and_kick_out_all_users</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:87</small></div>
+<div class="dialog-line"><strong>Close</strong><code>k_close</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:88</small></div>
+<div class="dialog-line"><strong>Messages unavailable in the room now.</strong><code>k_messages_unavailable_in_the_room_now</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:294</small></div>
+<div class="dialog-line"><strong>Succeed!</strong><code>k_succeed</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:492</small></div>
+<div class="dialog-line"><strong>You don&#39;t have the right to start Dice yet.</strong><code>k_you_dont_have_the_right_to_start_dice_yet</code><small>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart:556</small></div>
+<div class="dialog-line"><strong>Succeeded</strong><code>k_succeeded</code><small>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_config_sheets.dart:60</small></div>
+<div class="dialog-line"><strong>You don&#39;t enough,Want to recharge?</strong><code>k_not_enough_diamonds_want_to_recharge</code><small>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_config_sheets.dart:82</small></div>
+<div class="dialog-line"><strong>Recharge</strong><code>k_recharge</code><small>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_config_sheets.dart:84</small></div>
+<div class="dialog-line hard-line"><strong>Input cannot be empty</strong><small>lib&#47;ui&#47;room&#47;widget&#47;room_input_sheets.dart:296</small></div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;ui&#47;room&#47;controller&#47;room_input_edit_controller.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;entity&#47;event_room_music_floating_status.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;page&#47;room_page_bottom_extension.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;audio_effect&#47;room_audio_effect_sheets.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;dias_rain&#47;dias_rain_config_sheets.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_actions_sheet.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_decoration_sheets.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_password_config_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_stage_layout_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_stage_layout_list_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_wallpaper_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;manage&#47;room_wallpaper_list_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;music&#47;room_music_player_sheets.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;music&#47;room_music_progress_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;music&#47;room_music_vertical_slider.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_at_users_sheets.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_input_sheets.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_message_list_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_message_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_mic_sticker_list_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_mic_sticker_sheets.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;room_search_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_alert.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_chip_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_chip_edit_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;room&#47;widget&#47;turntable&#47;room_turntable_config_alert.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li>
+<li><code>lib&#47;widget&#47;sheet&#47;app_custom_action_sheet.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

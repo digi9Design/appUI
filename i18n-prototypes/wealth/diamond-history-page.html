@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diamond History Page（钻石流水） i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#wealth/diamond-history-page.html" data-back-link>← 返回目录</a><span>/</span><span>wealth</span></nav>
+          <div class="phone-wire">
+      <div class="frame-label">Diamond History Page（钻石流水）</div>
+      <div class="top-bar">Diamond History Page（钻石流水）</div>
+      <div class="wire-content"><div class="wire-block">Start and end time</div>
+<div class="wire-block">start date</div>
+<div class="wire-block">end date</div>
+<div class="wire-block">Cancel</div>
+<div class="wire-block">Confirm</div>
+<div class="wire-block">History</div>
+<div class="wire-block">Select date</div></div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">wealth</p>
+        <h1>Diamond History Page（钻石流水）</h1>
+        <p>docs&#47;ui-structure&#47;wealth&#47;diamond-history-page.md</p>
+      </header>
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>背景 `#FAF9F7`；筛选行（日期、类型下拉）；列表为白色圆角卡片；收支可用纯色圆+箭头组件（非必须切图）。</p></div>
+      </section>
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>Text</td>
+              <td>Start and end time</td>
+              <td><code>k_start_and_end_time</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:60</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>start date</td>
+              <td><code>k_start_date</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:73</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>end date</td>
+              <td><code>k_end_date</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:142</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Cancel</td>
+              <td><code>k_cancel</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:228</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Confirm</td>
+              <td><code>k_confirm</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:245</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>History</td>
+              <td><code>k_history</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;diamond_history_page.dart:48</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Select date</td>
+              <td><code>k_select_date</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;diamond_history_page.dart:106</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="dialog-line"><strong>Not later than today</strong><code>k_not_later_than_today</code><small>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:99</small></div>
+<div class="dialog-line"><strong>Failure</strong><code>k_failure</code><small>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:103</small></div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog_controller.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;page&#47;diamond_history_page.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

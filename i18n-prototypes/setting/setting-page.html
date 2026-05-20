@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Setting Page i18n Prototype</title>
+  <link rel="stylesheet" href="../assets/i18n-prototype.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="wire-panel">
+      <nav class="crumb"><a class="back-link" href="../index.html#setting/setting-page.html" data-back-link>← 返回目录</a><span>/</span><span>setting</span></nav>
+          <div class="phone-wire setting-wire">
+      <div class="frame-label">Setting Page</div>
+      <div class="simple-appbar">‹ <strong>Settings</strong></div>
+      <div class="setting-list">
+        <div class="setting-row"><b>Function switch</b><em>›</em></div>
+        <div class="setting-row"><b>Language</b><small>English</small><em>›</em></div>
+        <div class="setting-row"><b>Delete account</b><em>›</em></div>
+        <div class="setting-row"><b>Bind&#47;Change Email</b><small>user@example.com</small><em>›</em></div>
+        <div class="setting-row"><b>Bind&#47;Change Phone</b><small>+1 555****8888</small><em>›</em></div>
+        <div class="setting-row"><b>Set ID login password</b><em>›</em></div>
+        <div class="setting-row"><b>Contact us</b><em>›</em></div>
+        <div class="setting-row"><b>Privacy agreement</b><em>›</em></div>
+        <div class="setting-row"><b>Tap to rate</b><em>›</em></div>
+        <div class="setting-row"><b>Version</b><small>1.0.0 (100)</small><em></em></div>
+        <div class="setting-row danger"><b>Sign out</b><em>›</em></div>
+      </div>
+      <div class="setting-language-sheet">
+        <span>English</span>
+        <span>عربى</span>
+        <span>हिंदी</span>
+        <span>Türkçe</span>
+        <b>Cancel</b>
+      </div>
+      <div class="setting-alert-wire">
+        <strong>You are about to log out，Do you Confirm?</strong>
+        <div><span>Cancel</span><b>Confirm</b></div>
+      </div>
+    </div>
+    </section>
+    <aside class="detail-panel">
+      <header class="detail-head">
+        <p class="eyebrow">setting</p>
+        <h1>Setting Page</h1>
+        <p>docs&#47;ui-structure&#47;setting&#47;setting-page.md</p>
+      </header>
+      
+            <section class="section">
+        <h2>页面文案与来源</h2>
+        <table>
+          <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
+          <tbody>            <tr>
+              <td>UI text</td>
+              <td>Language</td>
+              <td><code>k_language</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:31</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Function switch</td>
+              <td><code>k_function_switch</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:33</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Set ID login password</td>
+              <td><code>k_set_id_login_password</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:35</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Contact us</td>
+              <td><code>k_contact_us</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:37</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Tap to rate</td>
+              <td><code>k_tap_to_rate</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:39</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Delete account</td>
+              <td><code>k_delete_account</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:41</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Version</td>
+              <td><code>k_version</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:43</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Sign out</td>
+              <td><code>k_sign_out</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:45</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Privacy agreement</td>
+              <td><code>k_privacy_agreement</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:47</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Bind&#47;Change Email</td>
+              <td><code>k_bindchange_email</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:49</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Bind&#47;Change Phone</td>
+              <td><code>k_bindchange_phone</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart:51</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Settings</td>
+              <td><code>k_settings</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;page&#47;setting_page.dart:39</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Cancel</td>
+              <td><code>k_cancel</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;page&#47;setting_page.dart:249</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Confirm</td>
+              <td><code>k_confirm</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;page&#47;setting_page.dart:303</code></td>
+            </tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>当前硬编码文案</h2>
+        <table>
+          <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
+          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+        </table>
+      </section>
+            <section class="section">
+        <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
+        <div class="dialog-wire">
+          <div class="dialog-line"><strong>Do you want to delete your account?</strong><code>k_are_you_sure_you_want_to_delete_your_account</code><small>lib&#47;ui&#47;setting&#47;page&#47;setting_page.dart:244</small></div>
+<div class="dialog-line"><strong>You are about to log out，Do you Confirm?</strong><code>k_are_you_sure_you_want_to_log_out</code><small>lib&#47;ui&#47;setting&#47;page&#47;setting_page.dart:290</small></div>
+        </div>
+      </section>
+            <section class="section">
+        <h2>扫描源码</h2>
+        <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;setting&#47;entity&#47;setting_function_entity.dart</code></li>
+<li><code>lib&#47;ui&#47;setting&#47;page&#47;setting_page.dart</code></li>
+<li><code>lib&#47;ui&#47;setting&#47;widget&#47;setting_cell.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li></ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>
