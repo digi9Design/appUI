@@ -3,32 +3,91 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Post Detail Page i18n Prototype</title>
+  <title>帖子详情 - Post Detail Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
     <section class="wire-panel">
       <nav class="crumb"><a class="back-link" href="../index.html#post/post-detail-page.html" data-back-link>← 返回目录</a><span>/</span><span>post</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">Post Detail Page</div>
-      <div class="top-bar">Post Detail Page</div>
-      <div class="wire-content"><div class="wire-block">Delete</div>
-<div class="wire-block">Do you confirm deletion?</div>
-<div class="wire-block">Total</div>
-<div class="wire-block">Block</div>
-<div class="wire-block">Hide all from user</div>
-<div class="wire-block">All Comments</div>
-<div class="wire-block">Just now</div>
-<div class="wire-block">ago</div>
-<div class="wire-block">What’s on your mind?</div>
-<div class="wire-block">Send</div></div>
+          <div class="post-detail-board-wire">
+      <div class="frame-label">帖子详情 - Post Detail Page</div>
+      <div class="phone-wire post-detail-wire">
+        <div class="post-detail-hero"></div>
+        <div class="post-detail-appbar">‹</div>
+        <div class="post-detail-scroll">
+          <div class="post-detail-header">
+            <span></span>
+            <div>
+              <strong>Username</strong>
+              <small>Just now</small>
+            </div>
+            <em>⋯</em>
+          </div>
+          <p class="post-detail-copy">This is the post detail content area. Longer text sits above the media stack and keeps its original reading order.</p>
+          <div class="post-detail-media"></div>
+          <div class="post-detail-media small"></div>
+          <div class="post-detail-bottom">
+            <b>128 Likes</b>
+            <span>42 Comments</span>
+          </div>
+          <div class="post-detail-divider"></div>
+          <div class="post-detail-comment-title">All Comments</div>
+          <div class="post-comment-wire">
+            <span></span>
+            <div>
+              <strong>Commenter</strong>
+              <small>2m ago</small>
+              <p>First level comment content shown in the detail page.</p>
+              <div class="post-comment-replies">@replyUser: Nested reply preview</div>
+            </div>
+            <em>⋯</em>
+          </div>
+          <div class="post-comment-wire">
+            <span></span>
+            <div>
+              <strong>Commenter</strong>
+              <small>12m ago</small>
+              <p>Another comment item with like and reply affordances.</p>
+            </div>
+            <em>⋯</em>
+          </div>
+        </div>
+        <div class="post-comment-input-wire">
+          <div>What’s on your mind?</div>
+          <b>Send</b>
+        </div>
+      </div>
+      <div class="post-floating-examples">
+        <div class="post-float-card">
+          <h3>More Menu</h3>
+          <div class="post-action-sheet-wire">
+            <span>Report</span>
+            <span>Block</span>
+            <span>Delete</span>
+          </div>
+        </div>
+        <div class="post-float-card">
+          <h3>Block Actions</h3>
+          <div class="post-action-sheet-wire">
+            <span>Hide post</span>
+            <span>Hide all from user</span>
+          </div>
+        </div>
+        <div class="post-float-card">
+          <h3>Delete Confirm</h3>
+          <div class="post-confirm-wire">
+            <strong>Do you confirm deletion?</strong>
+            <div><span>Delete</span></div>
+          </div>
+        </div>
+      </div>
     </div>
     </section>
     <aside class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">post</p>
-        <h1>Post Detail Page</h1>
+        <h1>帖子详情 - Post Detail Page</h1>
         <p>docs&#47;ui-structure&#47;post&#47;post-detail-page.md</p>
       </header>
       

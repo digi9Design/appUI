@@ -3,24 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Room Music List Page i18n Prototype</title>
+  <title>房间音乐列表 - Room Music List Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
     <section class="wire-panel">
       <nav class="crumb"><a class="back-link" href="../index.html#room/room-music-list-page.html" data-back-link>← 返回目录</a><span>/</span><span>room</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">Room Music List Page</div>
-      <div class="top-bar">Room Music List Page</div>
-      <div class="wire-content"><div class="wire-block">Playlist({s1})</div>
-<div class="wire-block">Empty</div></div>
+          <div class="room-sheet-stage">
+      <div class="phone-wire room-music-list-wire">
+        <div class="frame-label">房间音乐列表 - Room Music List Page</div>
+        <div class="room-music-player-hero">
+          <div class="room-music-tabs">
+            <strong>Playlist(6)</strong>
+            <div><span>＋</span><span>🗑</span></div>
+          </div>
+          <div class="room-music-title">Moonlight Sonata</div>
+          <div class="room-music-artist">Ludwig van Beethoven</div>
+          <div class="room-music-progress-bar"><b style="width: 36%;"></b></div>
+          <div class="room-music-controls">
+            <span>⏮</span><b>⏯</b><span>⏭</span><em>🔁</em>
+          </div>
+          <div class="room-music-sliders">
+            <div><label>🎙</label><small></small></div>
+            <div><label>🔊</label><small></small></div>
+          </div>
+        </div>
+        <div class="room-music-queue">
+          <div class="room-music-queue-item current">
+            <span></span><div><strong>Moonlight Sonata</strong><small>Ludwig van Beethoven</small></div>
+          </div>
+          <div class="room-music-queue-item">
+            <span></span><div><strong>Dreaming</strong><small>Artist name</small></div>
+          </div>
+          <div class="room-music-queue-item">
+            <span></span><div><strong>Gravity</strong><small>Artist name</small></div>
+          </div>
+          <div class="room-music-queue-item">
+            <span></span><div><strong>Waves</strong><small>Artist name</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="room-float-card">
+        <h3>Empty State</h3>
+        <div class="room-music-empty-card">Empty</div>
+      </div>
     </div>
     </section>
     <aside class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">room</p>
-        <h1>Room Music List Page</h1>
+        <h1>房间音乐列表 - Room Music List Page</h1>
         <p>docs&#47;ui-structure&#47;room&#47;room-music-list-page.md</p>
       </header>
       

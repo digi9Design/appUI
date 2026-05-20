@@ -3,26 +3,76 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Room Main Page i18n Prototype</title>
+  <title>房间列表首页 - Room Main Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
     <section class="wire-panel">
       <nav class="crumb"><a class="back-link" href="../index.html#room_list/room-main-page.html" data-back-link>← 返回目录</a><span>/</span><span>room_list</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">Room Main Page</div>
-      <div class="top-bar">Room Main Page</div>
-      <div class="wire-content"><div class="wire-block">Mine</div>
-<div class="wire-block">Active</div>
-<div class="wire-block">Party Event</div>
-<div class="wire-block">Active Friends</div></div>
+          <div class="room-main-board-wire">
+      <div class="frame-label">房间列表首页 - Room Main Page</div>
+      <div class="room-state-card">
+        <h3>Mine · nested Favorite / Recently</h3>
+        <div class="phone-wire room-main-wire">
+          <div class="room-main-tabs"><b>Mine</b><span>Active</span><span>Party Event</span></div>
+          <div class="room-main-actions"><em>◎</em><em>⌕</em></div>
+          <div class="room-mine-card">
+            <span></span>
+            <div><strong>My Room</strong><small>Create room / existing room card</small></div>
+            <b>›</b>
+          </div>
+          <div class="room-sub-tabs"><b>Favorite</b><span>Recently</span></div>
+          <div class="room-list-stack mine">
+            <div><span></span><strong>Favorite Room</strong><small>horizontal mine card</small></div>
+            <div><span></span><strong>Favorite Room</strong><small>horizontal mine card</small></div>
+          </div>
+          <div class="room-floating-tip">Friends in room</div>
+        </div>
+      </div>
+      <div class="room-state-card">
+        <h3>Active</h3>
+        <div class="phone-wire room-main-wire">
+          <div class="room-main-tabs"><span>Mine</span><b>Active</b><span>Party Event</span></div>
+          <div class="room-main-actions"><em>◎</em><em>⌕</em></div>
+          <div class="room-banner-wire"></div>
+          <div class="room-ranking-wire">
+            <span>Ranking</span><span>Banner</span>
+          </div>
+          <div class="room-list-grid">
+            <div>Room card</div>
+            <div>Room card</div>
+            <div>Room card</div>
+            <div>Room card</div>
+          </div>
+        </div>
+      </div>
+      <div class="room-state-card">
+        <h3>Party Event</h3>
+        <div class="phone-wire room-main-wire">
+          <div class="room-main-tabs"><span>Mine</span><span>Active</span><b>Party Event</b></div>
+          <div class="room-main-actions"><em>◎</em><em>⌕</em></div>
+          <div class="room-event-hero">ActivityPage embedded here</div>
+          <div class="room-event-list">
+            <div>Event card</div>
+            <div>Event card</div>
+          </div>
+        </div>
+      </div>
+      <div class="room-floating-examples">
+        <div class="room-float-card">
+          <h3>Friend In Room Tip</h3>
+          <div class="room-tip-example">
+            <span></span><span></span><span></span><b>Follow</b>
+          </div>
+        </div>
+      </div>
     </div>
     </section>
     <aside class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">room_list</p>
-        <h1>Room Main Page</h1>
+        <h1>房间列表首页 - Room Main Page</h1>
         <p>docs&#47;ui-structure&#47;room_list&#47;room-main-page.md</p>
       </header>
             <section class="section">
@@ -56,13 +106,6 @@
               <td><code>k_party_event</code></td>
               <td>No</td>
               <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart:197</code></td>
-            </tr>
-            <tr>
-              <td>UI text</td>
-              <td>Active Friends</td>
-              <td><code>k_active_friends</code></td>
-              <td>No</td>
-              <td><code>lib&#47;ui&#47;room_list&#47;widget&#47;follow_room_tip_float_widget.dart:56</code></td>
             </tr></tbody>
         </table>
       </section>
@@ -83,11 +126,9 @@
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;ui&#47;room_list&#47;entity&#47;event_bus_update_friend_in_room.dart</code></li>
 <li><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart</code></li>
-<li><code>lib&#47;ui&#47;room_list&#47;widget&#47;follow_room_tip_float_widget.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li>
 <li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
-<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li>
-<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
+<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li></ul>
       </section>
     </aside>
   </main>
