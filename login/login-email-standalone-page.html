@@ -3,28 +3,106 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>邮箱登录 - Login Email Standalone Page i18n Prototype</title>
+  <title>邮箱登录流程 - Login Email Standalone Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
     <section class="wire-panel">
       <nav class="crumb"><a class="back-link" href="../index.html#login/login-email-standalone-page.html" data-back-link>← 返回目录</a><span>/</span><span>login</span></nav>
-          <div class="phone-wire form-wire">
-      <div class="frame-label">邮箱登录 - Login Email Standalone Page</div>
-      <div class="top-bar">Enter your email</div>
-      <div class="form-stack">
-        <div class="field-wire">Enter your password</div>
-<div class="wire-button">Forget password?</div>
-<div class="wire-button">Don&#39;t have an account yet?</div>
-<div class="wire-button">Sign up</div>
+          <div class="sms-flow-stage">
+            <div class="phone-wire sms-flow-wire">
+        <div class="frame-label">邮箱登录流程 - Login Email Standalone Page &#47; Login</div>
+        <div class="sms-appbar">‹</div>
+        <div class="sms-logo">U</div>
+        <h3>Register or log in
+to the Uparty account</h3>
+        <div class="sms-form-stack">
+                            <div class="sms-field"><span>@</span><b>Enter your email</b></div>
+                  <div class="sms-field"><span>*</span><b>Enter password</b><em>eye</em></div>
+          <div class="sms-link-row"><span>Forget password?</span></div>
+        
+          <div class="sms-primary-button">Log in</div>
+          <div class="sms-footer-note">Don&#39;t have an account yet? <b>Sign up</b></div>
+        </div>
+      </div>
+            <div class="phone-wire sms-flow-wire">
+        <div class="frame-label">邮箱登录流程 - Login Email Standalone Page &#47; Register</div>
+        <div class="sms-appbar">‹</div>
+        <div class="sms-logo">U</div>
+        <h3>Register or log in
+to the Uparty account</h3>
+        <div class="sms-form-stack">
+                  <div class="sms-field"><span>@</span><b>Enter your email</b></div>
+          <div class="sms-primary-button">Send code</div>
+          <div class="sms-footer-note">Already have an account? <b>Log in</b></div>
+        </div>
+      </div>
+            <div class="phone-wire sms-flow-wire">
+        <div class="frame-label">邮箱登录流程 - Login Email Standalone Page &#47; Forgot Password</div>
+        <div class="sms-appbar">‹ <strong>Forgot password</strong></div>
+        <div class="sms-logo">U</div>
+        <h3>Don&#39;t worry, enter your email and let us help you to retrieve your password</h3>
+        <div class="sms-form-stack">
+                  <div class="sms-field"><span>@</span><b>Enter your email</b></div>
+          <div class="sms-primary-button">Send code</div>
+          
+        </div>
+      </div>
+            <div class="phone-wire sms-flow-wire">
+        <div class="frame-label">邮箱登录流程 - Login Email Standalone Page &#47; Verify Code</div>
+        <div class="sms-appbar">‹</div>
+        <div class="sms-logo">U</div>
+        <h3>Enter verification code</h3>
+        <div class="sms-form-stack">
+                    <p class="sms-desc">We sent a verification code to your email. Please fill in the verification code</p>
+          <div class="sms-code-boxes"><span></span><span></span><span></span><span></span></div>
+          <div class="sms-link-row"><span>Resend 59s</span></div>
+        
+          <div class="sms-primary-button">Next</div>
+          
+        </div>
+      </div>
+            <div class="phone-wire sms-flow-wire">
+        <div class="frame-label">邮箱登录流程 - Login Email Standalone Page &#47; Set Password</div>
+        <div class="sms-appbar">‹ <strong>Set password</strong></div>
+        <div class="sms-logo">U</div>
+        <h3>Set password to complete registration your Uparty account: {s1}</h3>
+        <div class="sms-form-stack">
+                            <div class="sms-field"><span>*</span><b>Enter password</b><em>eye</em></div>
+                  <div class="sms-field"><span>*</span><b>Enter the password again</b><em>eye</em></div>
+        
+          <div class="sms-primary-button">Done</div>
+          
+        </div>
+      </div>
+            <div class="phone-wire sms-flow-wire">
+        <div class="frame-label">邮箱登录流程 - Login Email Standalone Page &#47; Reset Password</div>
+        <div class="sms-appbar">‹ <strong>Forgot password</strong></div>
+        <div class="sms-logo">U</div>
+        <h3>Cannot be the same as the old password</h3>
+        <div class="sms-form-stack">
+                            <div class="sms-field"><span>*</span><b>Enter password</b><em>eye</em></div>
+                  <div class="sms-field"><span>*</span><b>Enter the password again</b><em>eye</em></div>
+        
+          <div class="sms-primary-button">Set password</div>
+          
+        </div>
+      </div>
+      <div class="sms-flow-extras">
+        
+        <div class="login-example-card compact">
+          <h3>Toast</h3>
+          <div class="login-toast">Succeeded</div>
+          <div class="login-toast secondary">Password does not match.</div>
+        </div>
       </div>
     </div>
     </section>
     <aside class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">login</p>
-        <h1>邮箱登录 - Login Email Standalone Page</h1>
+        <h1>邮箱登录流程 - Login Email Standalone Page</h1>
         <p>docs&#47;ui-structure&#47;login&#47;login-email-standalone-page.md</p>
       </header>
       
@@ -33,11 +111,95 @@
         <table>
           <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
           <tbody>            <tr>
+              <td>UI text</td>
+              <td>Succeeded</td>
+              <td><code>k_succeeded</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_verify_page.dart:49</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Cannot be the same as the old password</td>
+              <td><code>k_new_password_must_be_different_from_old_one</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_password_setup_page.dart:97</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Set password to complete registration your Uparty account: {s1}</td>
+              <td><code>k_set_password_to_complete_registration_your_litchat_account_xxx</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_password_setup_page.dart:98</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Forgot password</td>
+              <td><code>k_forgot_password</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_password_setup_page.dart:112</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Enter password</td>
+              <td><code>k_enter_password</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_password_setup_page.dart:140</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Enter the password again</td>
+              <td><code>k_enter_the_password_again</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_password_setup_page.dart:145</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>Set password</td>
+              <td><code>k_set_password</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_password_setup_page.dart:154</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>Done</td>
+              <td><code>k_done</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_password_setup_page.dart:154</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Don&#39;t worry, enter your email and let us help you to retrieve your password</td>
+              <td><code>k_dont_worry_enter_your_email_and_let_us_help_you_to_retrieve_your_password</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_register_page.dart:114</code></td>
+            </tr>
+            <tr>
               <td>Input hint</td>
               <td>Enter your email</td>
               <td><code>k_enter_your_email</code></td>
               <td>No</td>
-              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_standalone_page.dart:192</code></td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_register_page.dart:133</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Send code</td>
+              <td><code>k_send_code</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_register_page.dart:270</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Already have an account?</td>
+              <td><code>k_already_have_an_account</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_register_page.dart:298</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Log in</td>
+              <td><code>k_log_in</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_register_page.dart:308</code></td>
             </tr>
             <tr>
               <td>Input hint</td>
@@ -66,6 +228,27 @@
               <td><code>k_sign_up_for_one</code></td>
               <td>No</td>
               <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_standalone_page.dart:451</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Enter verification code</td>
+              <td><code>k_enter_verification_code</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_verify_page.dart:184</code></td>
+            </tr>
+            <tr>
+              <td>Button &#47; label</td>
+              <td>Resend</td>
+              <td><code>k_resend</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_verify_page.dart:321</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Next</td>
+              <td><code>k_next</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_verify_page.dart:392</code></td>
             </tr></tbody>
         </table>
       </section>
@@ -73,19 +256,26 @@
         <h2>当前硬编码文案</h2>
         <table>
           <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
-          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+          <tbody>            <tr>
+              <td>Rich text</td>
+              <td><span class="hard">\n</span></td>
+              <td><code>lib&#47;ui&#47;login&#47;email&#47;login_email_verify_page.dart:165</code></td>
+            </tr></tbody>
         </table>
       </section>
             <section class="section">
         <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
         <div class="dialog-wire">
-          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+          <div class="dialog-line"><strong>Password does not match.</strong><code>k_password_does_not_match</code><small>lib&#47;ui&#47;login&#47;email&#47;login_email_password_setup_page.dart:86</small></div>
         </div>
       </section>
             <section class="section">
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;login&#47;email&#47;login_email_password_setup_page.dart</code></li>
+<li><code>lib&#47;ui&#47;login&#47;email&#47;login_email_register_page.dart</code></li>
 <li><code>lib&#47;ui&#47;login&#47;email&#47;login_email_standalone_page.dart</code></li>
+<li><code>lib&#47;ui&#47;login&#47;email&#47;login_email_verify_page.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li></ul>
       </section>
     </aside>

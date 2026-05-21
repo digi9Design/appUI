@@ -3,23 +3,46 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>登录聚合 - Login Page i18n Prototype</title>
+  <title>登录首页 - Login Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
     <section class="wire-panel">
       <nav class="crumb"><a class="back-link" href="../index.html#login/login-page.html" data-back-link>← 返回目录</a><span>/</span><span>login</span></nav>
-          <div class="phone-wire auth-wire">
-      <div class="frame-label">登录聚合 - Login Page</div>
-      <div class="logo-placeholder">Logo<br />No text</div>
-      <div class="auth-stack">
-        <div class="wire-button">Google Login</div>
-<div class="wire-button">Huawei Login</div>
-<div class="wire-button">Facebook Login</div>
-        <div class="agreement-wire">
-          <span class="check-dot"></span>
-          <span>Sign in means you agree I have read and agree to Terms of Service & Privacy Policy</span>
+          <div class="login-page-stage">
+      <div class="phone-wire login-page-wire">
+        <div class="frame-label">登录首页 - Login Page</div>
+        <div class="login-logo-mark">
+          <div class="login-logo-orb"></div>
+          <strong>UPARTY</strong>
+        </div>
+        <div class="login-button-stack">
+          <div class="login-social-button"><span class="login-social-icon google">G</span><b>Google Login</b></div>
+          <div class="login-social-button conditional"><span class="login-social-icon huawei">H</span><b>Huawei Login</b><em>Huawei devices</em></div>
+          <div class="login-social-button conditional"><span class="login-social-icon facebook">f</span><b>Facebook Login</b><em>Android</em></div>
+          <div class="login-social-button conditional"><span class="login-social-icon apple">A</span><b>Sign in with Apple</b><em>iOS</em></div>
+          <div class="login-divider"><span></span><b>Other logins with</b><span></span></div>
+          <div class="login-other-row">
+            <div class="login-other-button"><span>ID</span></div>
+            <div class="login-other-button"><span>P</span></div>
+            <div class="login-other-button"><span>@</span></div>
+          </div>
+          <div class="login-agreement-row">
+            <span class="login-check"></span>
+            <span>Sign in means you agree I have read and agree to <u>Terms of Service</u> &amp; <u>Privacy Policy</u></span>
+          </div>
+        </div>
+      </div>
+      <div class="login-external-examples">
+        <div class="login-example-card">
+          <h3>End User License Agreement</h3>
+          <p>Please fully read and understand the <u>Privacy Policy</u> and <u>User Terms</u> Before using Uparty, please click Agree to indicate that you have read and agreed to all terms.</p>
+          <div class="login-dialog-actions"><span>Decline</span><b>Agree</b></div>
+        </div>
+        <div class="login-example-card compact">
+          <h3>Apple Toast</h3>
+          <div class="login-toast">Apple login coming soon</div>
         </div>
       </div>
     </div>
@@ -27,7 +50,7 @@
     <aside class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">login</p>
-        <h1>登录聚合 - Login Page</h1>
+        <h1>登录首页 - Login Page</h1>
         <p>docs&#47;ui-structure&#47;login&#47;login-page.md</p>
       </header>
             <section class="section">
