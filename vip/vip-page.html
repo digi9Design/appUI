@@ -3,38 +3,99 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VIP - Vip Page i18n Prototype</title>
+  <title>VIP 中心 - Vip Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#vip/vip-page.html" data-back-link>← 返回目录</a><span>/</span><span>vip</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#vip/vip-page.html" data-back-link>← 返回目录</a><span>/</span><span>vip</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">VIP - Vip Page</div>
-      <div class="top-bar">VIP - Vip Page</div>
-      <div class="wire-content"><div class="wire-block">My VIP</div>
-<div class="wire-block">Cancel</div>
-<div class="wire-block">Confirm</div>
-<div class="wire-block">days</div>
-<div class="wire-block">Join VIP</div>
-<div class="wire-block">List Stealth</div>
-<div class="wire-block">Into the Room Stealth</div>
-<div class="wire-block">VIP Sticker</div>
-<div class="wire-block">Room Encryption</div>
-<div class="wire-block">Anti Black</div>
-<div class="wire-block">Anti Kick</div>
-<div class="wire-block">Check profile visitors</div>
-<div class="wire-block">Sticker for VIP only</div>
-<div class="wire-block">Free room encryption</div>
-<div class="wire-block tall">VIP 5 or above users will be anti-black</div>
-<div class="wire-block tall">VIP 5 or above users will be anti-kick</div></div>
+          <div class="say-hi-board-wire vip-page-board-wire">
+      <div class="frame-label">VIP 中心 - Vip Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>VIP 首页 · 未开通</b><span>VipPage 主入口，从 Me 页、资料页、房间消息头像等入口进入；未开通时顶部显示 No VIP yet。</span></div>
+        <div class="phone-wire vip-page-wire">        <div class="simple-appbar vip-appbar">‹ <strong>My VIP</strong></div>
+        <div class="vip-header-card">
+          <div><small>Current Level</small><b>No VIP yet</b></div>
+          <span>V</span>
+          <button>Activate Privileges</button>
+        </div>
+              <div class="vip-level-tabs">
+        <b>VIP1</b><span>VIP2</span><span>VIP3</span><span>VIP4</span><span>VIP5</span><span>VIP6</span><span>VIP7</span>
+      </div>
+        <div class="vip-level-preview"><strong>VIP1</strong><span></span></div>
+        <section><h3>VIP Privileges</h3><div class="vip-icon-grid cols-3"><div><i></i><span>VIP Icon</span></div><div><i></i><span>Entry Effect</span></div><div><i></i><span>Highlight Name</span></div><div><i></i><span>VIP Bubble</span></div><div><i></i><span>VIP Wave</span></div><div><i></i><span>VIP Page</span></div></div></section>
+        <section><h3>VIP Privileges</h3><div class="vip-icon-grid cols-4"><div><i></i><span>List Stealth</span></div><div><i></i><span>Into the Room Stealth</span></div><div><i></i><span>VIP Sticker</span></div><div><i></i><span>Room Encryption</span></div><div><i></i><span>Anti Kick</span></div><div><i></i><span>Anti Black</span></div></div></section>
+        <div class="vip-bottom-bar"><b>499 ♦</b><small>30 days</small><button>Join VIP</button></div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>VIP 首页 · 已开通</b><span>用户已有 VIP 时顶部展示当前等级和剩余天数，右侧仍可进入 Activate Privileges 设置。</span></div>
+        <div class="phone-wire vip-page-wire">        <div class="simple-appbar vip-appbar">‹ <strong>My VIP</strong></div>
+        <div class="vip-header-card active">
+          <div><small>Current Level</small><b>VIP6</b><em>Rest Days: 18</em></div>
+          <span>VIP6</span>
+          <button>Activate Privileges</button>
+        </div>
+              <div class="vip-level-tabs">
+        <span>VIP1</span><span>VIP2</span><span>VIP3</span><span>VIP4</span><span>VIP5</span><b>VIP6</b><span>VIP7</span>
+      </div>
+        <div class="vip-level-preview gold"><strong>VIP6</strong><span></span></div>
+        <section><h3>VIP Privileges</h3><div class="vip-icon-grid cols-3"><div><i></i><span>VIP Icon</span></div><div><i></i><span>Entry Effect</span></div><div><i></i><span>Highlight Name</span></div><div><i></i><span>VIP Bubble</span></div><div><i></i><span>VIP Wave</span></div><div><i></i><span>VIP Page</span></div></div></section>
+        <section><h3>VIP Privileges</h3><div class="vip-icon-grid cols-4"><div><i></i><span>List Stealth</span></div><div><i></i><span>Into the Room Stealth</span></div><div><i></i><span>VIP Sticker</span></div><div><i></i><span>Room Encryption</span></div><div><i></i><span>Anti Kick</span></div><div><i></i><span>Anti Black</span></div></div></section>
+        <div class="vip-bottom-bar"><b>8,888 ♦</b><small>30 days</small><button>Join VIP</button></div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>VIP7 特殊活动不可购买</b><span>切到不可直接购买的等级时，底部购买栏显示 VIP 7 is only available in special activities。</span></div>
+        <div class="phone-wire vip-page-wire">        <div class="simple-appbar vip-appbar">‹ <strong>My VIP</strong></div>
+        <div class="vip-header-card active">
+          <div><small>Current Level</small><b>VIP6</b><em>Rest Days: 18</em></div>
+          <span>VIP6</span>
+          <button>Activate Privileges</button>
+        </div>
+              <div class="vip-level-tabs">
+        <span>VIP1</span><span>VIP2</span><span>VIP3</span><span>VIP4</span><span>VIP5</span><span>VIP6</span><b>VIP7</b>
+      </div>
+        <div class="vip-level-preview locked"><strong>VIP7</strong><span></span></div>
+        <section><h3>VIP Privileges</h3><div class="vip-icon-grid cols-3"><div><i></i><span>VIP Icon</span></div><div><i></i><span>Entry Effect</span></div><div><i></i><span>Highlight Name</span></div><div><i></i><span>VIP Bubble</span></div><div><i></i><span>VIP Wave</span></div><div><i></i><span>VIP Page</span></div></div></section>
+        <div class="vip-bottom-bar disabled">VIP 7 is only available in special activities</div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>购买确认与成功弹窗</b><span>点击 Join VIP 后先展示二次确认；确认购买成功后弹出 Congratulations 弹窗。弹窗独立摆在状态内，避免覆盖主页面文案。</span></div>
+        <div class="phone-wire vip-page-wire">        <div class="simple-appbar vip-appbar">‹ <strong>My VIP</strong></div>
+        <div class="vip-level-preview compact"><strong>VIP3</strong><span></span></div>
+        <div class="vip-bottom-bar"><b>1,999 ♦</b><small>30 days</small><button>Join VIP</button></div>
+        <div class="vip-dialog-row">
+          <div class="vip-confirm-dialog"><p>Are you sure to consume 1,999 Golds to become VIP 3?</p><div><button>Cancel</button><button>Confirm</button></div></div>
+          <div class="vip-success-dialog"><b>Congratulations for becoming VIP 3</b><span>VIP3</span><button>Confirm</button></div>
+        </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>VIP 权限设置页</b><span>从 VIP 顶部 Activate Privileges 进入，包含两个开关：List Stealth 和 Into the Room Stealth。</span></div>
+        <div class="phone-wire vip-page-wire">        <div class="simple-appbar vip-appbar">‹ <strong>Activate Privileges</strong></div>
+        <div class="vip-switch-list">
+          <div><span>List Stealth</span><b class="on"></b></div>
+          <div><span>Into the Room Stealth</span><b></b></div>
+        </div>
+        <div class="vip-limit-notes"><p>Invisibility of ranking is only available for VIP 6 or above users</p><p>Invisibility of entry is only available for VIP 7 or above users</p></div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>特权详情弹窗</b><span>点击任意 Reward&#47;Power 图标会打开 VipItemDetailDialog，展示名称、说明和预览图。</span></div>
+        <div class="phone-wire vip-page-wire">        <div class="simple-appbar vip-appbar">‹ <strong>My VIP</strong></div>
+        <section><h3>VIP Privileges</h3><div class="vip-icon-grid cols-4"><div><i></i><span>List Stealth</span></div><div><i></i><span>Into the Room Stealth</span></div><div><i></i><span>VIP Icon</span></div><div><i></i><span>Entry Effect</span></div></div></section>
+        <div class="vip-item-dialog"><strong>List Stealth</strong><p>After activating it, records in the rankings can be hidden</p><div>Preview image</div><button>Confirm</button></div>
+      </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">vip</p>
-        <h1>VIP - Vip Page</h1>
+        <h1>VIP 中心 - Vip Page</h1>
         <p>docs&#47;ui-structure&#47;vip&#47;vip-page.md</p>
       </header>
       
@@ -76,6 +137,13 @@
               <td><code>k_join_vip</code></td>
               <td>No</td>
               <td><code>lib&#47;ui&#47;vip&#47;page&#47;vip_page.dart:404</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Activate Privileges</td>
+              <td><code>k_activate_privileges</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;vip&#47;page&#47;vip_power_setup_page.dart:35</code></td>
             </tr>
             <tr>
               <td>UI text</td>
@@ -240,13 +308,6 @@
             </tr>
             <tr>
               <td>UI text</td>
-              <td>Activate Privileges</td>
-              <td><code>k_activate_privileges</code></td>
-              <td>No</td>
-              <td><code>lib&#47;ui&#47;vip&#47;widget&#47;vip_page_header_curr_level_widget.dart:70</code></td>
-            </tr>
-            <tr>
-              <td>UI text</td>
               <td>Current Level</td>
               <td><code>k_current_level</code></td>
               <td>No</td>
@@ -286,6 +347,7 @@
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
 <li><code>lib&#47;ui&#47;vip&#47;entity&#47;vip_page_config.dart</code></li>
 <li><code>lib&#47;ui&#47;vip&#47;page&#47;vip_page.dart</code></li>
+<li><code>lib&#47;ui&#47;vip&#47;page&#47;vip_power_setup_page.dart</code></li>
 <li><code>lib&#47;ui&#47;vip&#47;vip_ui_util.dart</code></li>
 <li><code>lib&#47;ui&#47;vip&#47;widget&#47;vip_item_detail_dialog.dart</code></li>
 <li><code>lib&#47;ui&#47;vip&#47;widget&#47;vip_level_detail_widget.dart</code></li>
@@ -295,7 +357,7 @@
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li>
 <li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

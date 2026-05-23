@@ -3,30 +3,137 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>勋章 - User Medal Page i18n Prototype</title>
+  <title>勋章中心 - User Medal Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#medals/user-medal-page.html" data-back-link>← 返回目录</a><span>/</span><span>medals</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#medals/user-medal-page.html" data-back-link>← 返回目录</a><span>/</span><span>medals</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">勋章 - User Medal Page</div>
-      <div class="top-bar">勋章 - User Medal Page</div>
-      <div class="wire-content"><div class="wire-block">Ranking</div>
-<div class="wire-block">Mine</div>
-<div class="wire-block">Rules</div>
-<div class="wire-block tall">The leaderboard is ranked based on the total badge points of the user. Different ranks will receive different rank icon.</div>
-<div class="wire-block">Confirm</div>
-<div class="wire-block">Rank Icon</div>
-<div class="wire-block">Rank</div>
-<div class="wire-block">Badge Rank</div></div>
+          <div class="say-hi-board-wire">
+      <div class="frame-label">勋章中心 - User Medal Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>排行榜 Tab</b><span>User Medal Page 顶层 Ranking，顶部是前三名展示，下方是排行榜列表和自己的浮动排名。</span></div>
+        <div class="phone-wire medal-center-wire ranking">
+          <div class="simple-appbar medal-appbar">‹       <div class="medal-top-tabs">
+        <b>Ranking</b><span>Mine</span>
+      </div> <em>?</em></div>
+                <div class="medal-ranking-hero">
+        <div class="top second"><span></span><b>User B</b><small>8.8k</small></div>
+        <div class="top first"><span></span><b>User A</b><small>12.4k</small></div>
+        <div class="top third"><span></span><b>User C</b><small>7.6k</small></div>
+      </div>
+      <div class="medal-rank-list">
+        <div><em>4</em><span></span><b>User D</b><small>6.1k</small></div>
+        <div><em>5</em><span></span><b>User E</b><small>5.8k</small></div>
+        <div><em>99+</em><span></span><b>Me</b><small>1.2k</small></div>
+      </div>
+          
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>排行榜规则弹窗</b><span>排行榜页右上角问号打开 Rules，说明不同名次对应的 Rank Icon。</span></div>
+        <div class="phone-wire medal-center-wire ranking">
+          <div class="simple-appbar medal-appbar">‹       <div class="medal-top-tabs">
+        <b>Ranking</b><span>Mine</span>
+      </div> <em>?</em></div>
+                <div class="medal-ranking-hero">
+        <div class="top second"><span></span><b>User B</b><small>8.8k</small></div>
+        <div class="top first"><span></span><b>User A</b><small>12.4k</small></div>
+        <div class="top third"><span></span><b>User C</b><small>7.6k</small></div>
+      </div>
+      <div class="medal-rank-list">
+        <div><em>4</em><span></span><b>User D</b><small>6.1k</small></div>
+        <div><em>5</em><span></span><b>User E</b><small>5.8k</small></div>
+        <div><em>99+</em><span></span><b>Me</b><small>1.2k</small></div>
+      </div>
+          <div class="medal-rule-dialog"><strong>Rules</strong><p>The leaderboard is ranked based on the total badge points of the user. Different ranks will receive different rank icon.</p><div><b>Rank Icon</b><b>Rank</b></div><div><span>Top 1</span><span>Top 2-10</span></div><button>Confirm</button></div>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>我的勋章 Tab</b><span>切到 Mine 后默认展示 Badge 子 Tab：上方是佩戴槽位，下方是已拥有勋章列表。</span></div>
+        <div class="phone-wire medal-center-wire ">
+          <div class="simple-appbar medal-appbar">‹       <div class="medal-top-tabs">
+        <span>Ranking</span><b>Mine</b>
+      </div> <em></em></div>
+                <div class="medal-sub-tabs">
+        <b>Badge</b><span>Badge Wall</span>
+      </div>      <div class="medal-slot-panel">
+        <div class="medal-slots">
+          <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span>
+        </div>
+        <p>You can select up to 10 badges to wear, which will be displayed in rooms and profile.</p>
+        <button>Edit</button>
+      </div>      <div class="medal-grid-wire">
+        <div class=""><span></span><small>Badge 1</small></div><div class=""><span></span><small>Badge 2</small></div><div class=""><span></span><small>Badge 3</small></div><div class=""><span></span><small>Badge 4</small></div><div class=""><span></span><small>Badge 5</small></div><div class=""><span></span><small>Badge 6</small></div><div class=""><span></span><small>Badge 7</small></div><div class=""><span></span><small>Badge 8</small></div>
+      </div>
+          
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>编辑佩戴勋章</b><span>点击 Edit 后进入编辑状态，可添加、删除、拖拽排序最多 10 个展示勋章，保存后提示成功。</span></div>
+        <div class="phone-wire medal-center-wire ">
+          <div class="simple-appbar medal-appbar">‹       <div class="medal-top-tabs">
+        <span>Ranking</span><b>Mine</b>
+      </div> <em></em></div>
+                <div class="medal-sub-tabs">
+        <b>Badge</b><span>Badge Wall</span>
+      </div>      <div class="medal-slot-panel">
+        <div class="medal-slots">
+          <span class="filled">×</span><span class="filled">×</span><span class="filled">×</span><span class="filled">×</span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span>
+        </div>
+        <p>You can select up to 10 badges to wear, which will be displayed in rooms and profile.</p>
+        <button>Save</button>
+      </div>      <div class="medal-grid-wire">
+        <div class="selected"><span></span><small>Badge 1</small><em>-</em></div><div class="selected"><span></span><small>Badge 2</small><em>-</em></div><div class="selected"><span></span><small>Badge 3</small><em>-</em></div><div class=""><span></span><small>Badge 4</small><em>+</em></div><div class=""><span></span><small>Badge 5</small><em>+</em></div><div class=""><span></span><small>Badge 6</small><em>+</em></div><div class=""><span></span><small>Badge 7</small><em>+</em></div><div class=""><span></span><small>Badge 8</small><em>+</em></div>
+      </div>
+          
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>勋章墙 Tab</b><span>Mine 内部第二个子 Tab Badge Wall，展示勋章框&#47;勋章墙列表。</span></div>
+        <div class="phone-wire medal-center-wire ">
+          <div class="simple-appbar medal-appbar">‹       <div class="medal-top-tabs">
+        <span>Ranking</span><b>Mine</b>
+      </div> <em></em></div>
+                <div class="medal-sub-tabs">
+        <span>Badge</span><b>Badge Wall</b>
+      </div>      <div class="medal-frame-list-wire">
+        <div><span></span><b>Frame A</b><small>5 badges displaying</small><em>Edit</em></div>
+        <div><span></span><b>Frame B</b><small>Locked / empty state</small><em>Edit</em></div>
+      </div>
+      
+          
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>勋章墙选择弹窗</b><span>点击勋章墙卡片 Edit 后打开底部面板，选择要展示到该墙的勋章，最多 15 个。</span></div>
+        <div class="phone-wire medal-center-wire ">
+          <div class="simple-appbar medal-appbar">‹       <div class="medal-top-tabs">
+        <span>Ranking</span><b>Mine</b>
+      </div> <em></em></div>
+                <div class="medal-sub-tabs">
+        <span>Badge</span><b>Badge Wall</b>
+      </div>      <div class="medal-frame-list-wire">
+        <div><span></span><b>Frame A</b><small>5 badges displaying</small><em>Edit</em></div>
+        <div><span></span><b>Frame B</b><small>Locked / empty state</small><em>Edit</em></div>
+      </div>
+      <div class="medal-frame-sheet"><strong>Select badge to display(3/15)</strong><div class="medal-sheet-grid"><span class="selected"></span><span class="selected"></span><span class="selected"></span><span class=""></span><span class=""></span><span class=""></span></div><button>Confirm</button></div>
+          
+          <div class="say-hi-toast">A maximum of 15 badges can be selected for display</div>
+        </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">medals</p>
-        <h1>勋章 - User Medal Page</h1>
+        <h1>勋章中心 - User Medal Page</h1>
         <p>docs&#47;ui-structure&#47;medals&#47;user-medal-page.md</p>
       </header>
       
@@ -35,6 +142,48 @@
         <table>
           <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
           <tbody>            <tr>
+              <td>UI text</td>
+              <td>Confirm</td>
+              <td><code>k_confirm</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;medals&#47;page&#47;medal_frame_set_showing_dialog.dart:104</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Nothing at all</td>
+              <td><code>k_nothing_at_all</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;medals&#47;page&#47;medal_frames_list_page.dart:40</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Save</td>
+              <td><code>k_save</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;medals&#47;page&#47;medal_mine_list_page.dart:529</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Edit</td>
+              <td><code>k_edit</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;medals&#47;page&#47;medal_mine_list_page.dart:529</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Badge</td>
+              <td><code>k_badge</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;medals&#47;page&#47;medals_and_frames_page.dart:154</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Badge Wall</td>
+              <td><code>k_badge_wall</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;medals&#47;page&#47;medals_and_frames_page.dart:158</code></td>
+            </tr>
+            <tr>
               <td>UI text</td>
               <td>Ranking</td>
               <td><code>k_ranking</code></td>
@@ -61,13 +210,6 @@
               <td><code>k_the_leaderboard_is_ranked_based_on_the_total_badge_points_of_the_user_different_ranks_will_receive_different_rank_icon</code></td>
               <td>No</td>
               <td><code>lib&#47;ui&#47;medals&#47;widget&#47;medal_ranking_rule_dialog.dart:53</code></td>
-            </tr>
-            <tr>
-              <td>UI text</td>
-              <td>Confirm</td>
-              <td><code>k_confirm</code></td>
-              <td>No</td>
-              <td><code>lib&#47;ui&#47;medals&#47;widget&#47;medal_ranking_rule_dialog.dart:70</code></td>
             </tr>
             <tr>
               <td>UI text</td>
@@ -102,19 +244,35 @@
             <section class="section">
         <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
         <div class="dialog-wire">
-          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+          <div class="dialog-line"><strong>Succeeded</strong><code>k_succeeded</code><small>lib&#47;ui&#47;medals&#47;page&#47;medal_frame_set_showing_dialog.dart:116</small></div>
+<div class="dialog-line"><strong>Select badge to display</strong><code>k_select_badge_to_display</code><small>lib&#47;ui&#47;medals&#47;page&#47;medal_frame_set_showing_dialog.dart:145</small></div>
         </div>
       </section>
             <section class="section">
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;medals&#47;page&#47;medal_frame_set_showing_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;medals&#47;page&#47;medal_frames_list_page.dart</code></li>
+<li><code>lib&#47;ui&#47;medals&#47;page&#47;medal_mine_list_page.dart</code></li>
+<li><code>lib&#47;ui&#47;medals&#47;page&#47;medal_ranking_page.dart</code></li>
+<li><code>lib&#47;ui&#47;medals&#47;page&#47;medals_and_frames_page.dart</code></li>
 <li><code>lib&#47;ui&#47;medals&#47;page&#47;user_medal_page.dart</code></li>
+<li><code>lib&#47;ui&#47;medals&#47;widget&#47;badge_item_new_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;medals&#47;widget&#47;medal_frame_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;medals&#47;widget&#47;medal_list_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;medals&#47;widget&#47;medal_mine_edit_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;medals&#47;widget&#47;medal_physics_box_widget.dart</code></li>
 <li><code>lib&#47;ui&#47;medals&#47;widget&#47;medal_ranking_rule_dialog.dart</code></li>
 <li><code>lib&#47;ui&#47;medals&#47;widget&#47;medal_ranking_widget.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li>
-<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li></ul>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_pop_level_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_rich_level_icon.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

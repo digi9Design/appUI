@@ -3,38 +3,140 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CP - Cp Invite Page i18n Prototype</title>
+  <title>CP 邀请与关系 - Cp Invite Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#cp/cp-invite-page.html" data-back-link>← 返回目录</a><span>/</span><span>cp</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#cp/cp-invite-page.html" data-back-link>← 返回目录</a><span>/</span><span>cp</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">CP - Cp Invite Page</div>
-      <div class="top-bar">CP - Cp Invite Page</div>
-      <div class="wire-content"><div class="wire-block">become beloved CP!</div>
-<div class="wire-block tall">become Best Friend Forever!</div>
-<div class="wire-block">become super homie!</div>
-<div class="wire-block">Succeeded</div>
-<div class="wire-block">Friend</div>
-<div class="wire-block tall">{s1} applies to become your {s2}</div>
-<div class="wire-block">CP Invitation</div>
-<div class="wire-block">BFF Invitation</div>
-<div class="wire-block">Homie Invitation</div>
-<div class="wire-block">Friend Invitation</div>
-<div class="wire-block">ID</div>
-<div class="wire-block tall">Write something for her&#47;him to show your sincereness.</div>
-<div class="wire-block">Invitation valid in 24h</div>
-<div class="wire-block tall">Golds will be sent back automatically if he&#47;she rejects or no response with 24h.</div>
-<div class="wire-block">Refuse</div>
-<div class="wire-block">Accept</div></div>
+          <div class="say-hi-board-wire cp-board-wire">
+      <div class="frame-label">CP 邀请与关系 - Cp Invite Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>CP 邀请页</b><span>生产入口 CpInvitePage，从商城 CP 商品购买流程进入；选择好友后确认并弹出邀请确认卡。</span></div>
+        <div class="phone-wire cp-wire">        <div class="simple-appbar cp-appbar">‹ <strong>Choose a user to send</strong></div>
+        <div class="cp-search">Search</div>
+              <div class="cp-friend-row">
+        <span class="cp-avatar"><em></em></span>
+        <div><b>Mia</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        <i class=""></i>
+      </div>
+              <div class="cp-friend-row">
+        <span class="cp-avatar"><em></em></span>
+        <div><b>Noah</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        <i class="selected">✓</i>
+      </div>
+              <div class="cp-friend-row">
+        <span class="cp-avatar"><em></em></span>
+        <div><b>Ava</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        <i class=""></i>
+      </div>
+        <button class="cp-main-btn">Confirm</button>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>发送 CP 邀请弹窗</b><span>选择用户后打开 CpInviteDialog，发起方可输入留言，Send 按钮展示消耗价格。</span></div>
+        <div class="phone-wire cp-wire">        <div class="cp-invite-dialog">
+          <h3>CP Invitation</h3>
+          <div class="cp-invite-users"><span class="cp-avatar"><em>Me</em></span><span class="cp-relation-icon">CP</span><span class="cp-avatar"><em>Noah</em></span></div>
+          <div class="cp-message-box"><b>To Noah</b><p>Write something for her&#47;him to show your sincereness.</p><small>0/100</small></div>
+          <p>Golds will be sent back automatically if he&#47;she rejects or no response with 24h.</p>
+          <button>Send (100 ♦)</button>
+        </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>接收 CP 邀请弹窗</b><span>收到邀请时同一个 CpInviteDialog 以接收方模式展示倒计时、Refuse 和 Accept。</span></div>
+        <div class="phone-wire cp-wire">        <div class="cp-invite-dialog receive">
+          <h3>CP CP Invitation</h3>
+          <div class="cp-countdown">23:59:59</div>
+          <div class="cp-invite-users"><span class="cp-avatar"><em>Mia</em></span><span class="cp-relation-icon">CP</span><span class="cp-avatar"><em>Me</em></span></div>
+          <p>Mia applies to become your CP</p>
+          <small>Invitation valid in 24h</small>
+          <div class="cp-dialog-actions"><button>Refuse</button><button>Accept</button></div>
+        </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>IM 请求卡片状态</b><span>CpRequestCardView 用在聊天消息里，区分接收方&#47;发起方，以及申请中、已接受、已拒绝、已取消等状态。</span></div>
+        <div class="phone-wire cp-wire">        <div class="simple-appbar cp-appbar">‹ <strong>IM · CP</strong></div>
+        <div class="cp-card-grid">
+                <div class="cp-request-card receive">
+        <div><span class="cp-avatar"><em>A</em></span><span class="cp-relation-icon">CP</span><span class="cp-avatar"><em>B</em></span></div>
+        <b>CP binding invitation</b>
+        <small>Receiver preview</small>
+      </div>
+                <div class="cp-request-card receive">
+        <div><span class="cp-avatar"><em>A</em></span><span class="cp-relation-icon">CP</span><span class="cp-avatar"><em>B</em></span></div>
+        <b>Become CP</b>
+        <small>Receiver preview</small>
+      </div>
+                <div class="cp-request-card send">
+        <div><span class="cp-avatar"><em>A</em></span><span class="cp-relation-icon">CP</span><span class="cp-avatar"><em>B</em></span></div>
+        <b>Rejected</b>
+        <small>Sender preview</small>
+      </div>
+                <div class="cp-request-card send">
+        <div><span class="cp-avatar"><em>A</em></span><span class="cp-relation-icon">CP</span><span class="cp-avatar"><em>B</em></span></div>
+        <b>Canceled</b>
+        <small>Sender preview</small>
+      </div>
+        </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>资料页 CP 关系组件</b><span>CpProfileView 展示真爱 CP 主卡和 BFF&#47;Homie&#47;Friend 关系位；点击可打开 CP 列表底部面板。</span></div>
+        <div class="phone-wire cp-wire">        <div class="cp-profile-panel">
+          <div class="cp-profile-head"><b>My Relationship</b><span>?</span><span>bag</span></div>
+          <div class="cp-main-card"><span class="cp-avatar"><em>Me</em></span><span class="cp-relation-icon">CP</span><span class="cp-avatar"><em>CP</em></span><strong>CP value 9,999</strong></div>
+          <div class="cp-side-cards"><div><span class="cp-relation-icon">BFF</span><small>CP value 2,300</small></div><div><span class="cp-relation-icon">Homie</span><small>Available</small></div><div><span class="cp-relation-icon">Friend</span><small>Available</small></div></div>
+        </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>CP 列表与操作菜单</b><span>CpListDialog 是底部面板；可编辑时点击主 CP 会出现 Transfer relationship &#47; Apply to unbind 操作。</span></div>
+        <div class="phone-wire cp-wire">        <div class="cp-bottom-sheet">
+          <header><span>?</span><b>My Relationship</b><span>×</span></header>
+          <div class="cp-main-card small"><span class="cp-avatar"><em>Me</em></span><span class="cp-relation-icon">CP</span><span class="cp-avatar"><em>CP</em></span><strong>CP value 9,999</strong></div>
+          <div class="cp-action-sheet"><button>Transfer Relationship</button><button>Apply to unbind</button></div>
+        </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>关系转换与解绑</b><span>CpTransferDialog 选择要转换的新关系；CpReleaseConfirm&#47;AcceptDialog 处理解绑发起和接收确认。</span></div>
+        <div class="phone-wire cp-wire">        <div class="cp-bottom-sheet">
+          <header><b>My Relationship</b><span>×</span></header>
+          <p>With Noah, what relationship you wanna transfer to</p>
+          <div class="cp-transfer-options"><div><span class="cp-relation-icon">BFF</span><b>BFF</b><small>200 ♦</small></div><div class="selected"><span class="cp-relation-icon">Homie</span><b>Homie</b><small>300 ♦</small></div></div>
+          <button class="cp-main-btn">Confirm</button>
+        </div>
+        <div class="cp-release-dialog"><p>Sure to end relationship with Noah?</p><div><button>Confirm</button><button>Cancel</button></div><small>If no response within 24h...</small></div>
+        <div class="cp-release-dialog receive"><p>Noah wants to end relationship with u. Do you agree?</p><div><button>End it</button><button>Not Now</button></div></div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>CP 契约证书</b><span>CpContractDialog 在绑定成功后展示动画，随后展示可下载&#47;分享的契约证书。</span></div>
+        <div class="phone-wire cp-wire">        <div class="cp-contract">
+          <h3>Become CP</h3>
+          <div><span class="cp-avatar"><em>Me</em></span><span class="cp-avatar"><em>CP</em></span></div>
+          <p>Witnessed by Uparty. On this special day, the hearts of two souls are officially bound.</p>
+          <small>2026.05.22</small>
+        </div>
+        <div class="cp-contract-actions"><button>↓</button><button>↗</button></div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>CP 规则说明</b><span>帮助入口打开 H5 规则页，这里把规则文案以设计参考方式平铺出来。</span></div>
+        <div class="phone-wire cp-wire">        <div class="simple-appbar cp-appbar">‹ <strong>CP list</strong></div>
+        <div class="cp-rule-card">Rule: send a specific CP gift, invite the user, accept to become CP, unbind from CP list.</div>
+      </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">cp</p>
-        <h1>CP - Cp Invite Page</h1>
+        <h1>CP 邀请与关系 - Cp Invite Page</h1>
         <p>docs&#47;ui-structure&#47;cp&#47;cp-invite-page.md</p>
       </header>
       
@@ -198,6 +300,20 @@
             </tr>
             <tr>
               <td>UI text</td>
+              <td>Relationship</td>
+              <td><code>k_relationship</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_profile_view.dart:69</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>available</td>
+              <td><code>k_available_1</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_profile_view.dart:161</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
               <td>{s1} wants to end relationship with u. Do you agree?</td>
               <td><code>k_xxx_wants_to_end_relationship_with_u_do_you_agree</code></td>
               <td>Yes</td>
@@ -240,6 +356,76 @@
             </tr>
             <tr>
               <td>UI text</td>
+              <td>{s1} withdrawed this unbinding request.</td>
+              <td><code>k_xxx_withdrawed_this_unbinding_request</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:44</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} applied to end relationship</td>
+              <td><code>k_xxx_applied_to_end_relationship</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:122</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Your {s1} relationship ended</td>
+              <td><code>k_your_xxx_relationship_ended</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:123</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Click to view</td>
+              <td><code>k_click_to_view</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:141</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Binding Invitation</td>
+              <td><code>k_binding_invitation</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:227</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Become CP</td>
+              <td><code>k_become_cp</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:229</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Become BFF</td>
+              <td><code>k_become_bff</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:230</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Become Homie</td>
+              <td><code>k_become_homie</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:231</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Become Friend</td>
+              <td><code>k_become_friend</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:232</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} rejected your binding invitation</td>
+              <td><code>k_xxx_rejected_your_binding_invitation</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:235</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
               <td>CP</td>
               <td><code>k_cp_1</code></td>
               <td>No</td>
@@ -279,13 +465,39 @@
         <h2>当前硬编码文案</h2>
         <table>
           <thead><tr><th>位置</th><th>文案</th><th>Source</th></tr></thead>
-          <tbody><tr><td colspan="3" class="empty-cell">No obvious hard-coded UI text found.</td></tr></tbody>
+          <tbody>            <tr>
+              <td>Title</td>
+              <td><span class="hard">Cp预览主页</span></td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;preview&#47;cp_preview_page.dart:81</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td><span class="hard">Cp请求卡片预览</span></td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;preview&#47;cp_profile_preview_page.dart:24</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td><span class="hard">Cp请求卡片预览</span></td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;preview&#47;cp_request_card_preview_page.dart:35</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td><span class="hard">接收方预览</span></td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;preview&#47;cp_request_card_preview_page.dart:40</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td><span class="hard">发起方预览</span></td>
+              <td><code>lib&#47;ui&#47;cp&#47;ui&#47;preview&#47;cp_request_card_preview_page.dart:45</code></td>
+            </tr></tbody>
         </table>
       </section>
             <section class="section">
         <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
         <div class="dialog-wire">
           <div class="dialog-line"><strong>Failure</strong><code>k_failure</code><small>lib&#47;ui&#47;cp&#47;ui&#47;cp_contract_dialog.dart:70</small></div>
+<div class="dialog-line"><strong>Sure to withdraw this unbinding request?</strong><code>k_sure_to_withdraw_this_unbinding_request</code><small>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:94</small></div>
+<div class="dialog-line"><strong>Withdraw</strong><code>k_withdraw_1</code><small>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart:94</small></div>
 <div class="dialog-line"><strong>Transfer Relationship</strong><code>k_transfer_relationship</code><small>lib&#47;ui&#47;cp&#47;ui&#47;cp_service.dart:163</small></div>
 <div class="dialog-line"><strong>Apply to unbind</strong><code>k_apply_to_unbind</code><small>lib&#47;ui&#47;cp&#47;ui&#47;cp_service.dart:174</small></div>
         </div>
@@ -298,11 +510,16 @@
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_invite_dialog.dart</code></li>
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_invite_page.dart</code></li>
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_list_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_profile_view.dart</code></li>
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_release_accept_dialog.dart</code></li>
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_release_confirm_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_request_card_view.dart</code></li>
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_service.dart</code></li>
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_theme.dart</code></li>
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;cp_transfer_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;cp&#47;ui&#47;preview&#47;cp_preview_page.dart</code></li>
+<li><code>lib&#47;ui&#47;cp&#47;ui&#47;preview&#47;cp_profile_preview_page.dart</code></li>
+<li><code>lib&#47;ui&#47;cp&#47;ui&#47;preview&#47;cp_request_card_preview_page.dart</code></li>
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;widget&#47;cp_count_down_view.dart</code></li>
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;widget&#47;cp_main_item_view.dart</code></li>
 <li><code>lib&#47;ui&#47;cp&#47;ui&#47;widget&#47;cp_relation_icon.dart</code></li>
@@ -315,7 +532,7 @@
 <li><code>lib&#47;widget&#47;wealth&#47;user_pop_level_icon.dart</code></li>
 <li><code>lib&#47;widget&#47;wealth&#47;user_rich_level_icon.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

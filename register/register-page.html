@@ -3,31 +3,126 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>注册 - Register Page i18n Prototype</title>
+  <title>注册资料设置 - Register Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#register/register-page.html" data-back-link>← 返回目录</a><span>/</span><span>register</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#register/register-page.html" data-back-link>← 返回目录</a><span>/</span><span>register</span></nav>
-          <div class="phone-wire form-wire">
-      <div class="frame-label">注册 - Register Page</div>
-      <div class="top-bar">Set profile</div>
-      <div class="form-stack">
-        <div class="wire-button">Gender can only be selected once</div>
-<div class="wire-button">Female</div>
-<div class="wire-button">Male</div>
-<div class="field-wire">Input your nickname</div>
-<div class="wire-button">Please select your region</div>
-<div class="wire-button">Submit</div>
-<div class="wire-button">Next</div>
+          <div class="say-hi-board-wire">
+      <div class="frame-label">注册资料设置 - Register Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>资料设置空态</b><span>登录&#47;注册完成后进入 Set profile；头像、性别、昵称、地区未完整时按钮不可提交。</span></div>
+        <div class="phone-wire register-profile-wire">
+          <div class="simple-appbar">‹ <strong>Set profile</strong></div>
+          <div class="register-avatar ">
+            <span>CAM</span>
+            <b>*No avatar</b>
+          </div>
+          <p>*upload your avatar</p>
+          <div class="register-gender-row">
+            <div class=""><span>♀</span><b>Female</b></div>
+            <div><span>♂</span><b>Male</b></div>
+          </div>
+          <small>Gender can only be selected once</small>
+          <label>*Nickname</label>
+          <div class="register-input">Input your nickname</div>
+          <label>*Region</label>
+          <div class="register-input region">Please select your region<em>›</em></div>
+          
+          <button class="disabled">Next</button>
+          <div class="say-hi-toast">Avatar Can not be empty</div>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>资料设置已填写</b><span>头像上传后显示已选头像，选择性别、填写昵称和地区后按钮切换为 Submit。</span></div>
+        <div class="phone-wire register-profile-wire">
+          <div class="simple-appbar">‹ <strong>Set profile</strong></div>
+          <div class="register-avatar filled">
+            <span>CAM</span>
+            <b>Avatar uploaded</b>
+          </div>
+          <p>*upload your avatar</p>
+          <div class="register-gender-row">
+            <div class="selected"><span>♀</span><b>Female</b></div>
+            <div><span>♂</span><b>Male</b></div>
+          </div>
+          <small>Gender can only be selected once</small>
+          <label>*Nickname</label>
+          <div class="register-input">User name</div>
+          <label>*Region</label>
+          <div class="register-input region">United States<em>›</em></div>
+          
+          <button class="">Submit</button>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>地区下拉选择</b><span>点击 Region 后展示地区列表，选中后回填到资料设置页。</span></div>
+        <div class="phone-wire register-profile-wire">
+          <div class="simple-appbar">‹ <strong>Set profile</strong></div>
+          <div class="register-avatar filled">
+            <span>CAM</span>
+            <b>Avatar uploaded</b>
+          </div>
+          <p>*upload your avatar</p>
+          <div class="register-gender-row">
+            <div class="selected"><span>♀</span><b>Female</b></div>
+            <div><span>♂</span><b>Male</b></div>
+          </div>
+          <small>Gender can only be selected once</small>
+          <label>*Nickname</label>
+          <div class="register-input">User name</div>
+          <label>*Region</label>
+          <div class="register-input region">United States<em>›</em></div>
+          <div class="register-region-menu"><span>United States</span><span>Türkiye</span><span>العربية</span><span>हिन्दी</span></div>
+          <button class="">Submit</button>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>头像相册选择</b><span>点击头像进入相册选择页，顶部可切换相册，底部 Send it 确认。</span></div>
+        <div class="phone-wire register-picker-wire">
+          <div class="register-picker-header"><span>×</span><strong>Recents ⌄</strong></div>
+          <div class="register-photo-grid"><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div></div>
+          <div class="register-picker-bottom"><button class="disabled">Send it</button></div>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>头像已选中</b><span>选择图片后缩略图出现选中态，Send it 按钮变为可用；返回后进入裁剪上传。</span></div>
+        <div class="phone-wire register-picker-wire">
+          <div class="register-picker-header"><span>×</span><strong>Recents ⌄</strong></div>
+          <div class="register-photo-grid"><div class=""><em></em></div><div class=""><em></em></div><div class="selected"><em>✓</em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div></div>
+          <div class="register-picker-bottom"><button class="">Send it</button></div>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>相册切换面板</b><span>点击顶部相册名弹出相册列表，选择后刷新图片网格。</span></div>
+        <div class="phone-wire register-picker-wire">
+          <div class="register-picker-header"><span>×</span><strong>Recents ⌄</strong></div>
+          <div class="register-photo-grid"><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div><div class=""><em></em></div></div>
+          <div class="register-picker-bottom"><button class="disabled">Send it</button></div>
+          <div class="register-album-sheet"><i></i><span>Recents ✓</span><span>Favorites</span><span>Screenshots</span></div>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>相册无权限</b><span>未授权相册权限时展示权限提示，不显示图片网格。</span></div>
+        <div class="phone-wire register-picker-wire">
+          <div class="register-picker-header"><span>×</span><strong>Recents ⌄</strong></div>
+          <div class="register-no-permission">Please allow access to your photo library in Settings.</div>
+          <div class="register-picker-bottom"><button class="disabled">Send it</button></div>
+          
+        </div>
       </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">register</p>
-        <h1>注册 - Register Page</h1>
+        <h1>注册资料设置 - Register Page</h1>
         <p>docs&#47;ui-structure&#47;register&#47;register-page.md</p>
       </header>
       
@@ -110,12 +205,13 @@
             <section class="section">
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;register&#47;register_avatar_picker_page.dart</code></li>
 <li><code>lib&#47;ui&#47;register&#47;register_page.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li>
 <li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
 <li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

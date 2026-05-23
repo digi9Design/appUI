@@ -3,25 +3,81 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BD系统 - Bd System Page i18n Prototype</title>
+  <title>BD 系统 - Bd System Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#bd_system/bd-system-page.html" data-back-link>← 返回目录</a><span>/</span><span>bd_system</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#bd_system/bd-system-page.html" data-back-link>← 返回目录</a><span>/</span><span>bd_system</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">BD系统 - Bd System Page</div>
-      <div class="top-bar">BD系统 - Bd System Page</div>
-      <div class="wire-content"><div class="wire-block">BD System</div>
-<div class="wire-block">Apply for family</div>
-<div class="wire-block">Copy link</div></div>
+          <div class="say-hi-board-wire bd-system-board-wire">
+      <div class="frame-label">BD 系统 - Bd System Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>BD 系统入口</b><span>从 MePage 条件入口进入，仅 BD 身份用户可见；页面提供申请创建家族和复制 BD 后台链接两个操作。</span></div>
+        <div class="phone-wire bd-system-wire">        <div class="simple-appbar super-appbar bd-appbar">‹ <strong>BD System</strong></div>
+        <div class="bd-system-hero">
+          <span>BD</span>
+          <b>BD System</b>
+          <small>Official BD portal</small>
+        </div>
+        <div class="bd-action-stack">
+          <button>Apply for family</button>
+          <button class="outline">Copy link</button>
+        </div>
+        <div class="bd-copy-toast">Copy successfully. Please open in the browser</div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>申请创建家族表单</b><span>点击 Apply for family 进入 BdApplyForFamilyPage，填写 Leader ID、Agent Name、Agent Whatsapp 后提交。</span></div>
+        <div class="phone-wire bd-system-wire">        <div class="simple-appbar super-appbar bd-appbar">‹ <strong>Family Registration</strong></div>
+        <div class="bd-apply-icon">BD</div>
+        <p class="bd-apply-intro">After filling the information, contact Super admin for approval</p>
+        <div class="super-form bd-apply-form">
+                <label class="super-field">
+        <span>Leader ID</span>
+        <i>Please enter Leader ID</i>
+      </label>
+                <label class="super-field">
+        <span>Agent Name</span>
+        <i>Please enter Agent Name</i>
+      </label>
+                <label class="super-field">
+        <span>Agent Whatsapp</span>
+        <i>Please enter Agent Whatsapp</i>
+      </label>
+          <button>Confirm</button>
+        </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>申请提交反馈</b><span>表单提交成功后 toast 提示 Succeeded 并返回；失败时展示后端错误文案。</span></div>
+        <div class="phone-wire bd-system-wire">        <div class="simple-appbar super-appbar bd-appbar">‹ <strong>Family Registration</strong></div>
+        <div class="bd-apply-icon done">✓</div>
+        <p class="bd-apply-intro">After filling the information, contact Super admin for approval</p>
+        <div class="super-form bd-apply-form">
+                <label class="super-field">
+        <span>Leader ID</span>
+        <i>100026</i>
+      </label>
+                <label class="super-field">
+        <span>Agent Name</span>
+        <i>Family Agency</i>
+      </label>
+                <label class="super-field">
+        <span>Agent Whatsapp</span>
+        <i>+1 555 2026</i>
+      </label>
+          <button>Confirm</button>
+        </div>
+        <div class="say-hi-toast">Succeeded</div>
+      </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">bd_system</p>
-        <h1>BD系统 - Bd System Page</h1>
+        <h1>BD 系统 - Bd System Page</h1>
         <p>docs&#47;ui-structure&#47;bd_system&#47;bd-system-page.md</p>
       </header>
       
@@ -30,6 +86,48 @@
         <table>
           <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
           <tbody>            <tr>
+              <td>Title</td>
+              <td>Family Registration</td>
+              <td><code>k_family_registration</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;bd_system&#47;page&#47;bd_apply_for_family_page.dart:32</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Leader ID</td>
+              <td><code>k_leader_id</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;bd_system&#47;page&#47;bd_apply_for_family_page.dart:73</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Please enter Leader ID</td>
+              <td><code>k_please_enter_leader_id</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;bd_system&#47;page&#47;bd_apply_for_family_page.dart:100</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Agent Name</td>
+              <td><code>k_agent_name</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;bd_system&#47;page&#47;bd_apply_for_family_page.dart:110</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Please enter Agent Name</td>
+              <td><code>k_please_enter_agent_name</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;bd_system&#47;page&#47;bd_apply_for_family_page.dart:133</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Agent Whatsapp</td>
+              <td><code>k_agent_whatsapp</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;bd_system&#47;page&#47;bd_apply_for_family_page.dart:143</code></td>
+            </tr>
+            <tr>
               <td>Title</td>
               <td>BD System</td>
               <td><code>k_bd_system</code></td>
@@ -62,16 +160,19 @@
             <section class="section">
         <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
         <div class="dialog-wire">
-          <div class="dialog-line hard-line"><strong>no bdAdminUrl!!!</strong><small>lib&#47;ui&#47;bd_system&#47;page&#47;bd_system_page.dart:64</small></div>
+          <div class="dialog-line"><strong>Succeeded</strong><code>k_succeeded</code><small>lib&#47;ui&#47;bd_system&#47;page&#47;bd_apply_for_family_page.dart:242</small></div>
+<div class="dialog-line"><strong>Confirm</strong><code>k_confirm</code><small>lib&#47;ui&#47;bd_system&#47;page&#47;bd_apply_for_family_page.dart:248</small></div>
+<div class="dialog-line hard-line"><strong>no bdAdminUrl!!!</strong><small>lib&#47;ui&#47;bd_system&#47;page&#47;bd_system_page.dart:64</small></div>
         </div>
       </section>
             <section class="section">
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;bd_system&#47;page&#47;bd_apply_for_family_page.dart</code></li>
 <li><code>lib&#47;ui&#47;bd_system&#47;page&#47;bd_system_page.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

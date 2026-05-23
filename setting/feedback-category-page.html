@@ -3,30 +3,105 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>设置 - Feedback Category Page i18n Prototype</title>
+  <title>反馈流程 - Feedback Category Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#setting/feedback-category-page.html" data-back-link>← 返回目录</a><span>/</span><span>setting</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#setting/feedback-category-page.html" data-back-link>← 返回目录</a><span>/</span><span>setting</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">设置 - Feedback Category Page</div>
-      <div class="top-bar">设置 - Feedback Category Page</div>
-      <div class="wire-content"><div class="wire-block">Suggestion</div>
-<div class="wire-block">About Recharge</div>
-<div class="wire-block">Report</div>
-<div class="wire-block">Others</div>
-<div class="wire-block">Feedback</div></div>
+          <div class="say-hi-board-wire setting-flow-board-wire feedback-flow-board-wire">
+      <div class="frame-label">反馈流程 - Feedback Category Page</div>
+      <div class="mall-state-wrap">
+        <div class="state-note"><b>反馈分类入口</b><span>Setting Page 点击 Feedback 后进入分类页；选择分类后进入同一套反馈填写页面。</span></div>
+        <div class="phone-wire feedback-category-wire">
+          <div class="simple-appbar">‹ <strong>Feedback</strong></div>
+          <div class="feedback-category-list">
+            <div class="feedback-category-row"><b>Suggestion</b><em>›</em></div>
+            <div class="feedback-category-row"><b>About Recharge</b><em>›</em></div>
+            <div class="feedback-category-row"><b>Report</b><em>›</em></div>
+            <div class="feedback-category-row"><b>Others</b><em>›</em></div>
+          </div>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>Suggestion &#47; Others 填写页</b><span>普通建议与其他问题共用反馈填写结构，支持最多 3 张图片、联系方式和错误日志。</span></div>
+        <div class="phone-wire feedback-form-wire">
+          <div class="simple-appbar">‹ <strong>Feedback</strong></div>
+          <h2>Suggestion</h2>
+          <div class="feedback-textarea">We will reply to your suggestion as soon as possible, thank you very much!<small>0/500</small></div>
+          <div class="feedback-image-row">
+            <span></span><span></span>
+            <b>＋</b>
+          </div>
+          <p>You can only choose 3 pictures</p>
+          <div class="feedback-input">Enter your information</div>
+          <label class="feedback-log"><i></i>Upload error log</label>
+          <p class="feedback-tip">The log only contains system fault content and necessary system information</p>
+          
+          <button>Send</button>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>About Recharge 填写页</b><span>充值问题使用同一页面，但底部展示付款截图提示。</span></div>
+        <div class="phone-wire feedback-form-wire">
+          <div class="simple-appbar">‹ <strong>Feedback</strong></div>
+          <h2>About Recharge</h2>
+          <div class="feedback-textarea">We will reply to your suggestion as soon as possible, thank you very much!<small>0/500</small></div>
+          <div class="feedback-image-row">
+            
+            <b>＋</b>
+          </div>
+          <p>You can only choose 3 pictures</p>
+          <div class="feedback-input">Enter your information</div>
+          <label class="feedback-log"><i></i>Upload error log</label>
+          <p class="feedback-tip">The log only contains system fault content and necessary system information</p>
+          <p class="feedback-warning"><b>Warning</b>Please provide payment screenshot</p>
+          <button>Send</button>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>Report 填写页</b><span>举报类也从分类页进入，主要差异是顶部分类标题和提交内容。</span></div>
+        <div class="phone-wire feedback-form-wire">
+          <div class="simple-appbar">‹ <strong>Feedback</strong></div>
+          <h2>Report</h2>
+          <div class="feedback-textarea">We will reply to your suggestion as soon as possible, thank you very much!<small>0/500</small></div>
+          <div class="feedback-image-row">
+            
+            <b>＋</b>
+          </div>
+          <p>You can only choose 3 pictures</p>
+          <div class="feedback-input">Enter your information</div>
+          <label class="feedback-log"><i></i>Upload error log</label>
+          <p class="feedback-tip">The log only contains system fault content and necessary system information</p>
+          
+          <button>Send</button>
+        </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">setting</p>
-        <h1>设置 - Feedback Category Page</h1>
+        <h1>反馈流程 - Feedback Category Page</h1>
         <p>docs&#47;ui-structure&#47;setting&#47;feedback-category-page.md</p>
       </header>
-      
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>分类入口：</p>
+<p>Suggestion</p>
+<p>About Recharge</p>
+<p>Report</p>
+<p>Others</p>
+<p>反馈填写页：</p>
+<p>分类标题</p>
+<p>建议&#47;反馈内容输入框</p>
+<p>图片选择区，最多 3 张</p>
+<p>联系方式输入框</p>
+<p>Upload error log 开关</p>
+<p>充值问题额外展示付款截图提示</p>
+<p>Send 按钮</p></div>
+      </section>
             <section class="section">
         <h2>页面文案与来源</h2>
         <table>
@@ -65,6 +140,41 @@
               <td><code>k_feedback</code></td>
               <td>No</td>
               <td><code>lib&#47;ui&#47;setting&#47;page&#47;feedback_category_page.dart:53</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>You can only choose 3 pictures</td>
+              <td><code>k_up_to_3_pictures_can_be_selected</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;page&#47;feedback_page.dart:319</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>Enter your information</td>
+              <td><code>k_please_enter_your_information</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;page&#47;feedback_page.dart:165</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Upload error log</td>
+              <td><code>k_upload_error_log</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;page&#47;feedback_page.dart:207</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Warning</td>
+              <td><code>k_warning</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;page&#47;feedback_page.dart:235</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Send</td>
+              <td><code>k_send</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;setting&#47;page&#47;feedback_page.dart:274</code></td>
             </tr></tbody>
         </table>
       </section>
@@ -78,17 +188,20 @@
             <section class="section">
         <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
         <div class="dialog-wire">
-          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+          <div class="dialog-line"><strong>Succeeded</strong><code>k_succeeded</code><small>lib&#47;ui&#47;setting&#47;page&#47;feedback_page.dart:96</small></div>
         </div>
       </section>
             <section class="section">
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
 <li><code>lib&#47;ui&#47;setting&#47;page&#47;feedback_category_page.dart</code></li>
+<li><code>lib&#47;ui&#47;setting&#47;page&#47;feedback_page.dart</code></li>
 <li><code>lib&#47;ui&#47;setting&#47;widget&#47;feedback_category_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;setting&#47;widget&#47;feedback_image_add_cell.dart</code></li>
+<li><code>lib&#47;ui&#47;setting&#47;widget&#47;feedback_image_cell.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

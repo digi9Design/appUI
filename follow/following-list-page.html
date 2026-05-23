@@ -3,26 +3,150 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>关注 - Following List Page i18n Prototype</title>
+  <title>个人关系列表 - Following List Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#follow/following-list-page.html" data-back-link>← 返回目录</a><span>/</span><span>follow</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#follow/following-list-page.html" data-back-link>← 返回目录</a><span>/</span><span>follow</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">关注 - Following List Page</div>
-      <div class="top-bar">关注 - Following List Page</div>
-      <div class="wire-content"><div class="wire-block">Following</div>
-<div class="wire-block">Cancel</div>
-<div class="wire-block">Confirm</div>
-<div class="wire-block">Follow</div></div>
+          <div class="say-hi-board-wire follow-board-wire">
+      <div class="frame-label">个人关系列表 - Following List Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>Following 列表</b><span>从 MePage 的 Following 统计进入，展示自己关注的人；右侧关系按钮可取消关注或重新关注。</span></div>
+        <div class="phone-wire follow-wire">              <div class="simple-appbar follow-appbar">
+        <span>‹</span><strong>Following</strong><em></em>
+      </div>
+        <div class="follow-limit-tip">Following list is up to 5000 people!!</div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Ava</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        
+        <button class="follow-relation-btn active">Friends</button>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Noah</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        
+        <button class="follow-relation-btn active">Unfollow</button>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Mia</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        
+        <button class="follow-relation-btn ">Follow</button>
+      </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>Followers 列表</b><span>从 MePage 的 Followers 统计进入；右上角黑名单按钮进入 Banned list，列表里会显示 NEW 标记。</span></div>
+        <div class="phone-wire follow-wire">              <div class="simple-appbar follow-appbar">
+        <span>‹</span><strong>Followers</strong><em>ban</em>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Leo</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        <i>NEW</i>
+        <button class="follow-relation-btn ">Follow</button>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Zoe</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        
+        <button class="follow-relation-btn active">Friends</button>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Liam</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        
+        <button class="follow-relation-btn active">Unfollow</button>
+      </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>Visitors 列表 · VIP 可见</b><span>从 MePage 的 Visitors 统计进入；VIP2 及以上可以点击访客进入资料页，并显示访问次数和最近访问时间。</span></div>
+        <div class="phone-wire follow-wire">              <div class="simple-appbar follow-appbar">
+        <span>‹</span><strong>Visitors</strong><em></em>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Visitor A</b><small>Recent Visits: 2026.05.23 18:20</small></div>
+        
+        <strong>3<small>Views</small></strong>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Visitor B</b><small>Recent Visits: 2026.05.23 18:20</small></div>
+        
+        <strong>3<small>Views</small></strong>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Visitor C</b><small>Recent Visits: 2026.05.23 18:20</small></div>
+        
+        <strong>3<small>Views</small></strong>
+      </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>Visitors 列表 · 未解锁</b><span>非 VIP2 用户看到访客信息会模糊，点击后弹出加入 VIP 的确认弹窗。</span></div>
+        <div class="phone-wire follow-wire">              <div class="simple-appbar follow-appbar">
+        <span>‹</span><strong>Visitors</strong><em></em>
+      </div>
+              <div class="follow-user-row blurred">
+        <span></span>
+        <div><b>Hidden visitor</b><small>Recent Visits: 2026.05.23 18:20</small></div>
+        
+        <strong>3<small>Views</small></strong>
+      </div>
+              <div class="follow-user-row blurred">
+        <span></span>
+        <div><b>Hidden visitor</b><small>Recent Visits: 2026.05.23 18:20</small></div>
+        
+        <strong>3<small>Views</small></strong>
+      </div>
+        <div class="follow-confirm-dialog"><p>VIP2 and above can be viewed</p><div><button>No, thanks.</button><button>Join</button></div></div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>Banned list 黑名单</b><span>从 Followers 页右上角进入，展示被拉黑用户；右侧删除按钮用于移出黑名单。</span></div>
+        <div class="phone-wire follow-wire">              <div class="simple-appbar follow-appbar">
+        <span>‹</span><strong>Banned list</strong><em></em>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Blocked A</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        
+        <button class="delete">×</button>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Blocked B</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        
+        <button class="delete">×</button>
+      </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>取消关注确认弹窗</b><span>Following &#47; Followers 中点击已关注关系按钮，会先弹出 Are you sure to unfollow? 二次确认。</span></div>
+        <div class="phone-wire follow-wire">              <div class="simple-appbar follow-appbar">
+        <span>‹</span><strong>Following</strong><em></em>
+      </div>
+              <div class="follow-user-row ">
+        <span></span>
+        <div><b>Noah</b><small>Rich Lv.8 · Pop Lv.6</small></div>
+        
+        <button class="follow-relation-btn active">Unfollow</button>
+      </div>
+        <div class="follow-confirm-dialog"><p>Are you sure to unfollow?</p><div><button>Cancel</button><button>Confirm</button></div></div>
+      </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">follow</p>
-        <h1>关注 - Following List Page</h1>
+        <h1>个人关系列表 - Following List Page</h1>
         <p>docs&#47;ui-structure&#47;follow&#47;following-list-page.md</p>
       </header>
       
@@ -32,24 +156,73 @@
           <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
           <tbody>            <tr>
               <td>Title</td>
-              <td>Following</td>
-              <td><code>k_following</code></td>
+              <td>Banned list</td>
+              <td><code>k_banned_list</code></td>
               <td>No</td>
-              <td><code>lib&#47;ui&#47;follow&#47;page&#47;following_list_page.dart:37</code></td>
+              <td><code>lib&#47;ui&#47;follow&#47;page&#47;ban_user_list_page.dart:34</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Followers</td>
+              <td><code>k_followers</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;follow&#47;page&#47;follower_list_page.dart:37</code></td>
             </tr>
             <tr>
               <td>Text</td>
               <td>Cancel</td>
               <td><code>k_cancel</code></td>
               <td>No</td>
-              <td><code>lib&#47;ui&#47;follow&#47;page&#47;following_list_page.dart:182</code></td>
+              <td><code>lib&#47;ui&#47;follow&#47;page&#47;follower_list_page.dart:213</code></td>
             </tr>
             <tr>
               <td>UI text</td>
               <td>Confirm</td>
               <td><code>k_confirm</code></td>
               <td>No</td>
-              <td><code>lib&#47;ui&#47;follow&#47;page&#47;following_list_page.dart:188</code></td>
+              <td><code>lib&#47;ui&#47;follow&#47;page&#47;follower_list_page.dart:219</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Following</td>
+              <td><code>k_following</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;follow&#47;page&#47;following_list_page.dart:37</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Visitors</td>
+              <td><code>k_visitors</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;follow&#47;page&#47;visitor_list_page.dart:39</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>No, thanks.</td>
+              <td><code>k_no_thanks</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;follow&#47;page&#47;visitor_list_page.dart:109</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Join</td>
+              <td><code>k_join</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;follow&#47;page&#47;visitor_list_page.dart:115</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Views</td>
+              <td><code>k_views</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;follow&#47;page&#47;visitor_list_page.dart:158</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Recent Visits: {s1}</td>
+              <td><code>k_recent_visits_xxx</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;follow&#47;page&#47;visitor_list_page.dart:221</code></td>
             </tr>
             <tr>
               <td>Text</td>
@@ -70,19 +243,23 @@
             <section class="section">
         <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
         <div class="dialog-wire">
-          <div class="dialog-line"><strong>Are you sure to unfollow?</strong><code>k_are_you_sure_to_unfollow</code><small>lib&#47;ui&#47;follow&#47;page&#47;following_list_page.dart:179</small></div>
+          <div class="dialog-line"><strong>Are you sure to unfollow?</strong><code>k_are_you_sure_to_unfollow</code><small>lib&#47;ui&#47;follow&#47;page&#47;follower_list_page.dart:210</small></div>
+<div class="dialog-line"><strong>VIP2 and above can be viewed</strong><code>k_only_vip_2_or_above_users_can_check</code><small>lib&#47;ui&#47;follow&#47;page&#47;visitor_list_page.dart:105</small></div>
         </div>
       </section>
             <section class="section">
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;follow&#47;page&#47;ban_user_list_page.dart</code></li>
+<li><code>lib&#47;ui&#47;follow&#47;page&#47;follower_list_page.dart</code></li>
 <li><code>lib&#47;ui&#47;follow&#47;page&#47;following_list_page.dart</code></li>
+<li><code>lib&#47;ui&#47;follow&#47;page&#47;visitor_list_page.dart</code></li>
 <li><code>lib&#47;ui&#47;follow&#47;widget&#47;follow_state_button.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li>
 <li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
 <li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

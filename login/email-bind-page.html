@@ -3,35 +3,102 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>绑定邮箱 - Email Bind Page i18n Prototype</title>
+  <title>邮箱绑定与换绑流程 - Email Bind Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#login/email-bind-page.html" data-back-link>← 返回目录</a><span>/</span><span>login</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#login/email-bind-page.html" data-back-link>← 返回目录</a><span>/</span><span>login</span></nav>
-          <div class="phone-wire form-wire">
-      <div class="frame-label">绑定邮箱 - Email Bind Page</div>
-      <div class="top-bar">Send</div>
-      <div class="form-stack">
-        <div class="wire-button">Password</div>
-<div class="field-wire">Please enter password</div>
-<div class="wire-button">Confirm password</div>
-<div class="wire-button">Confirm new password</div>
-<div class="wire-button">Confirm</div>
-<div class="wire-button">Safety Certificate</div>
-<div class="field-wire">Enter verification code</div>
-<div class="wire-button">Change email</div>
+          <div class="say-hi-board-wire setting-flow-board-wire setting-bind-board-wire">
+      <div class="frame-label">邮箱绑定与换绑流程 - Email Bind Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>首次绑定邮箱</b><span>Setting Page 检测当前账号未绑定时直接进入绑定页，需要账号、验证码、密码和确认密码。</span></div>
+        <div class="phone-wire setting-bind-wire">
+          <div class="simple-appbar">‹ <strong>Bind Email</strong></div>
+          <div class="setting-bind-form">
+                  <label class="setting-bind-field">
+        <span>Bind Email account</span>
+        <i>Enter email</i>
+      </label>
+                  <label class="setting-bind-field">
+        <span>Email Code</span>
+        <i>Enter verification code<em>Send</em></i>
+      </label>
+                  <label class="setting-bind-field">
+        <span>Password</span>
+        <i>Please enter password</i>
+      </label>
+                  <label class="setting-bind-field">
+        <span>Confirm password</span>
+        <i>Confirm new password</i>
+      </label>
+          </div>
+          <button>Confirm</button>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>邮箱换绑安全验证</b><span>已绑定账号再次更换时，先验证当前 email，验证成功后进入新账号绑定页。</span></div>
+        <div class="phone-wire setting-bind-wire rebind-verify-wire">
+          <div class="simple-appbar">‹ <strong>Change email</strong></div>
+          <section>
+            <h3>Safety Certificate</h3>
+            <p>To ensure the security of your account, Please verify your identity first</p>
+            <small>user@example.com</small>
+                  <label class="setting-bind-field">
+        <span>Email Code</span>
+        <i>Enter verification code<em>Send</em></i>
+      </label>
+          </section>
+          <button>Confirm</button>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>换绑新邮箱</b><span>安全验证通过后进入新账号绑定页，此时是 rebind 模式，不再展示确认密码字段。</span></div>
+        <div class="phone-wire setting-bind-wire">
+          <div class="simple-appbar">‹ <strong>Change email</strong></div>
+          <div class="setting-bind-form">
+                  <label class="setting-bind-field">
+        <span>Bind Email account</span>
+        <i>Please enter a new email</i>
+      </label>
+                  <label class="setting-bind-field">
+        <span>New email verification code</span>
+        <i>Enter verification code<em>Send</em></i>
+      </label>
+                  <label class="setting-bind-field">
+        <span>Password</span>
+        <i>Please enter password</i>
+      </label>
+            
+          </div>
+          <button>Confirm</button>
+        </div>
       </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">login</p>
-        <h1>绑定邮箱 - Email Bind Page</h1>
+        <h1>邮箱绑定与换绑流程 - Email Bind Page</h1>
         <p>docs&#47;ui-structure&#47;login&#47;email-bind-page.md</p>
       </header>
-      
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>首次绑定邮箱：</p>
+<p>Bind Email account</p>
+<p>Email Code</p>
+<p>Password</p>
+<p>Confirm password</p>
+<p>邮箱换绑安全验证：</p>
+<p>Safety Certificate</p>
+<p>当前邮箱</p>
+<p>Verification code</p>
+<p>换绑新邮箱：</p>
+<p>Bind Email account</p>
+<p>New email verification code</p>
+<p>Password</p></div>
+      </section>
             <section class="section">
         <h2>页面文案与来源</h2>
         <table>
@@ -162,13 +229,14 @@
 <li><code>lib&#47;theme&#47;appbar&#47;app_bar_title.dart</code></li>
 <li><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;bind_ui.dart</code></li>
 <li><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;email&#47;email_bind_page.dart</code></li>
+<li><code>lib&#47;ui&#47;login&#47;bind&#47;ui&#47;email&#47;email_rebind_page.dart</code></li>
 <li><code>lib&#47;ui&#47;login&#47;widget&#47;login_background_view.dart</code></li>
 <li><code>lib&#47;ui&#47;login&#47;widget&#47;login_buttons.dart</code></li>
 <li><code>lib&#47;ui&#47;login&#47;widget&#47;login_header_label.dart</code></li>
 <li><code>lib&#47;ui&#47;login&#47;widget&#47;login_inputs.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

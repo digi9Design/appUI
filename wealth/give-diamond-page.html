@@ -8,23 +8,125 @@
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#wealth/give-diamond-page.html" data-back-link>← 返回目录</a><span>/</span><span>wealth</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#wealth/give-diamond-page.html" data-back-link>← 返回目录</a><span>/</span><span>wealth</span></nav>
-          <div class="phone-wire">
+          <div class="say-hi-board-wire">
       <div class="frame-label">送钻石 - Give Diamond Page</div>
-      <div class="top-bar">送钻石 - Give Diamond Page</div>
-      <div class="wire-content"><div class="wire-block">Transfer Amount</div>
-<div class="wire-block">User Name</div>
-<div class="wire-block">UID of the recipient</div>
-<div class="wire-block">Balance</div>
-<div class="wire-block">The number of Golds send</div>
-<div class="wire-block">Please check</div>
-<div class="wire-block">Receiver&#39;s Info</div>
-<div class="wire-block">Cancel</div>
-<div class="wire-block">Confirm</div></div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>转赠表单空态</b><span>从钻石充值页进入，填写收款 UID 和转赠钻石数量；未填完整时确认按钮不可用。</span></div>
+        <div class="phone-wire give-diamond-wire">
+          <div class="simple-appbar">‹ <strong>Transfer Amount</strong><em>◎</em></div>
+                <div class="give-diamond-form">
+        <div class="give-user-row"><span>User Name</span><b>--</b></div>
+        <div class="give-input">UID of the recipient</div>
+        <div class="give-balance">Balance <b>◆ 8,888</b></div>
+        <div class="give-input diamond">The number of Golds send</div>
+        <div class="give-submit disabled">Confirm</div>
+      </div>
+          
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>转赠表单已填写</b><span>UID 失焦后会查询用户信息，展示 User Name 和当前钻石余额。</span></div>
+        <div class="phone-wire give-diamond-wire">
+          <div class="simple-appbar">‹ <strong>Transfer Amount</strong><em>◎</em></div>
+                <div class="give-diamond-form">
+        <div class="give-user-row"><span>User Name</span><b>User A</b></div>
+        <div class="give-input">100001</div>
+        <div class="give-balance">Balance <b>◆ 8,888</b></div>
+        <div class="give-input diamond">300</div>
+        <div class="give-submit ">Confirm</div>
+      </div>
+          
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>转赠确认弹窗</b><span>点击确认后弹出收款人和转赠金额校验弹窗。</span></div>
+        <div class="phone-wire give-diamond-wire">
+          <div class="simple-appbar">‹ <strong>Transfer Amount</strong><em>◎</em></div>
+                <div class="give-diamond-form">
+        <div class="give-user-row"><span>User Name</span><b>User A</b></div>
+        <div class="give-input">100001</div>
+        <div class="give-balance">Balance <b>◆ 8,888</b></div>
+        <div class="give-input diamond">300</div>
+        <div class="give-submit ">Confirm</div>
+      </div>
+                <div class="give-confirm-dialog">
+        <strong>Please check</strong>
+        <label>Receiver&#39;s Info</label>
+        <div class="give-receiver"><span></span><b>User A</b><small>ID: 100001</small></div>
+        <label>Transfer Amount</label>
+        <div class="give-amount">◆ 300</div>
+        <footer><span>Cancel</span><b>Confirm</b></footer>
+      </div>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>转赠成功反馈</b><span>确认转赠成功后刷新钱包余额，并展示「Succeeded」临时提示。</span></div>
+        <div class="phone-wire give-diamond-wire">
+          <div class="simple-appbar">‹ <strong>Transfer Amount</strong><em>◎</em></div>
+                <div class="give-diamond-form">
+        <div class="give-user-row"><span>User Name</span><b>User A</b></div>
+        <div class="give-input">100001</div>
+        <div class="give-balance">Balance <b>◆ 8,888</b></div>
+        <div class="give-input diamond">300</div>
+        <div class="give-submit ">Confirm</div>
+      </div>
+          
+          <div class="say-hi-toast">Succeeded</div>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>转赠记录列表</b><span>右上角记录按钮进入 History，支持日期范围和收款 UID 筛选。</span></div>
+        <div class="phone-wire give-history-wire">
+          <div class="simple-appbar">‹ <strong>History</strong></div>
+          <div class="give-filter-row"><span>Select date</span><b>UID of the recipient</b></div>
+                <div class="give-record-list">
+        <h4>2026-05-22</h4>
+        <div><span>◆ -300</span><b>User A</b><small>ID: 100001</small></div>
+        <div><span>◆ -120</span><b>User B</b><small>ID: 100002</small></div>
+        <h4>2026-05-21</h4>
+        <div><span>◆ -80</span><b>User C</b><small>ID: 100003</small></div>
+      </div>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>记录回撤状态</b><span>部分代充&#47;转赠记录会显示 Deduction、Pending、Canceled 等回撤状态。</span></div>
+        <div class="phone-wire give-history-wire">
+          <div class="simple-appbar">‹ <strong>History</strong></div>
+          <div class="give-filter-row"><span>Select date</span><b>UID of the recipient</b></div>
+                <div class="give-record-list">
+        <h4>2026-05-22</h4>
+        <div><span>◆ -300</span><b>User A</b><small>ID: 100001</small><em>Deduction</em></div>
+        <div><span>◆ -120</span><b>User B</b><small>ID: 100002</small></div>
+        <h4>2026-05-21</h4>
+        <div><span>◆ -80</span><b>User C</b><small>ID: 100003</small></div>
+      </div>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>回撤确认弹窗</b><span>点击 Deduction 后弹出是否取消该交易的确认弹窗。</span></div>
+        <div class="phone-wire give-history-wire">
+          <div class="simple-appbar">‹ <strong>History</strong></div>
+          <div class="give-filter-row"><span>Select date</span><b>UID of the recipient</b></div>
+                <div class="give-record-list">
+        <h4>2026-05-22</h4>
+        <div><span>◆ -300</span><b>User A</b><small>ID: 100001</small><em>Deduction</em></div>
+        <div><span>◆ -120</span><b>User B</b><small>ID: 100002</small></div>
+        <h4>2026-05-21</h4>
+        <div><span>◆ -80</span><b>User C</b><small>ID: 100003</small></div>
+      </div>
+          <div class="score-confirm-dialog"><strong>Are you sure to cancel this transaction?</strong><footer><span>No</span><b>Yes</b></footer></div>
+        </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">wealth</p>
         <h1>送钻石 - Give Diamond Page</h1>
@@ -36,6 +138,83 @@
         <table>
           <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
           <tbody>            <tr>
+              <td>Text</td>
+              <td>Start and end time</td>
+              <td><code>k_start_and_end_time</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:60</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>start date</td>
+              <td><code>k_start_date</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:73</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>end date</td>
+              <td><code>k_end_date</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:142</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Cancel</td>
+              <td><code>k_cancel</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:228</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Confirm</td>
+              <td><code>k_confirm</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:245</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>History</td>
+              <td><code>k_history</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart:54</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Select date</td>
+              <td><code>k_select_date</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart:113</code></td>
+            </tr>
+            <tr>
+              <td>Input hint</td>
+              <td>UID of the recipient</td>
+              <td><code>k_uid_of_the_recipient</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart:165</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Deduction</td>
+              <td><code>k_deduction</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart:278</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Pending</td>
+              <td><code>k_pending</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart:297</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Canceled</td>
+              <td><code>k_canceled</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart:298</code></td>
+            </tr>
+            <tr>
               <td>Title</td>
               <td>Transfer Amount</td>
               <td><code>k_transfer_amount</code></td>
@@ -48,13 +227,6 @@
               <td><code>k_user_name</code></td>
               <td>No</td>
               <td><code>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_page.dart:78</code></td>
-            </tr>
-            <tr>
-              <td>Input hint</td>
-              <td>UID of the recipient</td>
-              <td><code>k_uid_of_the_recipient</code></td>
-              <td>No</td>
-              <td><code>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_page.dart:127</code></td>
             </tr>
             <tr>
               <td>Text</td>
@@ -83,20 +255,6 @@
               <td><code>k_receivers_info</code></td>
               <td>No</td>
               <td><code>lib&#47;ui&#47;wealth&#47;widget&#47;give_diamond_confirm_dialog.dart:50</code></td>
-            </tr>
-            <tr>
-              <td>Text</td>
-              <td>Cancel</td>
-              <td><code>k_cancel</code></td>
-              <td>No</td>
-              <td><code>lib&#47;ui&#47;wealth&#47;widget&#47;give_diamond_confirm_dialog.dart:155</code></td>
-            </tr>
-            <tr>
-              <td>Text</td>
-              <td>Confirm</td>
-              <td><code>k_confirm</code></td>
-              <td>No</td>
-              <td><code>lib&#47;ui&#47;wealth&#47;widget&#47;give_diamond_confirm_dialog.dart:187</code></td>
             </tr></tbody>
         </table>
       </section>
@@ -110,12 +268,20 @@
             <section class="section">
         <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
         <div class="dialog-wire">
-          <div class="dialog-line"><strong>Succeeded</strong><code>k_succeeded</code><small>lib&#47;ui&#47;wealth&#47;widget&#47;give_diamond_confirm_dialog.dart:178</small></div>
+          <div class="dialog-line"><strong>Not later than today</strong><code>k_not_later_than_today</code><small>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:99</small></div>
+<div class="dialog-line"><strong>Failure</strong><code>k_failure</code><small>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart:103</small></div>
+<div class="dialog-line"><strong>Are you sure to cancel this transaction?</strong><code>k_are_you_sure_to_cancel_this_transaction</code><small>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart:241</small></div>
+<div class="dialog-line"><strong>Yes</strong><code>k_yes</code><small>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart:242</small></div>
+<div class="dialog-line"><strong>No</strong><code>k_no</code><small>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart:243</small></div>
+<div class="dialog-line"><strong>Succeeded</strong><code>k_succeeded</code><small>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart:258</small></div>
         </div>
       </section>
             <section class="section">
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog.dart</code></li>
+<li><code>lib&#47;ui&#47;common&#47;common_ui&#47;date_start_end_picker_dialog_controller.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_history_page.dart</code></li>
 <li><code>lib&#47;ui&#47;wealth&#47;page&#47;give_diamond_page.dart</code></li>
 <li><code>lib&#47;ui&#47;wealth&#47;widget&#47;give_diamond_confirm_dialog.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li>
@@ -123,7 +289,7 @@
 <li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
 <li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

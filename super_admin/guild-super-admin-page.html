@@ -3,26 +3,118 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>超管 - Guild Super Admin Page i18n Prototype</title>
+  <title>超管后台 - Guild Super Admin Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#super_admin/guild-super-admin-page.html" data-back-link>← 返回目录</a><span>/</span><span>super_admin</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#super_admin/guild-super-admin-page.html" data-back-link>← 返回目录</a><span>/</span><span>super_admin</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">超管 - Guild Super Admin Page</div>
-      <div class="top-bar">超管 - Guild Super Admin Page</div>
-      <div class="wire-content"><div class="wire-block">Income</div>
-<div class="wire-block">Your Manage Families</div>
-<div class="wire-block">Family Details</div>
-<div class="wire-block">Management</div></div>
+          <div class="say-hi-board-wire super-admin-board-wire">
+      <div class="frame-label">超管后台 - Guild Super Admin Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>管理家族概览 Tab</b><span>GuildSuperAdminPage 的第一个 Tab，入口标题是 Income，用于查看超管管理家族的收益概览。</span></div>
+        <div class="phone-wire super-admin-wire">              <div class="simple-appbar super-appbar">‹ <strong>Income</strong></div>
+            <div class="super-tabs">
+        <b>Your Manage Families</b><span>Family Details</span><span>Management</span>
+      </div>
+        <div class="super-metric-grid">
+          <div class="super-metric"><small>Today</small><b>12,345</b><em>♦</em></div>
+          <div class="super-metric"><small>Yesterday</small><b>8,888</b><em>♦</em></div>
+          <div class="super-metric"><small>This Month</small><b>230,000</b><em>♦</em></div>
+          <div class="super-metric"><small>Last Month</small><b>198,000</b><em>♦</em></div>
+        </div>
+        <div class="super-salary-card"><span>Admin Salary · This Month</span><b>32,000</b></div>
+        <div class="super-salary-card muted"><span>Admin Salary · Last Month</span><b>28,000</b></div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>家族详情列表 Tab</b><span>第二个 Tab Family Details，展示每个家族及当月流水，属于超管首页内嵌列表，不再单独作为目录入口。</span></div>
+        <div class="phone-wire super-admin-wire">              <div class="simple-appbar super-appbar">‹ <strong>Income</strong></div>
+            <div class="super-tabs">
+        <span>Your Manage Families</span><b>Family Details</b><span>Management</span>
+      </div>
+        <div class="super-list-title">Family · This Month</div>
+        <div class="super-family-row"><i></i><div><b>Family 1</b><small>ID: 8802026</small></div><strong>♦ 2468</strong></div><div class="super-family-row"><i></i><div><b>Family 2</b><small>ID: 8812026</small></div><strong>♦ 3702</strong></div><div class="super-family-row"><i></i><div><b>Family 3</b><small>ID: 8822026</small></div><strong>♦ 4936</strong></div><div class="super-family-row"><i></i><div><b>Family 4</b><small>ID: 8832026</small></div><strong>♦ 6170</strong></div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>管理菜单 Tab</b><span>第三个 Tab Management，是实际管理操作入口；家族注册、封禁账号、家族薪资信息从这里进入。</span></div>
+        <div class="phone-wire super-admin-wire">              <div class="simple-appbar super-appbar">‹ <strong>Income</strong></div>
+            <div class="super-tabs">
+        <span>Your Manage Families</span><span>Family Details</span><b>Management</b>
+      </div>
+        <div class="super-menu-grid">
+          <button>Family Registration</button>
+          <button>Banning Accounts</button>
+          <button>Family Salary Info</button>
+        </div>
+        <div class="super-web-entry">Family Salary Info<small>/guild/salary-list</small></div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>家族注册申请页</b><span>从 Management 的 Family Registration 进入，属于超管管理流程子页面，目录中合并到超管后台。</span></div>
+        <div class="phone-wire super-admin-wire">              <div class="simple-appbar super-appbar">‹ <strong>Family Registration</strong></div>
+      
+        <div class="super-form">
+                <label class="super-field ">
+        <span>Famliy Leader id</span>
+        <i>Famliy Leader id</i>
+      </label>
+                <label class="super-field ">
+        <span>Family Name</span>
+        <i>Family Name</i>
+      </label>
+                <label class="super-field ">
+        <span>Whatsapp&#47;Facebook</span>
+        <i>Whatsapp&#47;Facebook</i>
+      </label>
+                <label class="super-field ">
+        <span>Members Amount</span>
+        <i>Members Amount</i>
+      </label>
+                <label class="super-field ">
+        <span>BD ID (optional)</span>
+        <i>BD ID (optional)</i>
+      </label>
+          <p>1. Please contact your super admin to create a group chat...</p>
+          <button>Ok</button>
+        </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>封禁账号申请页</b><span>从 Management 的 Banning Accounts 进入，填写用户 ID 和封禁原因后提交。</span></div>
+        <div class="phone-wire super-admin-wire">              <div class="simple-appbar super-appbar">‹ <strong>Banning Accounts</strong></div>
+      
+        <div class="super-form ban-form">
+                <label class="super-field ">
+        <span>Ban a user ID</span>
+        <i>Ban a user ID</i>
+      </label>
+                <label class="super-field tall">
+        <span>Reason to ban</span>
+        <i>Reason to ban</i>
+      </label>
+          <button>Ok</button>
+        </div>
+      </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>BD 管理遗留路由</b><span>BdManagementPage 路由仍保留，但超管菜单里的 BD Management 按钮已注释；这里仅并入文案审计，不在目录单独列入口。</span></div>
+        <div class="phone-wire super-admin-wire">              <div class="simple-appbar super-appbar">‹ <strong>My BD</strong></div>
+      
+        <div class="super-bd-tabs"><b>My BD</b><span>BD Application</span></div>
+        <div class="super-family-row"><i></i><div><b>BD User</b><small>ID: 920026</small></div><strong>Invited Valid Families 12</strong></div>
+        <div class="super-apply-card"><i></i><div><b>Applicant</b><small>UID: 610026 · WhatsApp</small><em>Reason text</em></div><span>✓</span><span>×</span></div>
+        <div class="super-legacy-note">入口当前在 GuildSaBdManagementPage 中被注释，设计侧无需单独出主入口。</div>
+      </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">super_admin</p>
-        <h1>超管 - Guild Super Admin Page</h1>
+        <h1>超管后台 - Guild Super Admin Page</h1>
         <p>docs&#47;ui-structure&#47;super_admin&#47;guild-super-admin-page.md</p>
       </header>
       
@@ -31,6 +123,125 @@
         <table>
           <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
           <tbody>            <tr>
+              <td>Title</td>
+              <td>My BD</td>
+              <td><code>k_my_bd</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;bd_management_page.dart:44</code></td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>BD Application</td>
+              <td><code>k_bd_application_1</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;bd_management_page.dart:52</code></td>
+            </tr>
+            <tr>
+              <td>Title</td>
+              <td>Family Registration</td>
+              <td><code>k_family_registration</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;family_registration_page.dart:31</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Famliy Leader id</td>
+              <td><code>k_family_leader_id</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;family_registration_page.dart:47</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Family Name</td>
+              <td><code>k_family_name</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;family_registration_page.dart:83</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Whatsapp&#47;Facebook</td>
+              <td><code>k_whatsapp_number_facebook_name_1</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;family_registration_page.dart:115</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Members Amount</td>
+              <td><code>k_members_amount</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;family_registration_page.dart:149</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>BD ID (optional)</td>
+              <td><code>k_bd_id_optional</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;family_registration_page.dart:185</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Please enter BD UID</td>
+              <td><code>k_please_enter_bd_uid</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;family_registration_page.dart:212</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Banning Accounts</td>
+              <td><code>k_banning_accounts</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_sa_bd_management_page.dart:32</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Family Salary Info</td>
+              <td><code>k_family_salary_info</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_sa_bd_management_page.dart:36</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Today</td>
+              <td><code>k_today_3</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_super_admin_detail_page.dart:52</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Yesterday</td>
+              <td><code>k_yesterday_3</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_super_admin_detail_page.dart:60</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>This Month</td>
+              <td><code>k_this_month</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_super_admin_detail_page.dart:72</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Last Month</td>
+              <td><code>k_last_month</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_super_admin_detail_page.dart:80</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Admin Salary</td>
+              <td><code>k_admin_salary</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_super_admin_detail_page.dart:90</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Family</td>
+              <td><code>k_family</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_super_admin_guilds_page.dart:44</code></td>
+            </tr>
+            <tr>
               <td>Title</td>
               <td>Income</td>
               <td><code>k_income</code></td>
@@ -57,6 +268,27 @@
               <td><code>k_management</code></td>
               <td>No</td>
               <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_super_admin_page.dart:74</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Ban a user ID</td>
+              <td><code>k_ban_a_user_id</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;sa_ban_user_page.dart:43</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Reason to ban</td>
+              <td><code>k_reason_to_ban</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;sa_ban_user_page.dart:76</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Invited Valid Families</td>
+              <td><code>k_invited_valid_families</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;super_admin&#47;page&#47;sa_my_bd_list_page.dart:79</code></td>
             </tr></tbody>
         </table>
       </section>
@@ -70,16 +302,28 @@
             <section class="section">
         <h2>弹出层 / 临时反馈（不属于页面常驻区域）</h2>
         <div class="dialog-wire">
-          <div class="empty-wire">No dialog, sheet, toast or snackbar text found.</div>
+          <div class="dialog-line"><strong>Succeeded</strong><code>k_succeeded</code><small>lib&#47;ui&#47;super_admin&#47;page&#47;bd_apply_list_page.dart:64</small></div>
+<div class="dialog-line"><strong>Ok</strong><code>k_ok</code><small>lib&#47;ui&#47;super_admin&#47;page&#47;family_registration_page.dart:318</small></div>
         </div>
       </section>
             <section class="section">
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;super_admin&#47;page&#47;bd_apply_list_page.dart</code></li>
+<li><code>lib&#47;ui&#47;super_admin&#47;page&#47;bd_management_page.dart</code></li>
+<li><code>lib&#47;ui&#47;super_admin&#47;page&#47;family_registration_page.dart</code></li>
+<li><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_sa_bd_management_page.dart</code></li>
+<li><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_super_admin_detail_page.dart</code></li>
+<li><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_super_admin_guilds_page.dart</code></li>
 <li><code>lib&#47;ui&#47;super_admin&#47;page&#47;guild_super_admin_page.dart</code></li>
-<li><code>lib&#47;widget&#47;base_widget.dart</code></li></ul>
+<li><code>lib&#47;ui&#47;super_admin&#47;page&#47;sa_ban_user_page.dart</code></li>
+<li><code>lib&#47;ui&#47;super_admin&#47;page&#47;sa_my_bd_list_page.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

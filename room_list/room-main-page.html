@@ -8,8 +8,8 @@
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#room_list/room-main-page.html" data-back-link>← 返回目录</a><span>/</span><span>room_list</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#room_list/room-main-page.html" data-back-link>← 返回目录</a><span>/</span><span>room_list</span></nav>
           <div class="room-main-board-wire">
       <div class="frame-label">房间列表首页 - Room Main Page</div>
       <div class="room-state-card">
@@ -48,14 +48,36 @@
         </div>
       </div>
       <div class="room-state-card">
-        <h3>Party Event</h3>
+        <h3>Party Event · ActivityPage</h3>
         <div class="phone-wire room-main-wire">
           <div class="room-main-tabs"><span>Mine</span><span>Active</span><b>Party Event</b></div>
           <div class="room-main-actions"><em>◎</em><em>⌕</em></div>
-          <div class="room-event-hero">ActivityPage embedded here</div>
+          <div class="activity-rain-section">
+            <div><b>Golds Rain</b><span>›</span></div>
+            <article><strong>Golds Rain room</strong><small>Ends in 00:18:20</small></article>
+            <article><strong>Golds Rain room</strong><small>Tap to enter room</small></article>
+          </div>
+          <div class="activity-type-tabs"><b>User Event</b><span>Official Event</span></div>
           <div class="room-event-list">
-            <div>Event card</div>
-            <div>Event card</div>
+            <div><b>User Event</b><small>Activity banner 343 × 100</small></div>
+            <div><b>User Event</b><small>ActionEntity tap target</small></div>
+          </div>
+          <div class="activity-float-actions"><span>Apply</span><span>Admin</span></div>
+        </div>
+      </div>
+      <div class="room-state-card">
+        <h3>Party Event · AR variant</h3>
+        <div class="phone-wire room-main-wire">
+          <div class="room-main-tabs"><span>Mine</span><span>Active</span><b>Party Event</b></div>
+          <div class="room-main-actions"><em>◎</em><em>⌕</em></div>
+          <div class="activity-rain-section">
+            <div><b>Golds Rain</b><span>›</span></div>
+            <article><strong>Golds Rain card</strong><small>Only first two are shown above tabs</small></article>
+          </div>
+          <div class="activity-type-tabs"><b>Events</b><span>Features</span></div>
+          <div class="room-event-list">
+            <div><b>Events</b><small>AR title branch</small></div>
+            <div><b>Features</b><small>Official event list item</small></div>
           </div>
         </div>
       </div>
@@ -91,7 +113,7 @@
       </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">room_list</p>
         <h1>房间列表首页 - Room Main Page</h1>
@@ -109,6 +131,41 @@
         <table>
           <thead><tr><th>位置</th><th>英文</th><th>Key</th><th>动态</th><th>Source</th></tr></thead>
           <tbody>            <tr>
+              <td>UI text</td>
+              <td>User Event</td>
+              <td><code>k_user_event</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;activity&#47;page&#47;activity_page.dart:72</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Official Event</td>
+              <td><code>k_official_event</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;activity&#47;page&#47;activity_page.dart:73</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Events</td>
+              <td><code>k_events</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;activity&#47;page&#47;activity_page.dart:75</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Features</td>
+              <td><code>k_features</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;activity&#47;page&#47;activity_page.dart:76</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Golds Rain</td>
+              <td><code>k_dias_rain</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;activity&#47;page&#47;activity_page.dart:131</code></td>
+            </tr>
+            <tr>
               <td>UI text</td>
               <td>Active Friends</td>
               <td><code>k_active_friends</code></td>
@@ -135,6 +192,27 @@
               <td><code>k_party_event</code></td>
               <td>No</td>
               <td><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart:197</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>after {s1}</td>
+              <td><code>k_after_xxx</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;widget&#47;dias_rain_list_cell.dart:48</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>{s1} Sent the Lucky Rain</td>
+              <td><code>k_xxx_sent_the_lucky_rain</code></td>
+              <td>Yes</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;widget&#47;dias_rain_list_cell.dart:113</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Go</td>
+              <td><code>k_go</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;room_list&#47;widget&#47;dias_rain_list_cell.dart:149</code></td>
             </tr></tbody>
         </table>
       </section>
@@ -154,16 +232,21 @@
             <section class="section">
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;activity&#47;page&#47;activity_page.dart</code></li>
+<li><code>lib&#47;ui&#47;activity&#47;page&#47;activity_type_page.dart</code></li>
+<li><code>lib&#47;ui&#47;room_list&#47;controller&#47;dias_rain_list_controller.dart</code></li>
+<li><code>lib&#47;ui&#47;room_list&#47;entity&#47;event_bus_dias_list_update.dart</code></li>
 <li><code>lib&#47;ui&#47;room_list&#47;entity&#47;event_bus_update_friend_in_room.dart</code></li>
 <li><code>lib&#47;ui&#47;room_list&#47;page&#47;friend_in_room_list_page.dart</code></li>
 <li><code>lib&#47;ui&#47;room_list&#47;page&#47;room_main_page.dart</code></li>
+<li><code>lib&#47;ui&#47;room_list&#47;widget&#47;dias_rain_list_cell.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li>
 <li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
 <li><code>lib&#47;widget&#47;keep_alive_wrapper.dart</code></li>
 <li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li>
 <li><code>lib&#47;widget&#47;user&#47;user_id_widget.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

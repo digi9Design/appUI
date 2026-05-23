@@ -3,24 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>用户人气财富聚合 - User Pop Rich Page i18n Prototype</title>
+  <title>财富魅力等级 - User Pop Rich Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#wealth/user-pop-rich-page.html" data-back-link>← 返回目录</a><span>/</span><span>wealth</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#wealth/user-pop-rich-page.html" data-back-link>← 返回目录</a><span>/</span><span>wealth</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">用户人气财富聚合 - User Pop Rich Page</div>
-      <div class="top-bar">用户人气财富聚合 - User Pop Rich Page</div>
-      <div class="wire-content"><div class="wire-block">Charm Level</div>
-<div class="wire-block">Wealth Ranking</div></div>
+          <div class="say-hi-board-wire">
+      <div class="frame-label">财富魅力等级 - User Pop Rich Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>魅力等级 Tab</b><span>默认展示收礼&#47;魅力等级，顶部问号进入魅力规则说明 H5。</span></div>
+        <div class="phone-wire pop-rich-wire charm">
+          <div class="simple-appbar pop-rich-appbar">‹ <em>?</em></div>
+                <div class="pop-rich-tabs">
+        <b>Charm Level</b>
+<span>Wealth Ranking</span>
+      </div>
+                <div class="pop-rich-progress">
+        <strong>Charm Level Lv.8</strong>
+        <div><span></span></div>
+        <small>12,800 / 20,000</small>
+      </div>
+                <div class="pop-rich-list">
+        <div><em>1</em><span></span><b>User A</b><small>88,888</small></div>
+        <div><em>2</em><span></span><b>User B</b><small>66,666</small></div>
+        <div><em>3</em><span></span><b>User C</b><small>52,000</small></div>
+        <div><em>4</em><span></span><b>User D</b><small>30,100</small></div>
+      </div>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>财富等级 Tab</b><span>切换到财富等级后背景和列表含义变化，展示送礼记录与财富进度。</span></div>
+        <div class="phone-wire pop-rich-wire wealth">
+          <div class="simple-appbar pop-rich-appbar">‹ <em>?</em></div>
+                <div class="pop-rich-tabs">
+        <span>Charm Level</span>
+<b>Wealth Ranking</b>
+      </div>
+                <div class="pop-rich-progress">
+        <strong>Wealth Ranking Lv.8</strong>
+        <div><span></span></div>
+        <small>12,800 / 20,000</small>
+      </div>
+                <div class="pop-rich-list">
+        <div><em>1</em><span></span><b>Gift name</b><small>88,888</small></div>
+        <div><em>2</em><span></span><b>Gift name</b><small>66,666</small></div>
+        <div><em>3</em><span></span><b>Gift name</b><small>52,000</small></div>
+        <div><em>4</em><span></span><b>Gift name</b><small>30,100</small></div>
+      </div>
+        </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">wealth</p>
-        <h1>用户人气财富聚合 - User Pop Rich Page</h1>
+        <h1>财富魅力等级 - User Pop Rich Page</h1>
         <p>docs&#47;ui-structure&#47;wealth&#47;user-pop-rich-page.md</p>
       </header>
       
@@ -41,6 +80,13 @@
               <td><code>k_wealth_ranking_1</code></td>
               <td>No</td>
               <td><code>lib&#47;ui&#47;wealth&#47;page&#47;user_pop_rich_page.dart:119</code></td>
+            </tr>
+            <tr>
+              <td>UI text</td>
+              <td>Level up progress</td>
+              <td><code>k_levelup_progress</code></td>
+              <td>No</td>
+              <td><code>lib&#47;ui&#47;wealth&#47;widget&#47;pop_rich_progress_view.dart:72</code></td>
             </tr></tbody>
         </table>
       </section>
@@ -60,10 +106,18 @@
             <section class="section">
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;page&#47;pop_level_detail_page.dart</code></li>
+<li><code>lib&#47;ui&#47;wealth&#47;page&#47;rich_level_detail_page.dart</code></li>
 <li><code>lib&#47;ui&#47;wealth&#47;page&#47;user_pop_rich_page.dart</code></li>
-<li><code>lib&#47;widget&#47;base_widget.dart</code></li></ul>
+<li><code>lib&#47;ui&#47;wealth&#47;widget&#47;pop_rich_progress_view.dart</code></li>
+<li><code>lib&#47;widget&#47;base_widget.dart</code></li>
+<li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;gender_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_pop_level_icon.dart</code></li>
+<li><code>lib&#47;widget&#47;wealth&#47;user_rich_level_icon.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

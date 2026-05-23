@@ -3,34 +3,148 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>排行榜总页 - Ranking Page i18n Prototype</title>
+  <title>排行榜流程 - Ranking Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#ranking/ranking-page.html" data-back-link>← 返回目录</a><span>/</span><span>ranking</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#ranking/ranking-page.html" data-back-link>← 返回目录</a><span>/</span><span>ranking</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">排行榜总页 - Ranking Page</div>
-      <div class="top-bar">排行榜总页 - Ranking Page</div>
-      <div class="wire-content"><div class="wire-block">Owner</div>
-<div class="wire-block">Ranking</div>
-<div class="wire-block">Gift Received</div>
-<div class="wire-block">Gift Sent</div>
-<div class="wire-block">Room</div>
-<div class="wire-block">Family</div></div>
+          <div class="say-hi-board-wire ranking-flow-board-wire">
+      <div class="frame-label">排行榜流程 - Ranking Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>房间列表入口进入 · Room Ranking</b><span>RoomList&#47;Recommend 的排行榜卡片点击后调用 AppNavigator.pageRanking(type)，默认可进入 Room 分类。</span></div>
+        <div class="phone-wire ranking-flow-wire room">
+          <div class="ranking-flow-hero">
+            <div class="simple-appbar">‹ <strong>Ranking</strong></div>
+            <div class="ranking-main-tabs">
+              <span>Gift Received</span><span>Gift Sent</span><b>Room</b><span>Family</span>
+            </div>
+            <div class="ranking-time-tabs">
+              <b>Daily</b><span>Weekly</span><span>Monthly</span>
+            </div>
+            <div class="ranking-podium-flow">
+              <article class="second"><i>2</i><b>User B</b><small>8,520</small></article>
+              <article class="first"><i>1</i><b>User A</b><small>12,800</small></article>
+              <article class="third"><i>3</i><b>User C</b><small>7,100</small></article>
+            </div>
+          </div>
+          <div class="ranking-list-panel">
+            <div class="ranking-row"><em>4</em><span></span><b>Room name</b><small>9600</small></div><div class="ranking-row"><em>5</em><span></span><b>Room name</b><small>8980</small></div><div class="ranking-row"><em>6</em><span></span><b>Room name</b><small>8360</small></div><div class="ranking-row"><em>7</em><span></span><b>Room name</b><small>7740</small></div><div class="ranking-row"><em>8</em><span></span><b>Room name</b><small>7120</small></div>
+          </div>
+          <div class="ranking-me-row"><em>99+</em><span></span><b>My ranking</b><small>1,280</small></div>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>总页分类 Tab · Gift Received</b><span>Ranking Page 顶部主分类 Tab 控制 TabBarView，每个分类内嵌 RankingCategoryPage。</span></div>
+        <div class="phone-wire ranking-flow-wire charm">
+          <div class="ranking-flow-hero">
+            <div class="simple-appbar">‹ <strong>Ranking</strong></div>
+            <div class="ranking-main-tabs">
+              <b>Gift Received</b><span>Gift Sent</span><span>Room</span><span>Family</span>
+            </div>
+            <div class="ranking-time-tabs">
+              <span>Daily</span><b>Weekly</b><span>Monthly</span>
+            </div>
+            <div class="ranking-podium-flow">
+              <article class="second"><i>2</i><b>User B</b><small>8,520</small></article>
+              <article class="first"><i>1</i><b>User A</b><small>12,800</small></article>
+              <article class="third"><i>3</i><b>User C</b><small>7,100</small></article>
+            </div>
+          </div>
+          <div class="ranking-list-panel">
+            <div class="ranking-row"><em>4</em><span></span><b>User name</b><small>9600</small></div><div class="ranking-row"><em>5</em><span></span><b>User name</b><small>8980</small></div><div class="ranking-row"><em>6</em><span></span><b>User name</b><small>8360</small></div><div class="ranking-row"><em>7</em><span></span><b>User name</b><small>7740</small></div><div class="ranking-row"><em>8</em><span></span><b>User name</b><small>7120</small></div>
+          </div>
+          <div class="ranking-me-row"><em>99+</em><span></span><b>My ranking</b><small>1,280</small></div>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>财富榜 · Gift Sent</b><span>同一分类页结构，切换到 Gift Sent 后背景主色、榜单 cell 类型和前三名数据对应财富榜。</span></div>
+        <div class="phone-wire ranking-flow-wire wealth">
+          <div class="ranking-flow-hero">
+            <div class="simple-appbar">‹ <strong>Ranking</strong></div>
+            <div class="ranking-main-tabs">
+              <span>Gift Received</span><b>Gift Sent</b><span>Room</span><span>Family</span>
+            </div>
+            <div class="ranking-time-tabs">
+              <span>Daily</span><span>Weekly</span><b>Monthly</b>
+            </div>
+            <div class="ranking-podium-flow">
+              <article class="second"><i>2</i><b>User B</b><small>8,520</small></article>
+              <article class="first"><i>1</i><b>User A</b><small>12,800</small></article>
+              <article class="third"><i>3</i><b>User C</b><small>7,100</small></article>
+            </div>
+          </div>
+          <div class="ranking-list-panel">
+            <div class="ranking-row"><em>4</em><span></span><b>User name</b><small>9600</small></div><div class="ranking-row"><em>5</em><span></span><b>User name</b><small>8980</small></div><div class="ranking-row"><em>6</em><span></span><b>User name</b><small>8360</small></div><div class="ranking-row"><em>7</em><span></span><b>User name</b><small>7740</small></div><div class="ranking-row"><em>8</em><span></span><b>User name</b><small>7120</small></div>
+          </div>
+          <div class="ranking-me-row"><em>99+</em><span></span><b>My ranking</b><small>1,280</small></div>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>家族榜 · Family</b><span>Family 分类使用 family cell，列表项展示家族头像&#47;名称&#47;数值，底部仍可展示我的排名。</span></div>
+        <div class="phone-wire ranking-flow-wire family">
+          <div class="ranking-flow-hero">
+            <div class="simple-appbar">‹ <strong>Ranking</strong></div>
+            <div class="ranking-main-tabs">
+              <span>Gift Received</span><span>Gift Sent</span><span>Room</span><b>Family</b>
+            </div>
+            <div class="ranking-time-tabs">
+              <b>Daily</b><span>Weekly</span><span>Monthly</span>
+            </div>
+            <div class="ranking-podium-flow">
+              <article class="second"><i>2</i><b>User B</b><small>8,520</small></article>
+              <article class="first"><i>1</i><b>User A</b><small>12,800</small></article>
+              <article class="third"><i>3</i><b>User C</b><small>7,100</small></article>
+            </div>
+          </div>
+          <div class="ranking-list-panel">
+            <div class="ranking-row"><em>4</em><span></span><b>Family name</b><small>9600</small></div><div class="ranking-row"><em>5</em><span></span><b>Family name</b><small>8980</small></div><div class="ranking-row"><em>6</em><span></span><b>Family name</b><small>8360</small></div><div class="ranking-row"><em>7</em><span></span><b>Family name</b><small>7740</small></div><div class="ranking-row"><em>8</em><span></span><b>Family name</b><small>7120</small></div>
+          </div>
+          <div class="ranking-me-row"><em>99+</em><span></span><b>My ranking</b><small>1,280</small></div>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>空列表 &#47; 无我的排名</b><span>接口返回前三名不足或无列表时，上方保留占位，下方白色列表区域为空；没有 currentMyItem 时底部我的排名不显示。</span></div>
+        <div class="phone-wire ranking-flow-wire room">
+          <div class="ranking-flow-hero">
+            <div class="simple-appbar">‹ <strong>Ranking</strong></div>
+            <div class="ranking-main-tabs">
+              <span>Gift Received</span><span>Gift Sent</span><b>Room</b><span>Family</span>
+            </div>
+            <div class="ranking-time-tabs">
+              <b>Daily</b><span>Weekly</span><span>Monthly</span>
+            </div>
+            <div class="ranking-podium-flow">
+              <article class="second"><i>2</i><b>User B</b><small>8,520</small></article>
+              <article class="first"><i>1</i><b>User A</b><small>12,800</small></article>
+              <article class="third"><i>3</i><b>User C</b><small>7,100</small></article>
+            </div>
+          </div>
+          <div class="ranking-list-panel">
+            <div class="ranking-empty">Ranking list empty</div>
+          </div>
+          
+        </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">ranking</p>
-        <h1>排行榜总页 - Ranking Page</h1>
+        <h1>排行榜流程 - Ranking Page</h1>
         <p>docs&#47;ui-structure&#47;ranking&#47;ranking-page.md</p>
       </header>
             <section class="section">
         <h2>结构说明</h2>
-        <div class="notes"><p>`Scaffold` 黑底，`extendBodyBehindAppBar: true`，透明 `AppBar` + 白字标题 `k_ranking`。</p>
-<p>`body`：`SafeArea` + `Stack`：`TabBarView`（各分类一个 `RankingCategoryPage`）+ 底部 `Positioned` 分类 Tab（魅力&#47;财富&#47;房间&#47;家族等，由接口 `categoryList` 决定）。</p></div>
+        <div class="notes"><p>总页：透明 `AppBar` + 标题 `Ranking`，上方主分类 Tab。</p>
+<p>分类页：</p>
+<p>Gift Received &#47; Gift Sent &#47; Room &#47; Family</p>
+<p>Daily &#47; Weekly &#47; Monthly Segment</p>
+<p>前三名领奖台</p>
+<p>普通榜单列表</p>
+<p>底部我的排名 `myCell`</p>
+<p>空状态：榜单不足或无 `currentMyItem` 时保留空白列表区域，不显示我的排名。</p></div>
       </section>
             <section class="section">
         <h2>页面文案与来源</h2>
@@ -77,6 +191,27 @@
               <td><code>k_family</code></td>
               <td>Yes</td>
               <td><code>semantic:ranking-page</code></td>
+            </tr>
+            <tr>
+              <td>Time segment</td>
+              <td>Daily</td>
+              <td><code>k_daily</code></td>
+              <td>Yes</td>
+              <td><code>semantic:ranking-page</code></td>
+            </tr>
+            <tr>
+              <td>Time segment</td>
+              <td>Weekly</td>
+              <td><code>k_weekly</code></td>
+              <td>Yes</td>
+              <td><code>semantic:ranking-page</code></td>
+            </tr>
+            <tr>
+              <td>Time segment</td>
+              <td>Monthly</td>
+              <td><code>k_monthly</code></td>
+              <td>Yes</td>
+              <td><code>semantic:ranking-page</code></td>
             </tr></tbody>
         </table>
       </section>
@@ -117,7 +252,7 @@
 <li><code>lib&#47;widget&#47;wealth&#47;user_pop_level_icon.dart</code></li>
 <li><code>lib&#47;widget&#47;wealth&#47;user_rich_level_icon.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

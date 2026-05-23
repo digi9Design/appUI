@@ -3,41 +3,84 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>设置 - Customer Helper Page i18n Prototype</title>
+  <title>帮助中心 - Customer Helper Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#setting/customer-helper-page.html" data-back-link>← 返回目录</a><span>/</span><span>setting</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#setting/customer-helper-page.html" data-back-link>← 返回目录</a><span>/</span><span>setting</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">设置 - Customer Helper Page</div>
-      <div class="top-bar">设置 - Customer Helper Page</div>
-      <div class="wire-content"><div class="wire-block">Help Center</div>
-<div class="wire-block">I’m looking for a job</div>
-<div class="wire-block">I want to report an issue</div>
-<div class="wire-block">I have a suggestion</div>
-<div class="wire-block">Leave a Message</div>
-<div class="wire-block">I met a problem</div>
-<div class="wire-block">Job Application Submitted!</div>
-<div class="wire-block">View details</div>
-<div class="wire-block">Report</div>
-<div class="wire-block">Ideas &amp; Suggestions</div>
-<div class="wire-block">Message</div>
-<div class="wire-block">Report Details</div>
-<div class="wire-block tall">Please enter the content...</div>
-<div class="wire-block">Contact Information</div>
-<div class="wire-block">Images (Optional)</div>
-<div class="wire-block">Submit</div></div>
+          <div class="say-hi-board-wire setting-flow-board-wire helper-board-wire">
+      <div class="frame-label">帮助中心 - Customer Helper Page</div>
+      <div class="mall-state-wrap">
+        <div class="state-note"><b>帮助中心首页</b><span>Setting Page 的 Contact us 进入 Help Center，顶部是助手卡片和五个问题入口。</span></div>
+        <div class="phone-wire helper-home-wire">
+          <div class="helper-bg"></div>
+          <div class="simple-appbar">‹ <strong>Help Center</strong></div>
+          <section class="helper-card">
+            <span>U</span>
+            <p>Hi, I’m the official Uparty assistant. How can I help you today?</p>
+            <div class="helper-menu-item"><i></i><b>I’m looking for a job</b></div>
+            <div class="helper-menu-item"><i></i><b>I want to report an issue</b></div>
+            <div class="helper-menu-item"><i></i><b>I have a suggestion</b></div>
+            <div class="helper-menu-item"><i></i><b>Leave a Message</b></div>
+            <div class="helper-menu-item"><i></i><b>I met a problem</b></div>
+          </section>
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>Job Application Sheet</b><span>点击 I’m looking for a job 时打开工作申请底部面板，四个字段都填写后可提交。</span></div>
+        <div class="helper-sheet-wire">      <div class="helper-sheet-appbar"><strong>Job Application</strong><em>×</em></div>
+      <label class="helper-field"><span>name</span><i></i></label>
+      <label class="helper-field"><span>Contact Information</span><i></i></label>
+      <label class="helper-field"><span>Position You’re Applying For</span><i></i></label>
+      <label class="helper-field"><span>Apps You Have Worked On Before</span><i></i></label>
+      <button>Submit</button>
+    </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>Report &#47; Suggestion &#47; Message 提交 Sheet</b><span>这三个入口共用底部提交面板；Report 额外要求联系方式，Suggestion &#47; Message 支持图片。</span></div>
+        <div class="helper-sheet-wire">      <div class="helper-sheet-appbar"><strong>Report</strong><em>×</em></div>
+      <div class="helper-sheet-tabs"><b>Report</b><span>Ideas &amp; Suggestions</span><span>Leave a Message</span></div>
+      <label class="helper-field textarea"><span>Report Details</span><i>Please enter the content...</i></label>
+      <label class="helper-field"><span>Contact Information</span><i></i></label>
+      <label class="helper-field images"><span>Images (Optional)</span><i>＋</i></label>
+      <button>Submit</button>
+    </div>
+      </div>
+      <div class="mall-state-wrap">
+        <div class="state-note"><b>已提交工单 / 联系方式结果</b><span>提交后列表会回显处理提示；I met a problem 会返回地区 SA 联系信息。</span></div>
+        <div class="phone-wire helper-home-wire helper-result-wire">
+          <div class="simple-appbar">‹ <strong>Help Center</strong></div>
+          <p class="helper-received">We have received your job application and will process it as soon as possible. Thank you for your support!</p>
+          <article class="helper-case-card"><b>Job Application Submitted!</b><i></i><em>View details</em></article>
+          <article class="helper-contact-card">We see that your app region is US. You can contact the Super Admin(SA) of this region for assistance.</article>
+        </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">setting</p>
-        <h1>设置 - Customer Helper Page</h1>
+        <h1>帮助中心 - Customer Helper Page</h1>
         <p>docs&#47;ui-structure&#47;setting&#47;customer-helper-page.md</p>
       </header>
-      
+            <section class="section">
+        <h2>结构说明</h2>
+        <div class="notes"><p>帮助中心首页：</p>
+<p>背景头图</p>
+<p>官方助手问候卡片</p>
+<p>五个入口：找工作、举报问题、建议、留言、遇到问题</p>
+<p>底部提交面板：</p>
+<p>Job Application</p>
+<p>Report</p>
+<p>Ideas &amp; Suggestions</p>
+<p>Message</p>
+<p>结果区：</p>
+<p>已提交工单提示</p>
+<p>View details</p>
+<p>根据地区返回 Super Admin 联系方式</p></div>
+      </section>
             <section class="section">
         <h2>页面文案与来源</h2>
         <table>
@@ -218,7 +261,7 @@
 <li><code>lib&#47;ui&#47;setting&#47;page&#47;customer_helper_page.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>

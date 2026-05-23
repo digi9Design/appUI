@@ -3,27 +3,201 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>商城 - Mall Own Page i18n Prototype</title>
+  <title>商城背包 - Mall Own Page i18n Prototype</title>
   <link rel="stylesheet" href="../assets/i18n-prototype.css" />
 </head>
 <body>
   <main class="page-shell">
+    <nav class="crumb"><a class="back-link" href="../index.html#mall/mall-own-page.html" data-back-link>← 返回目录</a><span>/</span><span>mall</span></nav>
     <section class="wire-panel">
-      <nav class="crumb"><a class="back-link" href="../index.html#mall/mall-own-page.html" data-back-link>← 返回目录</a><span>/</span><span>mall</span></nav>
-          <div class="phone-wire">
-      <div class="frame-label">商城 - Mall Own Page</div>
-      <div class="top-bar">商城 - Mall Own Page</div>
-      <div class="wire-content"><div class="wire-block">Mall</div>
-<div class="wire-block">Stop Using</div>
-<div class="wire-block">Use</div>
-<div class="wire-block">Renew</div>
-<div class="wire-block">My Wallet</div></div>
+          <div class="mall-entry-board-wire">
+      <div class="frame-label">商城背包 - Mall Own Page</div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>背包默认态</b><span>从商城右上角背包进入，默认展示第一个商品分类；未选中物品时底部操作不可用。</span></div>
+        <div class="phone-wire mall-own-wire">
+          <div class="mall-header-bg"></div>
+          <div class="mall-appbar"><span>‹</span><strong>Mall</strong></div>
+          <div class="mall-wallet-row"><b>My Wallet</b><span>◆ 8,888</span><i>+</i></div>
+          <div class="mall-own-preview">
+            <span></span>
+            <div><b>Preview</b><small>No item selected yet</small></div>
+          </div>
+                  <div class="mall-own-tabs">
+          <b>Frame</b>
+<span>Vehicle</span>
+<span>Room Bubble</span>
+<span>Chat Bubble</span>
+<span>Sound Wave</span>
+<span>Profile Effect</span>
+<span>Entry Effects</span>
+        </div>
+          <h3>Frame owned items</h3>
+                  <div class="mall-owned-grid">
+          <div class=""><span></span><b>Frame</b><small>30d</small></div>
+          <div><span class="alt"></span><b>Frame</b><small>7d</small></div>
+          <div><span class="third"></span><b>Frame</b><small>Permanent</small></div>
+          <div><span></span><b>Frame</b><small>2d</small></div>
+          <div><span class="alt"></span><b>Frame</b><small>15d</small></div>
+          <div><span class="third"></span><b>Frame</b><small>90d</small></div>
+        </div>
+          <div class="mall-own-actions disabled">
+            <em>Give</em>
+            <b>Use</b>
+            <strong>Renew</strong>
+          </div>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>切换分类：Vehicle</b><span>点击顶部分类 Tab 后，背包商品网格切换到对应 ProductType。</span></div>
+        <div class="phone-wire mall-own-wire">
+          <div class="mall-header-bg"></div>
+          <div class="mall-appbar"><span>‹</span><strong>Mall</strong></div>
+          <div class="mall-wallet-row"><b>My Wallet</b><span>◆ 8,888</span><i>+</i></div>
+          <div class="mall-own-preview">
+            <span></span>
+            <div><b>Preview</b><small>No item selected yet</small></div>
+          </div>
+                  <div class="mall-own-tabs">
+          <span>Frame</span>
+<b>Vehicle</b>
+<span>Room Bubble</span>
+<span>Chat Bubble</span>
+<span>Sound Wave</span>
+<span>Profile Effect</span>
+<span>Entry Effects</span>
+        </div>
+          <h3>Vehicle owned items</h3>
+                  <div class="mall-owned-grid">
+          <div class=""><span></span><b>Vehicle</b><small>30d</small></div>
+          <div><span class="alt"></span><b>Vehicle</b><small>7d</small></div>
+          <div><span class="third"></span><b>Vehicle</b><small>Permanent</small></div>
+          <div><span></span><b>Vehicle</b><small>2d</small></div>
+          <div><span class="alt"></span><b>Vehicle</b><small>15d</small></div>
+          <div><span class="third"></span><b>Vehicle</b><small>90d</small></div>
+        </div>
+          <div class="mall-own-actions disabled">
+            <em>Give</em>
+            <b>Use</b>
+            <strong>Renew</strong>
+          </div>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>选中物品：Frame</b><span>点击某个已拥有商品后，上方预览区更新，底部出现 Give &#47; Use &#47; Renew 操作。</span></div>
+        <div class="phone-wire mall-own-wire">
+          <div class="mall-header-bg"></div>
+          <div class="mall-appbar"><span>‹</span><strong>Mall</strong></div>
+          <div class="mall-wallet-row"><b>My Wallet</b><span>◆ 8,888</span><i>+</i></div>
+          <div class="mall-own-preview">
+            <span></span>
+            <div><b>Frame</b><small>Selected item preview</small></div>
+          </div>
+                  <div class="mall-own-tabs">
+          <b>Frame</b>
+<span>Vehicle</span>
+<span>Room Bubble</span>
+<span>Chat Bubble</span>
+<span>Sound Wave</span>
+<span>Profile Effect</span>
+<span>Entry Effects</span>
+        </div>
+          <h3>Frame owned items</h3>
+                  <div class="mall-owned-grid">
+          <div class="selected"><span></span><b>Frame</b><small>30d</small></div>
+          <div><span class="alt"></span><b>Frame</b><small>7d</small></div>
+          <div><span class="third"></span><b>Frame</b><small>Permanent</small></div>
+          <div><span></span><b>Frame</b><small>2d</small></div>
+          <div><span class="alt"></span><b>Frame</b><small>15d</small></div>
+          <div><span class="third"></span><b>Frame</b><small>90d</small></div>
+        </div>
+          <div class="mall-own-actions ">
+            <em>Give</em>
+            <b>Use</b>
+            <strong>Renew</strong>
+          </div>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>正在使用的物品</b><span>当选中商品处于使用中，主按钮文案从「Use」切换为「Stop Using」。</span></div>
+        <div class="phone-wire mall-own-wire">
+          <div class="mall-header-bg"></div>
+          <div class="mall-appbar"><span>‹</span><strong>Mall</strong></div>
+          <div class="mall-wallet-row"><b>My Wallet</b><span>◆ 8,888</span><i>+</i></div>
+          <div class="mall-own-preview">
+            <span></span>
+            <div><b>Chat Bubble</b><small>Selected item preview</small></div>
+          </div>
+                  <div class="mall-own-tabs">
+          <span>Frame</span>
+<span>Vehicle</span>
+<span>Room Bubble</span>
+<b>Chat Bubble</b>
+<span>Sound Wave</span>
+<span>Profile Effect</span>
+<span>Entry Effects</span>
+        </div>
+          <h3>Chat Bubble owned items</h3>
+                  <div class="mall-owned-grid">
+          <div class="selected"><span></span><b>Chat Bubble</b><small>30d</small></div>
+          <div><span class="alt"></span><b>Chat Bubble</b><small>7d</small></div>
+          <div><span class="third"></span><b>Chat Bubble</b><small>Permanent</small></div>
+          <div><span></span><b>Chat Bubble</b><small>2d</small></div>
+          <div><span class="alt"></span><b>Chat Bubble</b><small>15d</small></div>
+          <div><span class="third"></span><b>Chat Bubble</b><small>90d</small></div>
+        </div>
+          <div class="mall-own-actions ">
+            <em>Give</em>
+            <b>Stop Using</b>
+            <strong>Renew</strong>
+          </div>
+          
+        </div>
+      </div>
+            <div class="mall-state-wrap">
+        <div class="state-note"><b>使用成功反馈</b><span>点击使用&#47;停止使用成功后会出现「Succeeded」临时反馈，并刷新当前分类列表。</span></div>
+        <div class="phone-wire mall-own-wire">
+          <div class="mall-header-bg"></div>
+          <div class="mall-appbar"><span>‹</span><strong>Mall</strong></div>
+          <div class="mall-wallet-row"><b>My Wallet</b><span>◆ 8,888</span><i>+</i></div>
+          <div class="mall-own-preview">
+            <span></span>
+            <div><b>Room Bubble</b><small>Selected item preview</small></div>
+          </div>
+                  <div class="mall-own-tabs">
+          <span>Frame</span>
+<span>Vehicle</span>
+<b>Room Bubble</b>
+<span>Chat Bubble</span>
+<span>Sound Wave</span>
+<span>Profile Effect</span>
+<span>Entry Effects</span>
+        </div>
+          <h3>Room Bubble owned items</h3>
+                  <div class="mall-owned-grid">
+          <div class="selected"><span></span><b>Room Bubble</b><small>30d</small></div>
+          <div><span class="alt"></span><b>Room Bubble</b><small>7d</small></div>
+          <div><span class="third"></span><b>Room Bubble</b><small>Permanent</small></div>
+          <div><span></span><b>Room Bubble</b><small>2d</small></div>
+          <div><span class="alt"></span><b>Room Bubble</b><small>15d</small></div>
+          <div><span class="third"></span><b>Room Bubble</b><small>90d</small></div>
+        </div>
+          <div class="mall-own-actions ">
+            <em>Give</em>
+            <b>Use</b>
+            <strong>Renew</strong>
+          </div>
+          <div class="mall-own-toast">Succeeded</div>
+        </div>
+      </div>
     </div>
     </section>
-    <aside class="detail-panel">
+    <section class="detail-panel">
       <header class="detail-head">
         <p class="eyebrow">mall</p>
-        <h1>商城 - Mall Own Page</h1>
+        <h1>商城背包 - Mall Own Page</h1>
         <p>docs&#47;ui-structure&#47;mall&#47;mall-own-page.md</p>
       </header>
       
@@ -85,13 +259,15 @@
         <h2>扫描源码</h2>
         <ul class="source-list"><li><code>lib&#47;theme&#47;appbar&#47;app_bar_leading.dart</code></li>
 <li><code>lib&#47;ui&#47;mall&#47;page&#47;mall_own_page.dart</code></li>
+<li><code>lib&#47;ui&#47;mall&#47;page&#47;mall_own_product_type_page.dart</code></li>
 <li><code>lib&#47;ui&#47;mall&#47;widget&#47;goods_item_preview_widget.dart</code></li>
+<li><code>lib&#47;ui&#47;mall&#47;widget&#47;mall_goods_display_item_widget.dart</code></li>
 <li><code>lib&#47;ui&#47;mall&#47;widget&#47;mall_wallet_info_widget.dart</code></li>
 <li><code>lib&#47;widget&#47;base_widget.dart</code></li>
 <li><code>lib&#47;widget&#47;image&#47;app_net_image.dart</code></li>
 <li><code>lib&#47;widget&#47;user&#47;user_avatar.dart</code></li></ul>
       </section>
-    </aside>
+    </section>
   </main>
 </body>
 </html>
